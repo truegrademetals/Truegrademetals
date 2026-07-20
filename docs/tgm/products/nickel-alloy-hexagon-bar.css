@@ -1,0 +1,78 @@
+#background-thing{
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	opacity: 0;
+	animation: opacity 3s forwards;
+}
+.background-logo{
+	width: 28.87vmin;
+	height: 16.67vmin;
+	opacity: 0.1;
+	position: absolute;
+	transform: translate(100vw, 0) rotate(90deg);
+	background-color: #aaaaaa;
+	border-radius: .5vmin;
+}
+.background-logo::before{
+	content: "";
+	width: 28.87vmin;
+	height: 16.67vmin;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotate(60deg);
+	background-color: #aaaaaa;
+	border-radius: .5vmin;
+}
+.background-logo::after{
+	content: "";
+	width: 28.87vmin;
+	height: 16.67vmin;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotate(-60deg);
+	background-color: #aaaaaa;
+	border-radius: .5vmin;
+}
+.background-logo:nth-child(1){
+	left: 15vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: 0s;
+}
+.background-logo:nth-child(2){
+	right: 15vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -15s;
+}
+.background-logo:nth-child(3){
+	left: calc(50vw - 20vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -30s;
+}
+.background-logo:nth-child(4){
+	left: 30vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -45s;
+}
+.background-logo:nth-child(5){
+	right: 30vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -60s;
+}
+@keyframes backgroundthing{
+	0%{transform: translate(0, 100vh) rotate(90deg);}
+	100%{transform: translate(0, -50vh) rotate(90deg);}
+}
+@keyframes opacity{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+#specifications-features-2{
+    background-image: url("../image/products/hexagon-bar/model.jpg");
+}
+

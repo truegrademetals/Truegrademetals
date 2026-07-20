@@ -1,0 +1,73 @@
+#background-thing{
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	opacity: 0;
+	animation: opacity 3s forwards;
+}
+.background-logo{
+	border: solid 13vmin #aaaaaa;
+	width: 8vmin;
+	height: 8vmin;
+	border-radius: 30vmin;
+	opacity: 0.1;
+	position: absolute;
+	transform: translate(100vw, 0);
+}
+.background-logo::after{
+	content: "";
+	width: 1vmin;
+	height: 15vmin;
+	background-color: #aaa;
+	border-radius: 1vmin;
+	position: absolute;
+	right: -13vmin;
+	top: -11vmin;
+}
+.background-logo:nth-child(1){
+	left: 20vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -50s;
+}
+.background-logo:nth-child(2){
+	left: calc(50vw - 20vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: 0s;
+}
+.background-logo:nth-child(3){
+	right: 20vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -25s;
+}
+@keyframes backgroundthing{
+	0%{transform: translate(0, 100vh);}
+	100%{transform: translate(0, -50vh);}
+}
+@keyframes opacity{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+#specifications-features-2{
+    background-image: url("../image/products/filler-metal/model.jpg");
+}
+@media screen and (min-width: 600px) {
+	.chemical::after{
+		content: "";
+		position: absolute;
+		top: 1vw;
+		left: -7.3vw;
+		background-color: #dddddd;
+		border-radius: 2vw;
+		padding: 0.5vw;
+		width: 5.5vw;
+		height: 0.5vw;
+		font-size: 0.9vw;
+		text-align: center;
+		line-height: 0.6vw;
+		color: #666666;
+		transform: skew(15deg);
+	}
+}

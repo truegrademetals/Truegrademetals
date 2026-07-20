@@ -1,0 +1,66 @@
+#background-thing{
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	opacity: 0;
+	animation: opacity 3s forwards;
+}
+.background-logo{
+	border: solid 10vmin #aaaaaa;
+	border-bottom: solid 10vmin transparent;
+	width: 18vmin;
+	height: 18vmin;
+	border-radius: 30vmin;
+	opacity: 0.1;
+	position: absolute;
+	transform: translate(100vw, 0) rotate(45deg);
+}
+.background-logo::before{
+	content: "";
+	width: 10vmin;
+	height: 10vmin;
+	background-color: #aaaaaa;
+	border-radius: 10vmin;
+	position: absolute;
+	top: 14vmin;
+	left: -5.8vmin;
+}
+.background-logo::after{
+	content: "";
+	width: 10vmin;
+	height: 10vmin;
+	background-color: #aaaaaa;
+	border-radius: 10vmin;
+	position: absolute;
+	top: 14vmin;
+	right: -5.8vmin;
+}
+.background-logo:nth-child(1){
+	left: 20vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -50s;
+}
+.background-logo:nth-child(2){
+	left: calc(50vw - 20vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: 0s;
+}
+.background-logo:nth-child(3){
+	right: 20vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -25s;
+}
+@keyframes backgroundthing{
+	0%{transform: translate(0, 100vh) rotate(45deg);;}
+	100%{transform: translate(0, -50vh) rotate(405deg);}
+}
+@keyframes opacity{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+#specifications-features-2{
+    background-image: url("../image/products/coil-tube/model.jpg");
+}

@@ -1,0 +1,50 @@
+#background-thing{
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	opacity: 0;
+	animation: opacity 3s forwards;
+}
+.background-logo{
+	border: solid 4vmin #aaaaaa;
+	width: 25vmin;
+	height: 25vmin;
+	border-radius: 30vmin;
+	opacity: 0.1;
+	position: absolute;
+	transform: translate(100vw, 0);
+}
+.background-logo:nth-child(1){
+	right: calc(25vw + 5vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -20s;
+}
+.background-logo:nth-child(2){
+	left: calc(25vw + 5vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -40s;
+}
+.background-logo:nth-child(3){
+	right: 5vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -60s;
+}
+.background-logo:nth-child(4){
+	left: 5vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: 0s;
+}
+@keyframes backgroundthing{
+	0%{transform: translate(0, 100vh);}
+	100%{transform: translate(0, -50vh);}
+}
+@keyframes opacity{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+#specifications-features-2{
+    background-image: url("../image/products/welded-pipe-tube/model.jpg");
+}

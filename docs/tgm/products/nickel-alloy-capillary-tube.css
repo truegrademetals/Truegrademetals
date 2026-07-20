@@ -1,0 +1,90 @@
+#background-thing{
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	opacity: 0;
+	animation: opacity 3s forwards;
+}
+.background-logo{
+	border: solid 1vmin #aaaaaa;
+	width: 5vmin;
+	height: 5vmin;
+	border-radius: 6vmin;
+	opacity: 0.1;
+	position: absolute;
+	transform: translate(100vw, 0);
+}
+.background-logo:nth-child(1){
+	right: calc(25vw + 5vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: 0s;
+}
+.background-logo:nth-child(2){
+	left: calc(25vw + 20vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -6.5s;
+}
+.background-logo:nth-child(3){
+	right: 5vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -13s;
+}
+.background-logo:nth-child(4){
+	left: 9vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -19.5s;
+}
+.background-logo:nth-child(5){
+	right: calc(25vw + 15vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -26s;
+}
+.background-logo:nth-child(6){
+	left: calc(25vw + 5vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -32.5s;
+}
+.background-logo:nth-child(7){
+	right: 8vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -39s;
+}
+.background-logo:nth-child(8){
+	left: 3vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -45.5s;
+}
+.background-logo:nth-child(9){
+	right: calc(25vw + 20vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -52s;
+}
+.background-logo:nth-child(10){
+	left: calc(25vw + 15vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -58.5s;
+}
+.background-logo:nth-child(11){
+	right: 2vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -65s;
+}
+.background-logo:nth-child(12){
+	left: 5vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -71.5s;
+}
+@keyframes backgroundthing{
+	0%{transform: translate(0, 100vh);}
+	100%{transform: translate(0, -50vh);}
+}
+@keyframes opacity{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+#specifications-features-2{
+    background-image: url("../image/products/capillary-tube/model.jpg");
+}

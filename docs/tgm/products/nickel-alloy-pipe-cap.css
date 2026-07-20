@@ -1,0 +1,56 @@
+#background-thing{
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	opacity: 0;
+	animation: opacity 3s forwards;
+}
+.background-logo{
+	border-top: solid 5vmin #aaa;
+	border-top: solid 5vmin #aaa;
+	width: 30vmin;
+	height: 30vmin;
+	opacity: 0.1;
+	position: absolute;
+	transform: scale(1.5, 1) translate(100vw, 0);
+	background: #aaa;
+	border-radius: 50vmin;
+}
+.background-logo::before{
+	content: "";
+	width: 30vmin;
+	height: 30vmin;
+	position: absolute;
+	top: 15vmin;
+	left: 0vmin;
+	background: #fff;
+}
+.background-logo:nth-child(1){
+	left: 20vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -50s;
+}
+.background-logo:nth-child(2){
+	left: calc(50vw - 20vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: 0s;
+}
+.background-logo:nth-child(3){
+	right: 20vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -25s;
+}
+@keyframes backgroundthing{
+	0%{transform: scale(1.5, 1) translate(0, 100vh);}
+	100%{transform: scale(1.5, 1) translate(0, -50vh);}
+}
+@keyframes opacity{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+#specifications-features-2{
+    background-image: url("../image/products/pipe-cap/model.jpg");
+}
