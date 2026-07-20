@@ -3577,11 +3577,6 @@
     const motionOk = window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
     const revealEls = document.querySelectorAll('.tgm-reveal:not(.tgm-hero .tgm-reveal)');
     if (motionOk) {
-      revealEls.forEach((el) => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(28px)';
-      });
-
       const revealObserver = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
