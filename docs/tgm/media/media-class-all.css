@@ -1,0 +1,463 @@
+@media screen and (min-width: 600px) {
+	main p{
+		text-align: center;
+	}
+
+
+
+	.point{
+		width: 1vw;
+		height: 1vw;
+		border-radius: 1vw;
+		background-color: #32558e;
+		position: relative;
+	}
+	#pagepicture{
+	    width: 100vw;
+	    height: 20vw;
+	    background-color: #333333;
+	    background-size: cover;
+	    position: relative;
+	}
+	#pagepicture::before{
+		content: "";
+		display: block;
+		width: 40vw;
+		height: 20vw;
+		background-color: #333;
+		transform: skew(-15deg);
+		position: absolute;
+		top: 0;
+		left: 2.6vw;
+		opacity: .8;
+		animation: line2 1s backwards;
+		animation-delay: .3s;
+	}
+	#pagepicture > h1{
+	    position: absolute;
+	    left: 3vw;
+	    top: 8vw;
+	    color: white;
+	    font-size: 3.5vw;
+	    text-align: center;
+	    width: 40vw;
+		animation: line3 1s backwards;
+		animation-delay: .1s;
+	}
+	
+	#breadol{
+	    width: 40vw;
+	    display: flex;
+	    align-content: center;
+	    justify-content: center;
+	    list-style: none;
+	    position: absolute;
+	    bottom: 1vw;
+	    left: 3vw;
+	    padding: 0;
+	    margin: 0;
+	    z-index: 1;
+		animation: line3 1s backwards;
+		animation-delay: .2s;
+	}
+	#breadol li{
+	    font-size: 1.2vw;
+	    color: white;
+	    line-height: 1vw;
+	    display: flex;
+	}
+	#breadol li a{
+	    color: white;
+	    margin-right: 2vw;
+	    display: block;
+	    position: relative;
+	}
+	#breadol li a::after{
+		content: "";
+		display: block;
+		width: .2vw;
+		height: 1vw;
+		background-color: #fff;
+		transform: skew(-15deg);
+		position: absolute;
+		top: 0vw;
+		right: -1.1vw;		
+	}
+	@keyframes line2{
+		0%{transform: translate(30vw, 0) skew(-15deg); opacity: 0;}
+		100%{transform: translate(0, 0) skew(-15deg); opacity: .8;}
+	}
+	@keyframes line3{
+		0%{transform: translate(30vw, 0); opacity: 0;}
+		100%{transform: translate(0, 0); opacity: 1;}
+	}
+	@keyframes line4{
+		0%{transform: translate(0, 10vw); opacity: 0;}
+		100%{transform: translate(0, 0); opacity: 1;}
+	}
+
+	
+	#media-latest{
+		margin: 5vw 0 8vw 0;
+		animation: line3 backwards 1s;
+		animation-delay: 0.3s;
+	}
+	#media-latest > .point{
+		margin: 2vw 16vw;
+	}
+	.media-blog{
+		width: 90vw;
+		height: 15vw;
+		position: relative;
+		margin: 1vw 5vw;
+	}
+	.media-blog::before{
+		content: "";
+		width: 9vw;
+		height: 18vw;
+		background-color: #eee;
+		position: absolute;
+		left: 80vw;
+		top: -1.5vw;
+		transform: skew(-15deg) scale(1, 1);
+		opacity: .5;
+		transform-origin: right;
+		transition: all .2s;
+	}
+	.media-blog:hover::before{
+		transform: skew(-15deg) scale(8, 1);
+	}
+	.media-blog > a{
+		width: 95vw;
+		height: 15vw;
+		position: absolute;
+		left: 0vw;
+		top: 0;
+	}
+	.media-blog > a > img{
+		height: 15vw;
+		position: absolute;
+		left: 0;
+		top: 0;
+		border-radius: 1vw;
+	}
+	.media-blog > a > h4{
+		font-size: 2.5vw;
+		width: 65vw;
+		margin: 0;
+		line-height: 2vw;
+		position: absolute;
+		left: 25vw;
+		top: 1vw;
+	}
+	.media-p{
+		font-size: 1.3vw;
+		width: 50vw;
+		line-height: 1.9vw;
+		position: absolute;
+		left: 25vw;
+		top: 4.5vw;
+		text-align: justify;
+	}
+	.media-time{
+		font-size: 1vw;
+		line-height: 2vw;
+		position: absolute;
+		right: 10vw;
+		top: 13vw;
+	}
+	.media-div{
+		font-size: 1.2vw;
+		width: 10vw;
+		height: 2vw;
+		color: #32558e;
+		border: solid .2vw #32558e;
+		border-radius: 2vw;
+		line-height: 2vw;
+		position: absolute;
+		text-align: center;
+		left: 25vw;
+		top: 12vw;
+		font-weight: bold;
+	}
+
+	#p-section{
+		width: 35vw;
+		padding: 3vw 22.5vw;
+		margin: 5vw 10vw;
+		position: relative;
+		animation: line3 1s backwards;
+		animation-delay: .4s;
+	}
+	#p-section > p{
+		width: 35vw;
+		font-size: 1.3vw;
+		line-height: 2vw;
+		text-align: justify;
+	}
+	#p-section::before{
+		content: "";
+		width: 1vw;
+		height: 1vw;
+		border-radius: 1vw;
+		background-color: #32558e;
+		position: absolute;
+		left: 39.5vw;
+		top: 0;
+	}
+	#p-section::after{
+		content: "";
+		width: 1vw;
+		height: 1vw;
+		border-radius: 1vw;
+		background-color: #32558e;
+		position: absolute;
+		left: 39.5vw;
+		bottom: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+	main p{
+		text-align: center;
+	}
+
+	@keyframes tc{
+		0%{transform: translate(50vw, 0); opacity: 0;}
+		100%{transform: translate(0, 0); opacity: 1;}
+	}
+	@keyframes td{
+		0%{transform: translate(0, 50vw); opacity: 0;}
+		100%{transform: translate(0, 0); opacity: 1;}
+	}
+
+
+	#pagepicture{
+		width: 100vw;
+		overflow: hidden;
+	    height: 67vw;
+	    background-color: #333333;
+	    background-size: cover;
+	    position: relative;
+	    display: flex;
+	    align-items: center;
+	}
+	#pagepicture::before{
+		content: "";
+		display: block;
+		width: 100vw;
+		height: 67vw;
+		background-color: #333;
+		transform: skew(-15deg);
+		position: absolute;
+		top: 0;
+		left: 0vw;
+		opacity: .8;
+	}
+	#pagepicture > h1{
+	    color: white;
+	    font-size: 15vw;
+	    line-height: 15vw;
+	    text-align: center;
+	    width: 85vw;
+	    margin: 7vw 7.5vw 0 7.5vw;
+	    animation: tc 1s backwards;
+	    z-index: 1;
+	}
+    #pagepicture{
+        background-image: url(image/grades-mobile.jpg);
+	}
+	#breadol{
+	    width: 85vw;
+	    display: flex;
+	    align-content: center;
+	    justify-content: center;
+	    list-style: none;
+	    position: absolute;
+	    bottom: 3vw;
+	    left: 7.5vw;
+	    padding: 0;
+	    margin: 0;
+	    z-index: 1;
+	    animation: tc 1s backwards;
+	    animation-delay: .1s;
+	}
+	#breadol li{
+	    font-size: 3.6vw;
+	    color: white;
+	    line-height: 3vw;
+	    display: flex;
+	}
+	#breadol li a{
+	    color: white;
+	    margin-right: 6vw;
+	    display: block;
+	    position: relative;
+	}
+	#breadol li a::after{
+		content: "";
+		display: block;
+		width: .6vw;
+		height: 3vw;
+		background-color: #fff;
+		transform: skew(-15deg);
+		position: absolute;
+		top: 0vw;
+		right: -3.3vw;		
+	}
+
+	#p-section{
+		width: 85vw;
+		margin: 10vw 7.5vw 6vw 7.5vw;
+		padding: 8vw 0 8vw 0;
+		position: relative;
+	    animation: td 1s backwards;
+	    animation-delay: .1s;
+	}
+	#p-section > p{
+		width: 85vw;
+		font-size: 4.5vw;
+		line-height: 6vw;
+		text-align: justify;
+	}
+	#p-section::before{
+		content: "";
+		width: 3vw;
+		height: 3vw;
+		border-radius: 3vw;
+		background-color: #32558e;
+		position: absolute;
+		left: 38.5vw;
+		top: 0;
+	}
+	#p-section::after{
+		content: "";
+		width: 3vw;
+		height: 3vw;
+		border-radius: 3vw;
+		background-color: #32558e;
+		position: absolute;
+		left: 38.5vw;
+		bottom: 0;
+	}
+	
+
+	#media-page{
+		position: relative;
+		padding: 12vw 0;
+		width: 100vw;
+		overflow: hidden;
+	}
+	#media-2{
+		padding-bottom: 18vw;
+		width: 100vw;
+		overflow: hidden;
+	    animation: td 1s backwards;
+	    animation-delay: .2s;
+	}
+	.point{
+		width: 3vw;
+		height: 3vw;
+		border-radius: 3vw;
+		background-color: #32558e;
+		position: relative;
+	}
+	#media-latest > .point{
+		margin-left: 5vw;
+		position: relative;
+	}
+	#media-latest > .point::after{
+		content: "";
+		height: .3vw;
+		width: 80vw;
+		background: #32558e;
+		position: absolute;
+		left: 6vw;
+		top: 1.3vw;
+		border-radius: 3vw;
+	}
+	.media-blog{
+		width: 100vw;
+		position: relative;
+		margin: 5vw 0;
+		overflow: hidden;
+	}
+	.media-blog > a{
+		display: block;
+		width: 90vw;
+		height: 100%;
+		position: relative;
+		margin: 0 5vw;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.media-blog > a > img{
+		width: 90vw;
+		height: 60vw;
+		position: relative;
+		border-radius: 3vw;
+		left: 0;
+		top: 0;
+	}
+	.media-blog > a > h4{
+		font-size: 7.5vw;
+		width: 85vw;
+		margin: 3vw 2.5vw;
+		line-height: 9vw;
+	}
+	.media-p{
+		font-size: 4.5vw;
+		width: 85vw;
+		margin: 0 2.5vw;
+		line-height: 6vw;
+		text-align: justify;
+	}
+	.media-time{
+		width: 30vw;
+		height: 9.6vw;
+		font-size: 4vw;
+		line-height: 9.6vw;
+		margin: 5vw 2.5vw;
+	}
+	.media-div{
+		font-size: 4.8vw;
+		width: 40vw;
+		height: 8vw;
+		border: solid .8vw #32558e;
+		border-radius: 8vw;
+		line-height: 8vw;
+		text-align: center;
+		font-weight: bold;
+		margin: 5vw 2.5vw;
+		color: #32558e;
+	}
+}
+
+
+
+
+
+
+
+
