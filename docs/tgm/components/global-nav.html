@@ -1,0 +1,1230 @@
+<!--
+  TrueGrade Metals — Global Navigation Component
+  ============================================================
+  A world-class, enterprise-grade navigation system designed for
+  industrial procurement professionals.
+
+  Usage:
+    1. Include this snippet directly after the opening <body> tag.
+    2. Or load via global-nav.js for reusable injection.
+
+  Features:
+    • Premium utility bar with trust signals
+    • Sticky scroll-aware main navigation
+    • Enterprise mega menus (Products, Industries, Applications, Materials, Resources)
+    • Predictive search overlay
+    • Persistent RFQ CTA
+    • Full mobile drawer with accordions
+    • Keyboard accessible, ARIA labelled, prefers-reduced-motion safe
+-->
+
+<!-- Skip link -->
+<a href="#main-content" class="tg-skip-link">Skip to main content</a>
+
+<!-- Utility bar -->
+<div class="tg-utility-bar" aria-label="Utility navigation">
+  <div class="tg-utility-inner">
+    <div class="tg-utility-left">
+      <a href="mailto:info@truegrademetals.com" class="tg-utility-item" aria-label="Email TrueGrade Metals">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span>info@truegrademetals.com</span>
+      </a>
+      <a href="tel:+8651981809659" class="tg-utility-item" aria-label="Call TrueGrade Metals">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>+86-519-81809659</span>
+      </a>
+      <span class="tg-utility-item tg-utility-no-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Mon–Fri, 8:30–17:30 CST</span>
+      </span>
+    </div>
+    <div class="tg-utility-right">
+      <span class="tg-utility-pill">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Certified Materials
+      </span>
+      <span class="tg-utility-pill">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Global Delivery
+      </span>
+      <span class="tg-utility-pill">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        Engineering Support
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- Main navigation -->
+<header class="tg-header" id="tg-header" data-scrolled="false">
+  <div class="tg-header-inner">
+    <a href="/" class="tg-header-logo" aria-label="TrueGrade Metals homepage">
+      <img src="/tgm/LOGO.svg" alt="" width="38" height="38"/>
+      <div class="tg-header-logo-text">
+        <span class="tg-header-logo-name">TrueGrade Metals</span>
+        <span class="tg-header-logo-tagline">Nickel Alloy Specialists</span>
+      </div>
+    </a>
+
+    <nav class="tg-desktop-nav" aria-label="Primary navigation">
+      <ul class="tg-nav-list">
+        <li class="tg-nav-item has-mega">
+          <button class="tg-nav-trigger" aria-expanded="false" aria-controls="mega-products" data-section="products">
+            Products
+            <svg class="tg-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="tg-mega" id="mega-products" hidden>
+            <div class="tg-mega-inner">
+              <div class="tg-mega-section">
+                <h3 class="tg-mega-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                  Product Forms
+                </h3>
+                <a href="/tgm/nickel-alloy-pipes.html" class="tg-mega-link">
+                  <span class="tg-mega-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"/><path d="M14 2v6h6"/><path d="M2 15h10"/><path d="M5 12v6"/><path d="M9 12v6"/></svg>
+                  </span>
+                  <span class="tg-mega-link-text">
+                    <strong>Pipes &amp; Tubes</strong>
+                    <span>Seamless, welded, capillary &amp; coil</span>
+                  </span>
+                </a>
+                <a href="/tgm/nickel-alloy-fittings.html" class="tg-mega-link">
+                  <span class="tg-mega-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4"/><path d="M12 2v8"/><path d="M6 10h12a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2z"/><path d="M12 14v8"/><path d="M10 22h4"/></svg>
+                  </span>
+                  <span class="tg-mega-link-text">
+                    <strong>Fittings</strong>
+                    <span>Elbows, flanges, reducers, tees &amp; caps</span>
+                  </span>
+                </a>
+                <a href="/tgm/nickel-alloy-bars.html" class="tg-mega-link">
+                  <span class="tg-mega-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M6 16l3-12h6l3 12"/><path d="M6 16h12"/></svg>
+                  </span>
+                  <span class="tg-mega-link-text">
+                    <strong>Bars &amp; Rods</strong>
+                    <span>Round, flat, hexagon &amp; square profiles</span>
+                  </span>
+                </a>
+                <a href="/tgm/nickel-alloy-sheets.html" class="tg-mega-link">
+                  <span class="tg-mega-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>
+                  </span>
+                  <span class="tg-mega-link-text">
+                    <strong>Sheets &amp; Plates</strong>
+                    <span>Hot &amp; cold rolled, cut-to-size</span>
+                  </span>
+                </a>
+                <a href="/tgm/nickel-alloy-wires.html" class="tg-mega-link">
+                  <span class="tg-mega-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21v-2a4 4 0 0 1 4-4h4"/><path d="M12 15V3"/><path d="M12 11h8"/><path d="M12 7h5"/></svg>
+                  </span>
+                  <span class="tg-mega-link-text">
+                    <strong>Wires &amp; Electrodes</strong>
+                    <span>Filler wire, welding electrodes &amp; coil</span>
+                  </span>
+                </a>
+              </div>
+
+              <div class="tg-mega-section">
+                <h3 class="tg-mega-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                  Material Grades
+                </h3>
+                <a href="/tgm/grades/400.html" class="tg-mega-grade">Monel® 400</a>
+                <a href="/tgm/grades/K-500.html" class="tg-mega-grade">Monel® K-500</a>
+                <a href="/tgm/grades/600.html" class="tg-mega-grade">Inconel® 600</a>
+                <a href="/tgm/grades/625.html" class="tg-mega-grade">Inconel® 625</a>
+                <a href="/tgm/grades/718.html" class="tg-mega-grade">Inconel® 718</a>
+                <a href="/tgm/grades/800.html" class="tg-mega-grade">Incoloy® 800</a>
+                <a href="/tgm/grades/825.html" class="tg-mega-grade">Incoloy® 825</a>
+                <a href="/tgm/grades/C-276.html" class="tg-mega-grade">Hastelloy® C-276</a>
+                <a href="/tgm/grades.html" class="tg-mega-grade tg-mega-grade-all">View all grades →</a>
+              </div>
+
+              <div class="tg-mega-section tg-mega-highlight">
+                <h3 class="tg-mega-title">Popular specifications</h3>
+                <p class="tg-mega-desc">ASTM / ASME B167, B444, B443, B574, B622 and equivalent DIN / EN standards. Mill Test Reports included as standard.</p>
+                <a href="/tgm/nickel-alloy.html" class="tg-btn tg-btn-primary tg-btn-sm">Explore all products</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="tg-nav-item has-mega">
+          <button class="tg-nav-trigger" aria-expanded="false" aria-controls="mega-industries" data-section="solutions">
+            Industries
+            <svg class="tg-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="tg-mega tg-mega-sm" id="mega-industries" hidden>
+            <div class="tg-mega-inner tg-mega-inner-grid">
+              <a href="/tgm/solutions.html" class="tg-mega-link">
+                <span class="tg-mega-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </span>
+                <span class="tg-mega-link-text"><strong>Aerospace</strong><span>High-temp structural alloys</span></span>
+              </a>
+              <a href="/tgm/solutions.html" class="tg-mega-link">
+                <span class="tg-mega-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg>
+                </span>
+                <span class="tg-mega-link-text"><strong>Oil &amp; Gas</strong><span>Corrosion-resistant materials</span></span>
+              </a>
+              <a href="/tgm/solutions.html" class="tg-mega-link">
+                <span class="tg-mega-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20"/><path d="M12 2v20"/><path d="M12 8l8-3"/><path d="M12 12l8 3"/></svg>
+                </span>
+                <span class="tg-mega-link-text"><strong>Marine</strong><span>Seawater &amp; offshore grades</span></span>
+              </a>
+              <a href="/tgm/solutions.html" class="tg-mega-link">
+                <span class="tg-mega-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                </span>
+                <span class="tg-mega-link-text"><strong>Chemical Processing</strong><span>Acid &amp; chloride resistance</span></span>
+              </a>
+              <a href="/tgm/solutions.html" class="tg-mega-link">
+                <span class="tg-mega-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </span>
+                <span class="tg-mega-link-text"><strong>Power Generation</strong><span>Turbine &amp; boiler alloys</span></span>
+              </a>
+              <a href="/tgm/solutions.html" class="tg-mega-link">
+                <span class="tg-mega-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </span>
+                <span class="tg-mega-link-text"><strong>Automotive</strong><span>Exhaust &amp; performance alloys</span></span>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="tg-nav-item">
+          <a href="/tgm/media/applications/index.html" class="tg-nav-link">Applications</a>
+        </li>
+
+        <li class="tg-nav-item has-mega">
+          <button class="tg-nav-trigger" aria-expanded="false" aria-controls="mega-materials" data-section="grades">
+            Materials
+            <svg class="tg-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="tg-mega tg-mega-sm" id="mega-materials" hidden>
+            <div class="tg-mega-inner tg-mega-inner-grid tg-mega-inner-grades">
+              <div class="tg-mega-grade-col">
+                <h4>Monel®</h4>
+                <a href="/tgm/grades/400.html">400</a>
+                <a href="/tgm/grades/K-500.html">K-500</a>
+                <a href="/tgm/grades/401.html">401</a>
+                <a href="/tgm/grades/R-405.html">R-405</a>
+                <a href="/tgm/grades/404.html">404</a>
+              </div>
+              <div class="tg-mega-grade-col">
+                <h4>Inconel®</h4>
+                <a href="/tgm/grades/600.html">600</a>
+                <a href="/tgm/grades/601.html">601</a>
+                <a href="/tgm/grades/625.html">625</a>
+                <a href="/tgm/grades/718.html">718</a>
+                <a href="/tgm/grades/X-750.html">X-750</a>
+              </div>
+              <div class="tg-mega-grade-col">
+                <h4>Incoloy®</h4>
+                <a href="/tgm/grades/800.html">800</a>
+                <a href="/tgm/grades/800H.html">800H</a>
+                <a href="/tgm/grades/825.html">825</a>
+                <a href="/tgm/grades/925.html">925</a>
+                <a href="/tgm/grades/909.html">909</a>
+              </div>
+              <div class="tg-mega-grade-col">
+                <h4>Hastelloy®</h4>
+                <a href="/tgm/grades/C-276.html">C-276</a>
+                <a href="/tgm/grades/C-22.html">C-22</a>
+                <a href="/tgm/grades/B-3.html">B-3</a>
+                <a href="/tgm/grades/B-2.html">B-2</a>
+                <a href="/tgm/grades/X.html">X</a>
+              </div>
+              <div class="tg-mega-grade-col">
+                <h4>More</h4>
+                <a href="/tgm/grades/200.html">Pure Nickel 200</a>
+                <a href="/tgm/grades/201.html">Pure Nickel 201</a>
+                <a href="/tgm/grades/nimonic.html">Nimonic</a>
+                <a href="/tgm/grades/nitronic.html">Nitronic</a>
+                <a href="/tgm/grades.html" class="tg-mega-grade-all">All grades →</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="tg-nav-item has-mega">
+          <button class="tg-nav-trigger" aria-expanded="false" aria-controls="mega-resources" data-section="media">
+            Resources
+            <svg class="tg-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="tg-mega tg-mega-sm" id="mega-resources" hidden>
+            <div class="tg-mega-inner tg-mega-inner-grid">
+              <a href="/tgm/tools.html" class="tg-mega-link">
+                <span class="tg-mega-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+                </span>
+                <span class="tg-mega-link-text"><strong>Engineering Tools</strong><span>Weight, schedule &amp; conversion calculators</span></span>
+              </a>
+              <a href="/tgm/gallery.html" class="tg-mega-link">
+                <span class="tg-mega-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                </span>
+                <span class="tg-mega-link-text"><strong>Product Gallery</strong><span>Photos of pipes, fittings, bars &amp; more</span></span>
+              </a>
+              <a href="/tgm/media/alloy-knowledge/index.html" class="tg-mega-link">
+                <span class="tg-mega-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </span>
+                <span class="tg-mega-link-text"><strong>Alloy Knowledge</strong><span>Technical guides &amp; material basics</span></span>
+              </a>
+              <a href="/tgm/blog.html" class="tg-mega-link">
+                <span class="tg-mega-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                </span>
+                <span class="tg-mega-link-text"><strong>Blog &amp; News</strong><span>Market updates &amp; sourcing insights</span></span>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="tg-nav-item">
+          <a href="/tgm/about-us.html" class="tg-nav-link">About</a>
+        </li>
+
+        <li class="tg-nav-item">
+          <a href="/tgm/contact-us.html" class="tg-nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="tg-header-actions">
+      <button class="tg-search-toggle" aria-label="Open search" aria-controls="tg-search-overlay" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <a href="/tgm/contact-us.html" class="tg-btn tg-btn-primary tg-btn-nav">Request Quote</a>
+      <button class="tg-menu-toggle" aria-label="Open menu" aria-controls="tg-mobile-nav" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Search overlay -->
+<div class="tg-search-overlay" id="tg-search-overlay" hidden>
+  <div class="tg-search-backdrop"></div>
+  <div class="tg-search-dialog" role="dialog" aria-modal="true" aria-label="Site search">
+    <div class="tg-search-header">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" class="tg-search-input" placeholder="Search grades, products, standards..." autocomplete="off" aria-label="Search site" />
+      <button class="tg-search-close" aria-label="Close search">ESC</button>
+    </div>
+    <div class="tg-search-body">
+      <div class="tg-search-empty">
+        <p>Start typing to search materials, grades, specifications and resources.</p>
+        <div class="tg-search-suggestions">
+          <span>Popular:</span>
+          <button data-search="Inconel 625">Inconel 625</button>
+          <button data-search="Hastelloy C-276">Hastelloy C-276</button>
+          <button data-search="Monel 400 pipe">Monel 400 pipe</button>
+          <button data-search="ASTM B444">ASTM B444</button>
+        </div>
+      </div>
+      <div class="tg-search-results" hidden></div>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile navigation -->
+<div class="tg-mobile-backdrop" id="tg-mobile-backdrop" hidden></div>
+<aside class="tg-mobile-nav" id="tg-mobile-nav" aria-label="Mobile navigation" hidden>
+  <div class="tg-mobile-header">
+    <span class="tg-mobile-logo">TrueGrade Metals</span>
+    <button class="tg-mobile-close" aria-label="Close menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="tg-mobile-body">
+    <div class="tg-mobile-search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" placeholder="Search grades, products..." aria-label="Search site" />
+    </div>
+
+    <div class="tg-mobile-accordion">
+      <button class="tg-mobile-trigger" aria-expanded="false">Products</button>
+      <div class="tg-mobile-panel" hidden>
+        <a href="/tgm/nickel-alloy-pipes.html">Pipes &amp; Tubes</a>
+        <a href="/tgm/nickel-alloy-fittings.html">Fittings</a>
+        <a href="/tgm/nickel-alloy-bars.html">Bars &amp; Rods</a>
+        <a href="/tgm/nickel-alloy-sheets.html">Sheets &amp; Plates</a>
+        <a href="/tgm/nickel-alloy-wires.html">Wires &amp; Electrodes</a>
+        <a href="/tgm/nickel-alloy.html">All products</a>
+      </div>
+    </div>
+
+    <div class="tg-mobile-accordion">
+      <button class="tg-mobile-trigger" aria-expanded="false">Industries</button>
+      <div class="tg-mobile-panel" hidden>
+        <a href="/tgm/solutions.html">Aerospace</a>
+        <a href="/tgm/solutions.html">Oil &amp; Gas</a>
+        <a href="/tgm/solutions.html">Marine</a>
+        <a href="/tgm/solutions.html">Chemical Processing</a>
+        <a href="/tgm/solutions.html">Power Generation</a>
+        <a href="/tgm/solutions.html">Automotive</a>
+      </div>
+    </div>
+
+    <a href="/tgm/media/applications/index.html" class="tg-mobile-link">Applications</a>
+
+    <div class="tg-mobile-accordion">
+      <button class="tg-mobile-trigger" aria-expanded="false">Materials</button>
+      <div class="tg-mobile-panel" hidden>
+        <a href="/tgm/grades/400.html">Monel 400</a>
+        <a href="/tgm/grades/625.html">Inconel 625</a>
+        <a href="/tgm/grades/718.html">Inconel 718</a>
+        <a href="/tgm/grades/825.html">Incoloy 825</a>
+        <a href="/tgm/grades/C-276.html">Hastelloy C-276</a>
+        <a href="/tgm/grades.html">All grades</a>
+      </div>
+    </div>
+
+    <div class="tg-mobile-accordion">
+      <button class="tg-mobile-trigger" aria-expanded="false">Resources</button>
+      <div class="tg-mobile-panel" hidden>
+        <a href="/tgm/tools.html">Engineering Tools</a>
+        <a href="/tgm/gallery.html">Product Gallery</a>
+        <a href="/tgm/media/alloy-knowledge/index.html">Alloy Knowledge</a>
+        <a href="/tgm/blog.html">Blog &amp; News</a>
+      </div>
+    </div>
+
+    <a href="/tgm/about-us.html" class="tg-mobile-link">About</a>
+    <a href="/tgm/contact-us.html" class="tg-mobile-link">Contact</a>
+  </div>
+  <div class="tg-mobile-footer">
+    <a href="/tgm/contact-us.html" class="tg-btn tg-btn-primary tg-btn-block">Request 24h Quote</a>
+  </div>
+</aside>
+
+<style>
+  /* ============================================================
+     TrueGrade Metals — Global Navigation Styles
+     ============================================================ */
+
+  :root {
+    --tg-navy-950: #050d18;
+    --tg-navy-900: #0B1F33;
+    --tg-navy-800: #14304d;
+    --tg-navy-700: #1d4167;
+    --tg-navy-100: #d6e3f0;
+    --tg-navy-50: #f2f7fb;
+    --tg-ember-600: #c44b10;
+    --tg-ember-500: #EE5D16;
+    --tg-ember-50: #fff6f2;
+    --tg-white: #ffffff;
+    --tg-gray-50: #f7f8fa;
+    --tg-gray-100: #eef0f4;
+    --tg-gray-200: #e2e5eb;
+    --tg-gray-300: #c8cdd6;
+    --tg-gray-500: #6b7280;
+    --tg-gray-600: #4b5563;
+    --tg-gray-700: #374151;
+
+    --tg-radius: 16px;
+    --tg-radius-sm: 12px;
+    --tg-radius-pill: 9999px;
+    --tg-shadow-xs: 0 1px 2px rgba(11, 31, 51, 0.04);
+    --tg-shadow-sm: 0 4px 12px rgba(11, 31, 51, 0.06);
+    --tg-shadow: 0 12px 36px rgba(11, 31, 51, 0.1);
+    --tg-shadow-lg: 0 24px 60px rgba(11, 31, 51, 0.14);
+    --tg-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .tg-skip-link {
+    position: absolute;
+    top: -60px;
+    left: 16px;
+    z-index: 200;
+    background: var(--tg-navy-900);
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: var(--tg-radius-sm);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: top 0.2s var(--tg-ease);
+  }
+  .tg-skip-link:focus { top: 16px; }
+
+  /* Utility bar */
+  .tg-utility-bar {
+    background: var(--tg-navy-900);
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.75rem;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .tg-utility-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .tg-utility-left,
+  .tg-utility-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .tg-utility-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: rgba(255, 255, 255, 0.75);
+    transition: color 0.2s ease;
+  }
+  .tg-utility-item:hover { color: #fff; }
+  .tg-utility-item svg { flex-shrink: 0; }
+  .tg-utility-no-link { cursor: default; }
+  .tg-utility-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: var(--tg-radius-pill);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+  }
+  .tg-utility-pill svg { color: var(--tg-ember-500); }
+
+  @media (max-width: 900px) {
+    .tg-utility-bar { display: none; }
+  }
+
+  /* Header */
+  .tg-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(11, 31, 51, 0.06);
+    transition: box-shadow 0.3s var(--tg-ease), background 0.3s ease;
+  }
+  .tg-header[data-scrolled="true"] {
+    box-shadow: var(--tg-shadow-sm);
+    background: rgba(255, 255, 255, 0.98);
+  }
+  .tg-header-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    transition: height 0.3s var(--tg-ease);
+  }
+  .tg-header[data-scrolled="true"] .tg-header-inner { height: 68px; }
+
+  .tg-header-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+  .tg-header-logo img { display: block; }
+  .tg-header-logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  .tg-header-logo-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--tg-navy-900);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+  .tg-header-logo-tagline {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--tg-gray-500);
+    font-weight: 500;
+  }
+
+  .tg-desktop-nav { flex: 1; display: flex; justify-content: center; }
+  .tg-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .tg-nav-item { position: relative; }
+  .tg-nav-link,
+  .tg-nav-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 14px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--tg-navy-900);
+    background: transparent;
+    border: none;
+    border-radius: var(--tg-radius-sm);
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    font-family: inherit;
+  }
+  .tg-nav-link:hover,
+  .tg-nav-trigger:hover,
+  .tg-nav-trigger[aria-expanded="true"],
+  .tg-nav-trigger.is-active {
+    background: var(--tg-navy-50);
+    color: var(--tg-navy-900);
+  }
+  .tg-nav-trigger.is-active { box-shadow: inset 0 -2px 0 0 var(--tg-ember-500); }
+  .tg-chevron { transition: transform 0.25s var(--tg-ease); }
+  .tg-nav-trigger[aria-expanded="true"] .tg-chevron { transform: rotate(180deg); }
+
+  .tg-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .tg-search-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: var(--tg-radius-pill);
+    border: 1px solid rgba(11, 31, 51, 0.1);
+    background: #fff;
+    color: var(--tg-navy-900);
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  }
+  .tg-search-toggle:hover { background: var(--tg-navy-50); border-color: rgba(11, 31, 51, 0.18); transform: translateY(-1px); }
+
+  .tg-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 22px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    border-radius: var(--tg-radius-pill);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s var(--tg-ease), box-shadow 0.2s ease, background 0.2s ease;
+    text-decoration: none;
+    font-family: inherit;
+  }
+  .tg-btn-primary {
+    background: var(--tg-ember-500);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(238, 93, 22, 0.28);
+  }
+  .tg-btn-primary:hover {
+    background: var(--tg-ember-600);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(238, 93, 22, 0.35);
+  }
+  .tg-btn-sm { padding: 9px 16px; font-size: 0.85rem; }
+  .tg-btn-nav { padding: 11px 20px; }
+  .tg-btn-block { width: 100%; }
+
+  .tg-menu-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--tg-radius-sm);
+    border: 1px solid rgba(11, 31, 51, 0.1);
+    background: #fff;
+    color: var(--tg-navy-900);
+    cursor: pointer;
+  }
+
+  @media (max-width: 1100px) {
+    .tg-desktop-nav { display: none; }
+    .tg-search-toggle { display: none; }
+    .tg-btn-nav { display: none; }
+    .tg-menu-toggle { display: flex; }
+  }
+
+  /* Mega menus */
+  .tg-mega {
+    position: absolute;
+    top: calc(100% + 14px);
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    min-width: 720px;
+    max-width: 900px;
+    background: #fff;
+    border: 1px solid rgba(11, 31, 51, 0.08);
+    border-radius: var(--tg-radius);
+    box-shadow: var(--tg-shadow-lg);
+    padding: 28px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.25s var(--tg-ease);
+  }
+  .tg-nav-item.has-mega:hover .tg-mega,
+  .tg-nav-item.has-mega:focus-within .tg-mega,
+  .tg-mega.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+  }
+  .tg-mega-sm { min-width: 520px; max-width: 640px; padding: 22px; }
+  .tg-mega-inner {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 0.9fr;
+    gap: 28px;
+  }
+  .tg-mega-inner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .tg-mega-inner-grades {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+  .tg-mega-section { display: flex; flex-direction: column; gap: 6px; }
+  .tg-mega-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--tg-gray-500);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .tg-mega-title svg { color: var(--tg-ember-500); }
+  .tg-mega-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: var(--tg-radius-sm);
+    color: var(--tg-navy-900);
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .tg-mega-link:hover {
+    background: var(--tg-navy-50);
+    transform: translateX(2px);
+  }
+  .tg-mega-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: var(--tg-navy-50);
+    color: var(--tg-navy-700);
+    flex-shrink: 0;
+  }
+  .tg-mega-link:hover .tg-mega-icon {
+    background: var(--tg-ember-50);
+    color: var(--tg-ember-500);
+  }
+  .tg-mega-link-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .tg-mega-link-text strong { font-weight: 600; font-size: 0.92rem; }
+  .tg-mega-link-text span { font-size: 0.8rem; color: var(--tg-gray-500); }
+
+  .tg-mega-grade {
+    display: block;
+    padding: 7px 12px;
+    border-radius: var(--tg-radius-sm);
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--tg-navy-800);
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .tg-mega-grade:hover { background: var(--tg-navy-50); color: var(--tg-navy-900); }
+  .tg-mega-grade-all { color: var(--tg-ember-500); font-weight: 600; }
+  .tg-mega-grade-all:hover { background: var(--tg-ember-50); }
+
+  .tg-mega-highlight {
+    background: linear-gradient(180deg, var(--tg-navy-50) 0%, #fff 100%);
+    border: 1px solid rgba(11, 31, 51, 0.06);
+    border-radius: var(--tg-radius-sm);
+    padding: 22px;
+    justify-content: space-between;
+  }
+  .tg-mega-desc {
+    font-size: 0.88rem;
+    color: var(--tg-gray-600);
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+
+  .tg-mega-grade-col h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--tg-gray-500);
+    margin-bottom: 10px;
+  }
+  .tg-mega-grade-col a {
+    display: block;
+    padding: 5px 0;
+    font-size: 0.86rem;
+    color: var(--tg-navy-800);
+    transition: color 0.2s ease;
+  }
+  .tg-mega-grade-col a:hover { color: var(--tg-ember-500); }
+
+  @media (max-width: 1100px) {
+    .tg-mega { display: none; }
+  }
+
+  /* Search overlay */
+  .tg-search-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 150;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+  }
+  .tg-search-overlay[hidden] { display: none; }
+  .tg-search-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 13, 24, 0.55);
+    backdrop-filter: blur(4px);
+  }
+  .tg-search-dialog {
+    position: relative;
+    width: min(720px, calc(100% - 48px));
+    background: #fff;
+    border-radius: var(--tg-radius);
+    box-shadow: var(--tg-shadow-lg);
+    overflow: hidden;
+  }
+  .tg-search-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 22px;
+    border-bottom: 1px solid var(--tg-gray-100);
+  }
+  .tg-search-header svg { color: var(--tg-gray-500); flex-shrink: 0; }
+  .tg-search-input {
+    flex: 1;
+    border: none;
+    font-size: 1.1rem;
+    font-family: inherit;
+    color: var(--tg-navy-900);
+    outline: none;
+  }
+  .tg-search-input::placeholder { color: var(--tg-gray-400); }
+  .tg-search-close {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--tg-gray-200);
+    background: var(--tg-gray-50);
+    color: var(--tg-gray-600);
+    font-size: 0.72rem;
+    font-weight: 600;
+    font-family: 'IBM Plex Mono', monospace;
+    cursor: pointer;
+  }
+  .tg-search-body { padding: 18px 22px; }
+  .tg-search-empty p {
+    font-size: 0.9rem;
+    color: var(--tg-gray-600);
+    margin-bottom: 16px;
+  }
+  .tg-search-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+  .tg-search-suggestions span { font-size: 0.8rem; color: var(--tg-gray-500); }
+  .tg-search-suggestions button {
+    padding: 6px 12px;
+    border-radius: var(--tg-radius-pill);
+    border: 1px solid var(--tg-gray-200);
+    background: #fff;
+    color: var(--tg-navy-800);
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
+  }
+  .tg-search-suggestions button:hover { border-color: var(--tg-ember-500); background: var(--tg-ember-50); }
+  .tg-search-results { display: flex; flex-direction: column; gap: 6px; }
+  .tg-search-result {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: var(--tg-radius-sm);
+    color: var(--tg-navy-900);
+    transition: background 0.2s ease;
+  }
+  .tg-search-result:hover { background: var(--tg-navy-50); }
+  .tg-search-result span { font-size: 0.9rem; font-weight: 500; }
+  .tg-search-result small { margin-left: auto; font-size: 0.75rem; color: var(--tg-gray-500); font-family: 'IBM Plex Mono', monospace; }
+
+  /* Mobile nav */
+  .tg-mobile-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 110;
+    background: rgba(5, 13, 24, 0.45);
+    backdrop-filter: blur(3px);
+  }
+  .tg-mobile-backdrop[hidden] { display: none; }
+  .tg-mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(420px, 88vw);
+    height: 100%;
+    z-index: 120;
+    background: #fff;
+    box-shadow: var(--tg-shadow-lg);
+    display: flex;
+    flex-direction: column;
+  }
+  .tg-mobile-nav[hidden] { display: none; }
+  .tg-mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 22px;
+    border-bottom: 1px solid var(--tg-gray-100);
+  }
+  .tg-mobile-logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: var(--tg-navy-900);
+  }
+  .tg-mobile-close {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--tg-radius-sm);
+    border: 1px solid var(--tg-gray-200);
+    background: #fff;
+    color: var(--tg-navy-900);
+    cursor: pointer;
+  }
+  .tg-mobile-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px 22px;
+  }
+  .tg-mobile-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border: 1px solid var(--tg-gray-200);
+    border-radius: var(--tg-radius-pill);
+    margin-bottom: 18px;
+  }
+  .tg-mobile-search input {
+    flex: 1;
+    border: none;
+    font-size: 0.95rem;
+    outline: none;
+    background: transparent;
+    color: var(--tg-navy-900);
+  }
+  .tg-mobile-search svg { color: var(--tg-gray-500); }
+  .tg-mobile-accordion { border-bottom: 1px solid var(--tg-gray-100); }
+  .tg-mobile-trigger,
+  .tg-mobile-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--tg-navy-900);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: inherit;
+  }
+  .tg-mobile-trigger::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+    transition: transform 0.25s var(--tg-ease);
+    opacity: 0.5;
+  }
+  .tg-mobile-trigger[aria-expanded="true"]::after { transform: rotate(-135deg); }
+  .tg-mobile-panel { overflow: hidden; }
+  .tg-mobile-panel[hidden] { display: none; }
+  .tg-mobile-panel a {
+    display: block;
+    padding: 11px 0 11px 18px;
+    font-size: 0.92rem;
+    color: var(--tg-gray-600);
+    border-left: 2px solid var(--tg-gray-200);
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .tg-mobile-panel a:hover { color: var(--tg-ember-500); border-color: var(--tg-ember-500); }
+  .tg-mobile-footer {
+    padding: 18px 22px;
+    border-top: 1px solid var(--tg-gray-100);
+    background: #fff;
+  }
+
+  @media (min-width: 1101px) {
+    .tg-mobile-nav,
+    .tg-mobile-backdrop { display: none !important; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .tg-header,
+    .tg-header-inner,
+    .tg-nav-link,
+    .tg-nav-trigger,
+    .tg-chevron,
+    .tg-mega,
+    .tg-mega-link,
+    .tg-mega-grade,
+    .tg-btn,
+    .tg-search-toggle,
+    .tg-mobile-trigger::after { transition: none !important; }
+  }
+</style>
+
+<script>
+  (function () {
+    'use strict';
+
+    const header = document.getElementById('tg-header');
+    const searchOverlay = document.getElementById('tg-search-overlay');
+    const searchToggle = document.querySelector('.tg-search-toggle');
+    const searchClose = document.querySelector('.tg-search-close');
+    const searchInput = document.querySelector('.tg-search-input');
+    const searchResults = document.querySelector('.tg-search-results');
+    const searchEmpty = document.querySelector('.tg-search-empty');
+    const mobileNav = document.getElementById('tg-mobile-nav');
+    const mobileBackdrop = document.getElementById('tg-mobile-backdrop');
+    const menuToggle = document.querySelector('.tg-menu-toggle');
+    const mobileClose = document.querySelector('.tg-mobile-close');
+
+    // Scroll-aware header
+    let lastScroll = 0;
+    function onScroll() {
+      const y = window.scrollY || window.pageYOffset;
+      if (header) header.setAttribute('data-scrolled', y > 20 ? 'true' : 'false');
+      lastScroll = y;
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Mega menu keyboard/accessibility
+    document.querySelectorAll('.tg-nav-item.has-mega').forEach(item => {
+      const trigger = item.querySelector('.tg-nav-trigger');
+      const mega = item.querySelector('.tg-mega');
+      if (!trigger || !mega) return;
+
+      function open() {
+        trigger.setAttribute('aria-expanded', 'true');
+        mega.removeAttribute('hidden');
+        mega.classList.add('is-open');
+      }
+      function close() {
+        trigger.setAttribute('aria-expanded', 'false');
+        mega.setAttribute('hidden', '');
+        mega.classList.remove('is-open');
+      }
+
+      item.addEventListener('mouseenter', open);
+      item.addEventListener('mouseleave', close);
+      trigger.addEventListener('focus', open);
+      item.addEventListener('focusout', (e) => {
+        if (!item.contains(e.relatedTarget)) close();
+      });
+      trigger.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') { close(); trigger.focus(); }
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); trigger.getAttribute('aria-expanded') === 'true' ? close() : open(); }
+        if (e.key === 'ArrowDown' && trigger.getAttribute('aria-expanded') === 'true') {
+          e.preventDefault();
+          const link = mega.querySelector('a');
+          if (link) link.focus();
+        }
+      });
+    });
+
+    // Search overlay
+    function openSearch() {
+      searchOverlay.removeAttribute('hidden');
+      document.body.style.overflow = 'hidden';
+      if (searchInput) { searchInput.value = ''; searchInput.focus(); }
+      if (searchResults) searchResults.setAttribute('hidden', '');
+      if (searchEmpty) searchEmpty.removeAttribute('hidden');
+    }
+    function closeSearch() {
+      searchOverlay.setAttribute('hidden', '');
+      document.body.style.overflow = '';
+    }
+    if (searchToggle) searchToggle.addEventListener('click', openSearch);
+    if (searchClose) searchClose.addEventListener('click', closeSearch);
+    if (searchOverlay) searchOverlay.addEventListener('click', (e) => { if (e.target === searchOverlay || e.target.classList.contains('tg-search-backdrop')) closeSearch(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && searchOverlay && !searchOverlay.hasAttribute('hidden')) closeSearch(); });
+
+    // Search index
+    const searchIndex = [
+      { title: 'Nickel Alloy Pipes', url: '/tgm/nickel-alloy-pipes.html', category: 'Product' },
+      { title: 'Nickel Alloy Fittings', url: '/tgm/nickel-alloy-fittings.html', category: 'Product' },
+      { title: 'Nickel Alloy Bars', url: '/tgm/nickel-alloy-bars.html', category: 'Product' },
+      { title: 'Nickel Alloy Sheets', url: '/tgm/nickel-alloy-sheets.html', category: 'Product' },
+      { title: 'Nickel Alloy Wires', url: '/tgm/nickel-alloy-wires.html', category: 'Product' },
+      { title: 'Inconel 625', url: '/tgm/grades/625.html', category: 'Grade' },
+      { title: 'Inconel 718', url: '/tgm/grades/718.html', category: 'Grade' },
+      { title: 'Hastelloy C-276', url: '/tgm/grades/C-276.html', category: 'Grade' },
+      { title: 'Monel 400', url: '/tgm/grades/400.html', category: 'Grade' },
+      { title: 'Incoloy 825', url: '/tgm/grades/825.html', category: 'Grade' },
+      { title: 'All Grades', url: '/tgm/grades.html', category: 'Grade' },
+      { title: 'Engineering Tools', url: '/tgm/tools.html', category: 'Resource' },
+      { title: 'Product Gallery', url: '/tgm/gallery.html', category: 'Resource' },
+      { title: 'Alloy Knowledge', url: '/tgm/media/alloy-knowledge/index.html', category: 'Resource' },
+      { title: 'About Us', url: '/tgm/about-us.html', category: 'Company' },
+      { title: 'Contact', url: '/tgm/contact-us.html', category: 'Company' }
+    ];
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const q = e.target.value.trim().toLowerCase();
+        if (!q) {
+          if (searchResults) searchResults.setAttribute('hidden', '');
+          if (searchEmpty) searchEmpty.removeAttribute('hidden');
+          return;
+        }
+        const matches = searchIndex.filter(item =>
+          item.title.toLowerCase().includes(q) ||
+          item.category.toLowerCase().includes(q)
+        );
+        if (searchEmpty) searchEmpty.setAttribute('hidden', '');
+        if (searchResults) {
+          searchResults.innerHTML = matches.length
+            ? matches.map(item => `
+                <a href="${item.url}" class="tg-search-result">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+                  <span>${item.title}</span>
+                  <small>${item.category}</small>
+                </a>
+              `).join('')
+            : '<p style="color:var(--tg-gray-500);font-size:0.9rem;padding:8px 0;">No results found. Try a grade, product form or standard.</p>';
+          searchResults.removeAttribute('hidden');
+        }
+      });
+    }
+
+    document.querySelectorAll('.tg-search-suggestions button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (searchInput) {
+          searchInput.value = btn.dataset.search;
+          searchInput.dispatchEvent(new Event('input'));
+          searchInput.focus();
+        }
+      });
+    });
+
+    // Mobile nav
+    function openMobile() {
+      mobileNav.removeAttribute('hidden');
+      mobileBackdrop.removeAttribute('hidden');
+      document.body.style.overflow = 'hidden';
+      if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true');
+    }
+    function closeMobile() {
+      mobileNav.setAttribute('hidden', '');
+      mobileBackdrop.setAttribute('hidden', '');
+      document.body.style.overflow = '';
+      if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+    }
+    if (menuToggle) menuToggle.addEventListener('click', openMobile);
+    if (mobileClose) mobileClose.addEventListener('click', closeMobile);
+    if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeMobile);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && mobileNav && !mobileNav.hasAttribute('hidden')) closeMobile(); });
+
+    // Mobile accordions
+    document.querySelectorAll('.tg-mobile-accordion').forEach(acc => {
+      const trigger = acc.querySelector('.tg-mobile-trigger');
+      const panel = acc.querySelector('.tg-mobile-panel');
+      if (!trigger || !panel) return;
+      trigger.addEventListener('click', () => {
+        const expanded = trigger.getAttribute('aria-expanded') === 'true';
+        trigger.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        panel[expanded ? 'setAttribute' : 'removeAttribute']('hidden', '');
+      });
+    });
+
+    // Mobile search
+    const mobileSearchInput = document.querySelector('.tg-mobile-search input');
+    if (mobileSearchInput) {
+      mobileSearchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          const q = mobileSearchInput.value.trim();
+          if (q) window.location.href = '/tgm/tools.html?q=' + encodeURIComponent(q);
+        }
+      });
+    }
+
+    // Scroll-spy active highlighting for section anchors
+    (function () {
+      const triggers = document.querySelectorAll('.tg-nav-trigger[data-section]');
+      if (!triggers.length) return;
+      const sections = Array.from(triggers)
+        .map(t => document.getElementById(t.dataset.section))
+        .filter(Boolean);
+      if (!sections.length) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            triggers.forEach(t => t.classList.toggle('is-active', t.dataset.section === entry.target.id));
+          }
+        });
+      }, { threshold: 0.25, rootMargin: '-100px 0px -55% 0px' });
+      sections.forEach(s => observer.observe(s));
+    })();
+  })();
+</script>
