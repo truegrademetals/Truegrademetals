@@ -1,0 +1,44 @@
+2026-07-17 17:06:26,751 [INFO] Fetching sitemap: https://www.aeether.com/sitemap.xml
+2026-07-17 17:07:29,742 [ERROR] Cannot fetch sitemap: HTTPSConnectionPool(host='www.aeether.com', port=443): Read timed out.
+2026-07-17 17:07:29,744 [INFO] Starting mirror of 1 pages into C:\Users\WIN10\STEELCHINA\www
+2026-07-17 17:07:31,254 [WARNING] Page download failed: https://www.aeether.com/ -> 403 Client Error: Forbidden for url: https://www.aeether.com/
+2026-07-17 17:07:31,256 [ERROR] Page processing failed: https://www.aeether.com/ -> 403 Client Error: Forbidden for url: https://www.aeether.com/
+2026-07-17 17:07:31,259 [INFO] Discovered 0 asset URLs
+2026-07-17 17:07:31,262 [INFO] ============================================================
+2026-07-17 17:07:31,263 [INFO] Mirror complete
+2026-07-17 17:07:31,263 [INFO] Pages: 0 downloaded, 1 failed
+2026-07-17 17:07:31,263 [INFO] Assets: 0 discovered, 0 failed
+2026-07-17 17:07:31,263 [INFO] Failed pages: ['https://www.aeether.com/']
+2026-07-17 17:20:14,245 [INFO] Fetching sitemap: https://www.aeether.com/sitemap.xml
+2026-07-17 17:20:14,691 [INFO] Sitemap contains 1450 internal URLs
+2026-07-17 17:20:14,692 [INFO] Starting mirror of 1450 pages into C:\Users\WIN10\STEELCHINA\www
+2026-07-17 17:21:16,399 [WARNING] Page download failed: https://www.aeether.com/AEETHER/catalog/Alloy-Bars-Catalog-AEETHER.pdf -> Failed to perform, curl: (28) Operation timed out after 60015 milliseconds with 850504 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:21:16,400 [ERROR] Page processing failed: https://www.aeether.com/AEETHER/catalog/Alloy-Bars-Catalog-AEETHER.pdf -> Failed to perform, curl: (28) Operation timed out after 60015 milliseconds with 850504 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:21:16,555 [WARNING] Page download failed: https://www.aeether.com/AEETHER/catalog/Alloy-Fittings-Catalog-AEETHER.pdf -> Failed to perform, curl: (28) Operation timed out after 60008 milliseconds with 1490638 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:21:16,557 [ERROR] Page processing failed: https://www.aeether.com/AEETHER/catalog/Alloy-Fittings-Catalog-AEETHER.pdf -> Failed to perform, curl: (28) Operation timed out after 60008 milliseconds with 1490638 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:21:16,650 [WARNING] Page download failed: https://www.aeether.com/AEETHER/catalog/Alloy-Pipes-Catalog-AEETHER.pdf -> Failed to perform, curl: (28) Operation timed out after 60009 milliseconds with 1121992 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:21:16,651 [ERROR] Page processing failed: https://www.aeether.com/AEETHER/catalog/Alloy-Pipes-Catalog-AEETHER.pdf -> Failed to perform, curl: (28) Operation timed out after 60009 milliseconds with 1121992 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:21:16,761 [WARNING] Page download failed: https://www.aeether.com/AEETHER/catalog/Alloy-Sheets-Catalog-AEETHER.pdf -> Failed to perform, curl: (28) Operation timed out after 60004 milliseconds with 522623 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:21:16,762 [ERROR] Page processing failed: https://www.aeether.com/AEETHER/catalog/Alloy-Sheets-Catalog-AEETHER.pdf -> Failed to perform, curl: (28) Operation timed out after 60004 milliseconds with 522623 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:22:16,409 [WARNING] Page download failed: https://www.aeether.com/AEETHER/catalog/Alloy-Wires-Catalog-AEETHER.pdf -> Failed to perform, curl: (28) Operation timed out after 60002 milliseconds with 2210601 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:22:16,409 [ERROR] Page processing failed: https://www.aeether.com/AEETHER/catalog/Alloy-Wires-Catalog-AEETHER.pdf -> Failed to perform, curl: (28) Operation timed out after 60002 milliseconds with 2210601 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:32:23,404 [INFO] Fetching sitemap: https://www.aeether.com/sitemap.xml
+2026-07-17 17:32:24,003 [INFO] Sitemap contains 1450 internal URLs
+2026-07-17 17:32:24,023 [INFO] Starting mirror of 1445 pages + 5 sitemap file assets into C:\Users\WIN10\STEELCHINA\www
+2026-07-17 17:34:25,904 [INFO] Fetching sitemap: https://www.aeether.com/sitemap.xml
+2026-07-17 17:34:26,738 [INFO] Sitemap contains 1450 internal URLs
+2026-07-17 17:34:26,782 [INFO] Starting mirror of 1445 pages + 5 sitemap file assets into C:\Users\WIN10\STEELCHINA\www
+2026-07-17 17:35:26,808 [WARNING] Page download failed: https://www.aeether.com/AEETHER/products/incoloy-925-nickel-alloy-pipes.html -> Failed to perform, curl: (28) Connection timed out after 60015 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:35:26,808 [ERROR] Page processing failed: https://www.aeether.com/AEETHER/products/incoloy-925-nickel-alloy-pipes.html -> Failed to perform, curl: (28) Connection timed out after 60015 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:35:27,303 [WARNING] Page download failed: https://www.aeether.com/AEETHER/products/hastelloy-B-2-nickel-alloy-welded-pipe-tube.html -> Failed to perform, curl: (28) Connection timed out after 60003 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:35:27,304 [ERROR] Page processing failed: https://www.aeether.com/AEETHER/products/hastelloy-B-2-nickel-alloy-welded-pipe-tube.html -> Failed to perform, curl: (28) Connection timed out after 60003 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:39:26,317 [INFO] Discovered 3018 asset URLs
+2026-07-17 17:42:21,333 [WARNING] Download failed (1/3): https://www.aeether.com/AEETHER/image/about-us/quality.svg -> Failed to perform, curl: (28) Connection timed out after 90005 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:44:03,466 [WARNING] Download failed (1/3): https://www.aeether.com/AEETHER/image/contact-us/wuxi2.jpg -> Failed to perform, curl: (28) Connection timed out after 90009 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:45:23,740 [WARNING] Download failed (1/3): https://www.aeether.com/AEETHER/image/about-us/wcu-5-mobile.jpg -> Failed to perform, curl: (28) Operation too slow. Less than 1 bytes/sec transferred the last 90 seconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:46:17,907 [WARNING] Download failed (1/3): https://www.aeether.com/AEETHER/image/contact-us/wuxi1.jpg -> Failed to perform, curl: (28) Operation too slow. Less than 1 bytes/sec transferred the last 90 seconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:49:16,560 [WARNING] Download failed (1/3): https://www.aeether.com/AEETHER/image/gallery/bar-rod/p41.jpg -> Failed to perform, curl: (28) Connection timed out after 90010 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 17:51:02,340 [WARNING] Download failed (1/3): https://www.aeether.com/AEETHER/image/gallery/pipe-fitting/p14.jpg -> Failed to perform, curl: (28) Connection timed out after 90011 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-17 18:53:59,576 [INFO] Fetching sitemap: https://www.aeether.com/sitemap.xml
+2026-07-17 18:54:04,512 [INFO] Sitemap contains 1450 internal URLs
+2026-07-17 18:54:04,580 [INFO] Starting mirror of 1445 pages + 5 sitemap file assets into C:\Users\WIN10\STEELCHINA\www
