@@ -1,0 +1,503 @@
+
+@media screen and (min-width: 600px) {
+@keyframes top-force {
+	0%{transform: translate(0, 0) scale(1); opacity: 1;}
+	100%{transform: translate(0, 1.5vw) scale(.8); opacity: 0;}
+}
+@keyframes bottom-force {
+	0%{transform: translate(0, 0) scale(1); opacity: 1;}
+	100%{transform: translate(0, -1.5vw) scale(.8); opacity: 0;}
+}
+@keyframes alloy-1 {
+	0%{background-color: #999;}
+	100%{background-color: #e83719;}
+}
+@keyframes opacity {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes scale {
+	0%{transform: scale(1);}
+	100%{transform: scale(8);}
+}
+
+#fatigue-1, .fatigue-1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	width: 30vw;
+	height: 20vw;
+}
+.fatigue-1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	width: 25vw;
+	height: 20vw;
+	margin: 0 2vw;
+}
+#fatigue-2, #fatigue-3, #fatigue-4, .fatigue-2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	width: 30vw;
+	height: 15vw;
+}
+#alloy-1{
+	width: 30vw;
+	height: 1vw;
+	border-radius: 1vw;
+	background-color: #999;
+	position: relative;
+}
+#alloy-1::before{
+	content: "";
+	width: 2vw;
+	height: 1vw;
+	position: absolute;
+	left: 14vw;
+	top: 0;
+	background-color: #999;
+	animation: alloy-1 6s infinite linear;
+}
+#top-force-1, #bottom-force-1{
+	width: 2vw;
+	height: 2vw;
+	background-color: #32558e;
+	margin: 3vw;
+	position: relative;
+}
+#top-force-1{
+	animation: top-force 2s infinite backwards;
+	transform-origin: top;
+}
+#bottom-force-1{
+	animation: bottom-force 2s infinite;
+	animation-delay: 1s;
+	transform-origin: bottom;
+	opacity: 0;
+}
+#top-force-1::before, #bottom-force-1::before{
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: -1vw;
+	top: 2vw;
+	border: solid 2vw transparent;
+	transform: scale(.8, 1);
+}
+#top-force-1::before{
+	top: 2vw;
+	border-top: solid 2vw #32558e;
+}
+#bottom-force-1::before{
+	top: -4vw;
+	border-bottom: solid 2vw #32558e;
+}
+
+
+
+#alloy-2{
+	width: 30vw;
+	height: 10vw;
+	border-radius: 1vw;
+	background-color: #999;
+	position: relative;
+	overflow: hidden;
+}
+#alloy-2::before, #alloy-2::after{
+	content: "";
+	width: 10vw;
+	height: 10vw;
+	background-color: #fff;
+	position: absolute;
+	left: 10vw;
+	border-radius:2vw;
+}
+#alloy-2::before{
+	top: -9vw;
+}
+#alloy-2::after{
+	top: 9vw;
+}
+
+
+#alloy-3{
+	width: 30vw;
+	height: 10vw;
+	border-radius: 1vw;
+	background-color: #999;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+#alloy-3 > img{
+	width: 1vw;
+	margin: 1vw .5vw;
+	animation: opacity 2s infinite linear;
+}
+
+
+#alloy-4{
+	width: 30vw;
+	height: 10vw;
+	border-radius: 1vw;
+	background-color: #999;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+#alloy-4 > img{
+	width: 1vw;
+	margin: 1vw .5vw;
+	animation: scale 2s infinite ease-in;
+}
+
+
+.alloy-3{
+	width: 25vw;
+	height: 1vw;
+	border-radius: 1vw;
+	background-color: #999;
+	position: relative;
+}
+.alloy-3::before{
+	content: "";
+	width: 2vw;
+	height: 1vw;
+	position: absolute;
+	left: 11.5vw;
+	top: 0;
+	background-color: #999;
+	animation: alloy-1 6s infinite linear;
+}
+#top-force-2, #bottom-force-2, #top-force-3, #bottom-force-3{
+	width: 2vw;
+	height: 2vw;
+	background-color: #32558e;
+	margin: 3vw;
+	position: relative;
+}
+#top-force-2{
+	animation: top-force 2s infinite backwards;
+	transform-origin: top;
+}
+#bottom-force-2{
+	animation: bottom-force 2s infinite;
+	animation-delay: 1s;
+	transform-origin: bottom;
+	opacity: 0;
+}
+#top-force-3{
+	animation: top-force 1s infinite backwards;
+	transform-origin: top;
+}
+#bottom-force-3{
+	animation: bottom-force 1s infinite;
+	animation-delay: .5s;
+	transform-origin: bottom;
+	opacity: 0;
+}
+#top-force-2::before, #bottom-force-2::before, #top-force-3::before, #bottom-force-3::before{
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: -1vw;
+	top: 2vw;
+	border: solid 2vw transparent;
+}
+#top-force-2::before, #bottom-force-2::before{
+	transform: scale(1.2, 1.5);
+}
+#top-force-3::before, #bottom-force-3::before{
+	transform: scale(.8, 1);
+}
+#top-force-2::before, #top-force-3::before{
+	top: 2vw;
+	border-top: solid 2vw #32558e;
+}
+#bottom-force-2::before, #bottom-force-3::before{
+	top: -4vw;
+	border-bottom: solid 2vw #32558e;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+@keyframes top-force {
+	0%{transform: translate(0, 0) scale(1); opacity: 1;}
+	100%{transform: translate(0, 4.5vw) scale(.8); opacity: 0;}
+}
+@keyframes bottom-force {
+	0%{transform: translate(0, 0) scale(1); opacity: 1;}
+	100%{transform: translate(0, -4.5vw) scale(.8); opacity: 0;}
+}
+@keyframes alloy-1 {
+	0%{background-color: #999;}
+	100%{background-color: #e83719;}
+}
+@keyframes opacity {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes scale {
+	0%{transform: scale(1);}
+	100%{transform: scale(8);}
+}
+
+#fatigue-1, .fatigue-1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	width: 90vw;
+	height: 60vw;
+	margin: 0 5vw;
+}
+.fatigue-1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	width: 90vw;
+	height: 60vw;
+	margin: 0 5vw;
+}
+#fatigue-2, #fatigue-3, #fatigue-4, .fatigue-2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	width: 90vw;
+	height: 45vw;
+	margin: 0 5vw;
+}
+#alloy-1{
+	width: 90vw;
+	height: 3vw;
+	border-radius: 3vw;
+	background-color: #999;
+	position: relative;
+}
+#alloy-1::before{
+	content: "";
+	width: 6vw;
+	height: 3vw;
+	position: absolute;
+	left: 42vw;
+	top: 0;
+	background-color: #999;
+	animation: alloy-1 6s infinite linear;
+}
+#top-force-1, #bottom-force-1{
+	width: 6vw;
+	height: 6vw;
+	background-color: #32558e;
+	margin: 9vw;
+	position: relative;
+}
+#top-force-1{
+	animation: top-force 2s infinite backwards;
+	transform-origin: top;
+}
+#bottom-force-1{
+	animation: bottom-force 2s infinite;
+	animation-delay: 1s;
+	transform-origin: bottom;
+	opacity: 0;
+}
+#top-force-1::before, #bottom-force-1::before{
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: -3vw;
+	top: 6vw;
+	border: solid 6vw transparent;
+	transform: scale(.8, 1);
+}
+#top-force-1::before{
+	top: 6vw;
+	border-top: solid 6vw #32558e;
+}
+#bottom-force-1::before{
+	top: -12vw;
+	border-bottom: solid 6vw #32558e;
+}
+
+
+
+#alloy-2{
+	width: 90vw;
+	height: 30vw;
+	border-radius: 3vw;
+	background-color: #999;
+	position: relative;
+	overflow: hidden;
+}
+#alloy-2::before, #alloy-2::after{
+	content: "";
+	width: 30vw;
+	height: 30vw;
+	background-color: #fff;
+	position: absolute;
+	left: 30vw;
+	border-radius: 6vw;
+}
+#alloy-2::before{
+	top: -27vw;
+}
+#alloy-2::after{
+	top: 27vw;
+}
+
+
+#alloy-3{
+	width: 90vw;
+	height: 30vw;
+	border-radius: 3vw;
+	background-color: #999;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+#alloy-3 > img{
+	width: 3vw;
+	margin: 3vw 1.5vw;
+	animation: opacity 2s infinite linear;
+}
+
+
+#alloy-4{
+	width: 90vw;
+	height: 30vw;
+	border-radius: 3vw;
+	background-color: #999;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+#alloy-4 > img{
+	width: 3vw;
+	margin: 3vw 1.5vw;
+	animation: scale 2s infinite ease-in;
+}
+
+
+.alloy-3{
+	width: 90vw;
+	height: 3vw;
+	border-radius: 3vw;
+	background-color: #999;
+	position: relative;
+}
+.alloy-3::before{
+	content: "";
+	width: 6vw;
+	height: 3vw;
+	position: absolute;
+	left: 42vw;
+	top: 0;
+	background-color: #999;
+	animation: alloy-1 6s infinite linear;
+}
+#top-force-2, #bottom-force-2, #top-force-3, #bottom-force-3{
+	width: 6vw;
+	height: 6vw;
+	background-color: #32558e;
+	margin: 9vw;
+	position: relative;
+}
+#top-force-2{
+	animation: top-force 2s infinite backwards;
+	transform-origin: top;
+}
+#bottom-force-2{
+	animation: bottom-force 2s infinite;
+	animation-delay: 1s;
+	transform-origin: bottom;
+	opacity: 0;
+}
+#top-force-3{
+	animation: top-force 1s infinite backwards;
+	transform-origin: top;
+}
+#bottom-force-3{
+	animation: bottom-force 1s infinite;
+	animation-delay: .5s;
+	transform-origin: bottom;
+	opacity: 0;
+}
+#top-force-2::before, #bottom-force-2::before, #top-force-3::before, #bottom-force-3::before{
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: -3vw;
+	border: solid 6vw transparent;
+}
+#top-force-2::before, #bottom-force-2::before{
+	transform: scale(1.2, 1.5);
+}
+#top-force-3::before, #bottom-force-3::before{
+	transform: scale(.8, 1);
+}
+#top-force-2::before, #top-force-3::before{
+	top: 6vw;
+	border-top: solid 6vw #32558e;
+}
+#bottom-force-2::before, #bottom-force-3::before{
+	top: -12vw;
+	border-bottom: solid 6vw #32558e;
+}
+}

@@ -1,0 +1,301 @@
+
+@media screen and (min-width: 600px) {
+@keyframes O2 {
+	0%{transform: translate(0, 0); opacity: 0;}
+	100%{transform: translate(-5vw, 0); opacity: 1;}
+}
+@keyframes O2-2 {
+	0%{transform: translate(0, 0); opacity: 1;}
+	100%{transform: translate(-5vw, 0); opacity: 0;}
+}
+@keyframes bottom-force {
+	0%{transform: translate(0, 0) scale(1); opacity: 1;}
+	100%{transform: translate(0, -1.5vw) scale(.8); opacity: 0;}
+}
+@keyframes alloy-1 {
+	0%{background-color: #999;}
+	100%{background-color: #e83719;}
+}
+@keyframes opacity {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes scale {
+	0%{transform: scale(1);}
+	100%{transform: scale(8);}
+}
+
+#fatigue-1, .fatigue-1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	width: 30vw;
+	height: 20vw;
+}
+.fatigue-1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	width: 25vw;
+	height: 20vw;
+	margin: 0 2vw;
+	position: relative;
+}
+#fatigue-2, #fatigue-3, #fatigue-4, .fatigue-2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	width: 30vw;
+	height: 15vw;
+}
+
+#alloy, #alloy-3{
+	width: 15vw;
+	height: 20vw;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #999;
+}
+#alloy::before{
+	content: "Fe";
+	width: 5vw;
+	height: 5vw;
+	position: absolute;
+	right: 5vw;
+	top: 7.5vw;
+	font-size: 1.5vw;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 5vw;
+}
+#alloy-3::after{
+	content: "";
+	width: 1vw;
+	height: 20vw;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 1.5vw;
+	font-weight: bold;
+	background-color: #FBA971;
+	text-align: center;
+	line-height: 5vw;
+	animation: opacity 3s backwards infinite linear;
+}
+#alloy::after{
+	content: "Fe2O3";
+	width: 5vw;
+	height: 5vw;
+	position: absolute;
+	right: 0;
+	top: 7.5vw;
+	font-size: 1.5vw;
+	font-weight: bold;
+	color: #fff;
+	background-color: #AD6A6C;
+	border-radius: 5vw;
+	text-align: center;
+	line-height: 5vw;
+	animation: opacity 2s backwards infinite linear;
+}
+.O2-1, .O2-2{
+	width: 3.5vw;
+	height: 3.5vw;
+	position: absolute;
+	right: 0;
+	top: 8.25vw;
+	font-size: 1.5vw;
+	font-weight: bold;
+	color: #fff;
+	background-color: #AD6A6C;
+	border-radius: 5vw;
+	text-align: center;
+	line-height: 3.5vw;
+}
+.O2-2{
+	right: 5vw;
+	animation: O2-2 1s backwards infinite linear;
+}
+.O2-1{
+	right: 0;
+	animation: O2 1s backwards infinite linear;
+}
+
+#alloy-2{
+	width: 15vw;
+	height: 15vw;
+	position: absolute;
+	left: 0;
+	top: 2.5vw;
+	border-radius: 15vw;
+	background-color: #e83719;
+}
+#alloy-2::after{
+	content: "";
+	width: 15vw;
+	height: 15vw;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 15vw;
+	border: solid 2vw #333;
+	box-sizing: border-box;
+	animation: opacity 3s backwards infinite linear;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+@keyframes O2 {
+	0%{transform: translate(0, 0); opacity: 0;}
+	100%{transform: translate(-15vw, 0); opacity: 1;}
+}
+@keyframes O2-2 {
+	0%{transform: translate(0, 0); opacity: 1;}
+	100%{transform: translate(-15vw, 0); opacity: 0;}
+}
+@keyframes opacity {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@keyframes scale {
+	0%{transform: scale(1);}
+	100%{transform: scale(8);}
+}
+
+.fatigue-1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	width: 75vw;
+	height: 60vw;
+	margin: 0 12.5vw;
+	position: relative;
+}
+
+#alloy, #alloy-3{
+	width: 45vw;
+	height: 60vw;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #999;
+}
+#alloy::before{
+	content: "Fe";
+	width: 15vw;
+	height: 15vw;
+	position: absolute;
+	right: 15vw;
+	top: 23.5vw;
+	font-size: 4.5vw;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	line-height: 15vw;
+}
+#alloy-3::after{
+	content: "";
+	width: 3vw;
+	height: 60vw;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 4.5vw;
+	font-weight: bold;
+	background-color: #FBA971;
+	text-align: center;
+	line-height: 15vw;
+	animation: opacity 3s backwards infinite linear;
+}
+#alloy::after{
+	content: "Fe2O3";
+	width: 15vw;
+	height: 15vw;
+	position: absolute;
+	right: 0;
+	top: 23.5vw;
+	font-size: 4.5vw;
+	font-weight: bold;
+	color: #fff;
+	background-color: #AD6A6C;
+	border-radius: 15vw;
+	text-align: center;
+	line-height: 15vw;
+	animation: opacity 2s backwards infinite linear;
+}
+.O2-1, .O2-2{
+	width: 10.5vw;
+	height: 10.5vw;
+	position: absolute;
+	right: 0;
+	top: 24.75vw;
+	font-size: 4.5vw;
+	font-weight: bold;
+	color: #fff;
+	background-color: #AD6A6C;
+	border-radius: 15vw;
+	text-align: center;
+	line-height: 10.5vw;
+}
+.O2-2{
+	right: 15vw;
+	animation: O2-2 1s backwards infinite linear;
+}
+.O2-1{
+	right: 0;
+	animation: O2 1s backwards infinite linear;
+}
+
+#alloy-2{
+	width: 45vw;
+	height: 45vw;
+	position: absolute;
+	left: 0;
+	top: 7.5vw;
+	border-radius: 45vw;
+	background-color: #e83719;
+}
+#alloy-2::after{
+	content: "";
+	width: 45vw;
+	height: 45vw;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 45vw;
+	border: solid 6vw #333;
+	box-sizing: border-box;
+	animation: opacity 3s backwards infinite linear;
+}
+}

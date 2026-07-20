@@ -1,0 +1,162 @@
+@media screen and (min-width: 600px) {
+	.video{
+		width: 35vw;
+		margin: 0 12.5vw;
+		height: 20vw;
+		border-radius: 2vw;
+		border: solid .3vw #666;
+		position: relative;
+		overflow: hidden;
+		box-shadow: .5vw .5vw 1vw #aaa;
+	}
+	.video > video{
+		position: absolute;
+		top: -0vw;
+		left: -0vw;
+		width: 36vw;
+	}
+	.long-figure{
+		width: 60vw;
+		z-index: 1;
+	}
+	.short-figure{
+		width: 45vw;
+		z-index: 1;
+	}
+
+	#work-hardening{
+		width: 60vw;
+		height: 20vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.line{
+		width: 60vw;
+		height: .3vw;
+		background: linear-gradient(90deg, #fff 0, #32558e 50%, #fff 100%);
+		margin: .5vw 0;
+	}
+	.crystals, .crystals2{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.crystals > div{
+		width: 6vw;
+		height: 6vw;
+		border-radius: 1vw;
+		margin: .5vw;
+		background-color: #32558e;
+		animation: crystals 2s infinite linear;
+	}
+	.crystals2 > div{
+		width: 6vw;
+		height: 6vw;
+		border-radius: 1vw;
+		margin: .5vw;
+		background-color: #32558e;
+		animation: crystals2 2s infinite linear;
+	}
+
+	@keyframes crystals {
+		0% {width: 6vw; height: 6vw;}
+		100% {width: 18vw; height: 2vw;}
+	}
+	@keyframes crystals2 {
+		0% {width: 18vw; height: 2vw; background-color: #32558e;}
+		100% {width: 9vw; height: 4vw; background-color: #e83719;}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+	.video{
+		width: 80vw;
+		height: 45.7vw;
+		border-radius: 4vw;
+		border: solid .6vw #666;
+		position: relative;
+		overflow: hidden;
+		margin: 0 10vw;
+	}
+	.video > video{
+		position: absolute;
+		top: 0vw;
+		left: 0vw;
+		width: 82vw;
+	}
+	.long-figure{
+		width: 100vw;
+		z-index: 1;
+	}
+	.short-figure{
+		width: 100vw;
+		z-index: 1;
+	}
+
+	#work-hardening{
+		width: 100vw;
+		height: 50vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.line{
+		width: 100vw;
+		height: .9vw;
+		background: linear-gradient(90deg, #fff 0, #32558e 50%, #fff 100%);
+		margin: 1.5vw 0;
+	}
+	.crystals, .crystals2{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.crystals > div{
+		width: 18vw;
+		height: 18vw;
+		border-radius: 3vw;
+		margin: 1.5vw;
+		background-color: #32558e;
+		animation: crystals 2s infinite linear;
+	}
+	.crystals2 > div{
+		width: 18vw;
+		height: 18vw;
+		border-radius: 3vw;
+		margin: 1.5vw;
+		background-color: #32558e;
+		animation: crystals2 2s infinite linear;
+	}
+
+	@keyframes crystals {
+		0% {width: 18vw; height: 18vw;}
+		100% {width: 54vw; height: 6vw;}
+	}
+	@keyframes crystals2 {
+		0% {width: 54vw; height: 6vw; background-color: #32558e;}
+		100% {width: 27vw; height: 12vw; background-color: #e83719;}
+	}
+}

@@ -1,0 +1,475 @@
+@media screen and (min-width: 600px) {
+	@keyframes liquid-1{
+		0%{transform: scale(1, 1);}
+		100%{transform: scale(1, 3);}
+	}
+	@keyframes liquid-2{
+		0%{transform: translate(0, 0);}
+		100%{transform: translate(0, 1vw);}
+	}
+	@keyframes drop{
+		0%{transform: translate(0, 0) rotate(135deg);}
+		40%{transform: translate(0, 7vw) rotate(135deg);}
+		60%{transform: translate(0, 9vw) rotate(135deg);}
+		100%{transform: translate(0, 16vw) rotate(135deg);}
+	}
+	@keyframes liquid-3{
+		0%{transform: scale(1, 1);}
+		5%{transform: scale(1, 1.1);}
+		15%{transform: scale(1, 1.1);}
+		25%{transform: scale(1, 1.2);}
+		35%{transform: scale(1, 1.2);}
+		45%{transform: scale(1, 1.3);}
+		55%{transform: scale(1, 1.3);}
+		65%{transform: scale(1, 1.4);}
+		75%{transform: scale(1, 1.4);}
+		85%{transform: scale(1, 1.5);}
+		95%{transform: scale(1, 1.5);}
+		100%{transform: scale(1, 1.5);}
+	}
+	@keyframes harm{
+		0%{transform: translate(0, 3vw); opacity: 1;}
+		100%{transform: translate(0, 0); opacity: 0;}
+	}
+	@keyframes harm-2{
+		0%{transform: translate(0, 3vw); opacity: 0;}
+		100%{transform: translate(0, 0); opacity: 1;}
+	}
+	.fatigue-1{
+		width: 25vw;
+		height: 30vw;
+		z-index: 1;
+		position: relative;
+	}
+	.furnace1{
+		width: 25vw;
+		height: 30vw;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	#liquid-1{
+		width: 22vw;
+		height: 5vw;
+		position: absolute;
+		left: 1.5vw;
+		top: 13.5vw;
+		background-color: #e83719;
+		transform-origin: bottom;
+		animation: liquid-1 5s infinite linear;
+	}
+	#liquid-2{
+		width: 22vw;
+		height: 10vw;
+		position: absolute;
+		left: 1.5vw;
+		top: 8.5vw;
+		background-color: #e83719;
+	}
+	#slag-1{
+		width: 20vw;
+		height: 1vw;
+		position: absolute;
+		left: 2.5vw;
+		top: 7.5vw;
+		background-color: #333;
+		border-radius: 1vw;
+	}
+	.ele-1{
+		font-size: 1.5vw;
+		text-align: center;
+		font-weight: bold;	
+		position: absolute;	
+		color: #fff;
+		animation: liquid-2 5s infinite linear;
+	}
+	#ni-1{
+		width: 20vw;
+		height: 5vw;
+		line-height: 5vw;
+		left: 2.5vw;
+		top: 10vw;
+		background: #32558e;
+	}
+	#cr-1{
+		width: 20vw;
+		height: 3vw;
+		line-height: 3vw;
+		left: 2.5vw;
+		top: 7vw;
+		background: #FBA971;
+	}
+	#fe-1{
+		width: 20vw;
+		height: 3vw;
+		line-height: 3vw;
+		left: 2.5vw;
+		top: 4vw;
+		background: #aaa;
+	}
+	#harm, #harm-2, #harm-3, #harm-4{
+		width: 20vw;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#harm{
+		top: 8vw;
+		left: 2.5vw;
+		animation: harm 2s infinite linear;
+	}
+	#harm-2{
+		top: 11vw;
+		left: 2.5vw;
+		animation: harm-2 2s infinite linear;
+	}
+	#harm-3{
+		top: 3vw;
+		left: 5vw;
+		animation: harm 2s infinite linear;
+	}
+	#harm-4{
+		top: 6vw;
+		left: 5vw;
+		animation: harm-2 2s infinite linear;
+	}
+	#harm > div, #harm-2 > div, #harm-3 > div, #harm-4 > div{
+		width: 2vw;
+		height: 2vw;
+		background: #FFD151;
+		border-radius: 2vw;
+		margin: 0 .5vw;
+	}
+
+
+	.fatigue-2{
+		width: 30vw;
+		height: 25vw;
+		z-index: 1;
+		position: relative;
+	}
+	.furnace2{
+		width: 30vw;
+		height: 25vw;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	#liquid-3{
+		width: 22vw;
+		height: 5vw;
+		position: absolute;
+		left: 4vw;
+		top: 13.8vw;
+		background-color: #e83719;
+		transform-origin: bottom;
+		animation: liquid-1 5s infinite linear;
+	}
+	#ni-2{
+		width: 20vw;
+		height: 5vw;
+		line-height: 5vw;
+		left: 5vw;
+		top: 10vw;
+		background: #32558e;
+	}
+	#cr-2{
+		width: 20vw;
+		height: 3vw;
+		line-height: 3vw;
+		left: 5vw;
+		top: 7vw;
+		background: #FBA971;
+	}
+	#fe-2{
+		width: 20vw;
+		height: 3vw;
+		line-height: 3vw;
+		left: 5vw;
+		top: 4vw;
+		background: #aaa;
+	}
+	#liquid-4{
+		width: 22vw;
+		height: 10vw;
+		position: absolute;
+		left: 4vw;
+		top: 8.8vw;
+		background-color: #e83719;
+	}
+
+
+
+	#liquid-5{
+		width: 22vw;
+		height: 3.5vw;
+		position: absolute;
+		left: 1.5vw;
+		top: 22vw;
+		background-color: #e83719;
+		transform-origin: bottom;
+		animation: liquid-3 5s infinite linear;
+		z-index: -1;
+	}
+	#drop-1{
+		width: 1.5vw;
+		height: 1.5vw;
+		border-radius: 1.5vw 1.5vw 1.5vw 0;
+		background-color: #e83719;
+		position: absolute;
+		left: 11.75vw;
+		top: 6vw;
+		transform: rotate(135deg);
+		animation: drop 1s infinite linear;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+	@keyframes liquid-1{
+		0%{transform: scale(1, 1);}
+		100%{transform: scale(1, 3);}
+	}
+	@keyframes liquid-2{
+		0%{transform: translate(0, 0);}
+		100%{transform: translate(0, 3vw);}
+	}
+	@keyframes drop{
+		0%{transform: translate(0, 0) rotate(135deg);}
+		40%{transform: translate(0, 21vw) rotate(135deg);}
+		60%{transform: translate(0, 27vw) rotate(135deg);}
+		100%{transform: translate(0, 48vw) rotate(135deg);}
+	}
+	@keyframes liquid-3{
+		0%{transform: scale(1, 1);}
+		5%{transform: scale(1, 1.1);}
+		15%{transform: scale(1, 1.1);}
+		25%{transform: scale(1, 1.2);}
+		35%{transform: scale(1, 1.2);}
+		45%{transform: scale(1, 1.3);}
+		55%{transform: scale(1, 1.3);}
+		65%{transform: scale(1, 1.4);}
+		75%{transform: scale(1, 1.4);}
+		85%{transform: scale(1, 1.5);}
+		95%{transform: scale(1, 1.5);}
+		100%{transform: scale(1, 1.5);}
+	}
+	@keyframes harm{
+		0%{transform: translate(0, 9vw); opacity: 1;}
+		100%{transform: translate(0, 0); opacity: 0;}
+	}
+	@keyframes harm-2{
+		0%{transform: translate(0, 9vw); opacity: 0;}
+		100%{transform: translate(0, 0); opacity: 1;}
+	}
+	.fatigue-1{
+		width: 75vw;
+		height: 90vw;
+		z-index: 1;
+		position: relative;
+		margin: 0 12.5vw;
+	}
+	.furnace1{
+		width: 75vw;
+		height: 90vw;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	#liquid-1{
+		width: 66vw;
+		height: 15vw;
+		position: absolute;
+		left: 4.5vw;
+		top: 40.5vw;
+		background-color: #e83719;
+		transform-origin: bottom;
+		animation: liquid-1 5s infinite linear;
+	}
+	#liquid-2{
+		width: 66vw;
+		height: 30vw;
+		position: absolute;
+		left: 4.5vw;
+		top: 25.5vw;
+		background-color: #e83719;
+	}
+	#slag-1{
+		width: 60vw;
+		height: 3vw;
+		position: absolute;
+		left: 7.5vw;
+		top: 22.5vw;
+		background-color: #333;
+		border-radius: 3vw;
+	}
+	.ele-1{
+		font-size: 4.5vw;
+		text-align: center;
+		font-weight: bold;	
+		position: absolute;	
+		color: #fff;
+		animation: liquid-2 5s infinite linear;
+	}
+	#ni-1{
+		width: 60vw;
+		height: 15vw;
+		line-height: 15vw;
+		left: 7.5vw;
+		top: 30vw;
+		background: #32558e;
+	}
+	#cr-1{
+		width: 60vw;
+		height: 9vw;
+		line-height: 9vw;
+		left: 7.5vw;
+		top: 21vw;
+		background: #FBA971;
+	}
+	#fe-1{
+		width: 60vw;
+		height: 9vw;
+		line-height: 9vw;
+		left: 7.5vw;
+		top: 12vw;
+		background: #aaa;
+	}
+	#harm, #harm-2, #harm-3, #harm-4{
+		width: 60vw;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#harm{
+		top: 24vw;
+		left: 7.5vw;
+		animation: harm 2s infinite linear;
+	}
+	#harm-2{
+		top: 33vw;
+		left: 7.5vw;
+		animation: harm-2 2s infinite linear;
+	}
+	#harm-3{
+		top: 9vw;
+		left: 15vw;
+		animation: harm 2s infinite linear;
+	}
+	#harm-4{
+		top: 18vw;
+		left: 15vw;
+		animation: harm-2 2s infinite linear;
+	}
+	#harm > div, #harm-2 > div, #harm-3 > div, #harm-4 > div{
+		width: 6vw;
+		height: 6vw;
+		background: #FFD151;
+		border-radius: 6vw;
+		margin: 0 1.5vw;
+	}
+
+
+	.fatigue-2{
+		width: 90vw;
+		height: 75vw;
+		margin: 0 5vw;
+		z-index: 1;
+		position: relative;
+	}
+	.furnace2{
+		width: 90vw;
+		height: 75vw;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	#liquid-3{
+		width: 66vw;
+		height: 15vw;
+		position: absolute;
+		left: 12vw;
+		top: 41.4vw;
+		background-color: #e83719;
+		transform-origin: bottom;
+		animation: liquid-1 5s infinite linear;
+	}
+	#ni-2{
+		width: 60vw;
+		height: 15vw;
+		line-height: 15vw;
+		left: 15vw;
+		top: 30vw;
+		background: #32558e;
+	}
+	#cr-2{
+		width: 60vw;
+		height: 9vw;
+		line-height: 9vw;
+		left: 15vw;
+		top: 21vw;
+		background: #FBA971;
+	}
+	#fe-2{
+		width: 60vw;
+		height: 9vw;
+		line-height: 9vw;
+		left: 15vw;
+		top: 12vw;
+		background: #aaa;
+	}
+	#liquid-4{
+		width: 66vw;
+		height: 30vw;
+		position: absolute;
+		left: 12vw;
+		top: 26.4vw;
+		background-color: #e83719;
+	}
+
+
+
+	#liquid-5{
+		width: 66vw;
+		height: 10.5vw;
+		position: absolute;
+		left: 4.5vw;
+		top: 66vw;
+		background-color: #e83719;
+		transform-origin: bottom;
+		animation: liquid-3 5s infinite linear;
+		z-index: -1;
+	}
+	#drop-1{
+		width: 4.5vw;
+		height: 4.5vw;
+		border-radius: 4.5vw 4.5vw 4.5vw 0;
+		background-color: #e83719;
+		position: absolute;
+		left: 35.25vw;
+		top: 18vw;
+		transform: rotate(135deg);
+		animation: drop 1s infinite linear;
+	}
+}
