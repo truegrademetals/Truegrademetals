@@ -1,0 +1,42 @@
+@media screen and (min-width: 600px) {
+	#single-lattice{
+		width: 25vw;
+		z-index: 1;
+	}
+	.long-figure{
+		width: 60vw;
+		z-index: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+	#single-lattice{
+		width: 50vw;
+		margin: 0 25vw;
+		z-index: 1;
+	}
+	.long-figure{
+		width: 100vw;
+		z-index: 1;
+	}
+}

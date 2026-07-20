@@ -1,0 +1,96 @@
+
+@media screen and (min-width: 600px) {
+
+
+	.long-figure{
+		width: 50vw;
+		z-index: 1;
+		user-select: none;
+		pointer-events: none;
+	}
+
+	
+	#drag-out{
+		width: 45vw;
+		height: .5vw;
+		background-color: #666;
+		border-radius: 10vw;
+		position: relative;
+		z-index: 10;
+		margin: 2vw 0;
+		margin-left: 5vw;
+        display: flex;
+        justify-content: space-between;
+	}
+	#drag{
+		width: 2vw;
+		height: 2vw;
+		background-color: #666;
+		border-radius: 10vw;
+		position: absolute;
+		top: -0.75vw;
+		z-index: 10;
+        cursor: pointer;
+        user-select: none;
+        box-shadow: 0 0 1vw #666;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+	.long-figure{
+		width: 90vw;
+		margin: 0 5vw;
+		z-index: 1;
+		user-select: none;
+		pointer-events: none;
+	}
+
+	
+	#drag-out{
+		width: 80vw;
+		height: 1.5vw;
+		background-color: #666;
+		border-radius: 10vw;
+		position: relative;
+		z-index: 10;
+		margin: 6vw 0;
+		margin-left: 15vw;
+        display: flex;
+        justify-content: space-between;
+	}
+	#drag{
+		width: 6vw;
+		height: 6vw;
+		background-color: #666;
+		border-radius: 10vw;
+		position: absolute;
+		top: -2.25vw;
+		z-index: 10;
+        cursor: pointer;
+        user-select: none;
+	}
+}

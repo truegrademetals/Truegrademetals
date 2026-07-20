@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 850.4 483.1" style="enable-background:new 0 0 850.4 483.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{
+		fill:#32558E;
+	}
+	.st1{
+		fill:none;
+		stroke:#333333;
+		stroke-width:3;
+		stroke-miterlimit:10;
+		animation: square 10s linear infinite;
+	}
+	@keyframes square{
+		0%{transform: translate(0, 0);}
+		10%{transform: translate(131px, 0);}
+		15%{transform: translate(131px, 0);}
+		25%{transform: translate(262px, 0);}
+		30%{transform: translate(262px, 0);}
+		40%{transform: translate(393px, 0);}
+		45%{transform: translate(393px, 0);}
+		55%{transform: translate(524px, 0);}
+		60%{transform: translate(524px, 0);}
+		70%{transform: translate(524px, 131px);}
+		75%{transform: translate(524px, 131px);}
+		85%{transform: translate(524px, 262px);}
+		90%{transform: translate(524px, 262px);}
+		100%{transform: translate(0, 0);}
+	}
+</style>
+<title>cold-rolling</title>
+<title>cold-rolling</title>
+<g>
+	<circle class="st0" cx="168.4" cy="115.5" r="28.7"/>
+	<circle class="st0" cx="103" cy="50.1" r="28.7"/>
+	<circle class="st0" cx="103" cy="180.9" r="28.7"/>
+	<circle class="st0" cx="233.8" cy="180.9" r="28.7"/>
+	<circle class="st0" cx="233.8" cy="50.1" r="28.7"/>
+	<circle class="st0" cx="299.2" cy="115.5" r="28.7"/>
+	<circle class="st0" cx="364.5" cy="180.9" r="28.7"/>
+	<circle class="st0" cx="364.5" cy="50.1" r="28.7"/>
+	<circle class="st0" cx="429.9" cy="115.5" r="28.7"/>
+	<circle class="st0" cx="495.3" cy="180.9" r="28.7"/>
+	<circle class="st0" cx="495.3" cy="50.1" r="28.7"/>
+	<circle class="st0" cx="560.7" cy="115.5" r="28.7"/>
+	<circle class="st0" cx="626" cy="180.9" r="28.7"/>
+	<circle class="st0" cx="626" cy="50.1" r="28.7"/>
+	<circle class="st0" cx="691.4" cy="115.5" r="28.7"/>
+	<circle class="st0" cx="756.8" cy="180.9" r="28.7"/>
+	<circle class="st0" cx="756.8" cy="50.1" r="28.7"/>
+	<circle class="st0" cx="168.4" cy="246.3" r="28.7"/>
+	<circle class="st0" cx="103" cy="311.6" r="28.7"/>
+	<circle class="st0" cx="233.8" cy="311.6" r="28.7"/>
+	<circle class="st0" cx="299.2" cy="246.3" r="28.7"/>
+	<circle class="st0" cx="364.5" cy="311.6" r="28.7"/>
+	<circle class="st0" cx="429.9" cy="246.3" r="28.7"/>
+	<circle class="st0" cx="495.3" cy="311.6" r="28.7"/>
+	<circle class="st0" cx="560.7" cy="246.3" r="28.7"/>
+	<circle class="st0" cx="626" cy="311.6" r="28.7"/>
+	<circle class="st0" cx="691.4" cy="246.3" r="28.7"/>
+	<circle class="st0" cx="756.8" cy="311.6" r="28.7"/>
+	<circle class="st0" cx="168.4" cy="377" r="28.7"/>
+	<circle class="st0" cx="103" cy="442.4" r="28.7"/>
+	<circle class="st0" cx="233.8" cy="442.4" r="28.7"/>
+	<circle class="st0" cx="299.2" cy="377" r="28.7"/>
+	<circle class="st0" cx="364.5" cy="442.4" r="28.7"/>
+	<circle class="st0" cx="429.9" cy="377" r="28.7"/>
+	<circle class="st0" cx="495.3" cy="442.4" r="28.7"/>
+	<circle class="st0" cx="560.7" cy="377" r="28.7"/>
+	<circle class="st0" cx="626" cy="442.4" r="28.7"/>
+	<circle class="st0" cx="691.4" cy="377" r="28.7"/>
+	<circle class="st0" cx="756.8" cy="442.4" r="28.7"/>
+	<path class="st1" d="M234.6,217.4H102.2c-19.7,0-35.8-16-35.8-35.8V49.3c0-19.7,16-35.8,35.8-35.8h132.4c19.7,0,35.8,16,35.8,35.8
+		v132.4C270.4,201.4,254.3,217.4,234.6,217.4z"/>
+</g>
+</svg>
