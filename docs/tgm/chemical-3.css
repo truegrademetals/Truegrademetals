@@ -1,0 +1,2608 @@
+.C{
+	background-color: #333333;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.Si{
+	background-color: #e83719;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.Mn{
+	background-color: #7E4E60;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.P{
+	background-color: #17BEBB;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.S{
+	background-color: #FFD151;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.Ni{
+	background-color: #32558e;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.Cr{
+	background-color: #FBA971;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.Mo{
+	background-color: #B7C8B5;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.Ti{
+	background-color: #F6D8AE;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.Nb{
+	background-color: #B9314F;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.Ce{
+	background-color: #A1D2CE;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.Cu{
+	background-color: #D5AD71;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.W{
+	background-color: #544343;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.Ta{
+	background-color: #566E3D;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.Al{
+	background-color: #C4AF9A;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.N{
+	background-color: #3B8EA5;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.Co{
+	background-color: #7FB285;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.B{
+	background-color: #3A405A;
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+.V{
+	background-color: #9268B3;
+	cursor: pointer;
+	width: 10%;
+	transition: all 0.3s;
+}
+.Zr{
+	background-color: #EEE5E9;
+	cursor: pointer;
+	width: 10%;
+	transition: all 0.3s;
+}
+.RE{
+	background-color: #f6f6f6;
+	cursor: pointer;
+	width: 10%;
+	transition: all 0.3s;
+}
+.Y2O3{
+	background-color: #AD6A6C;
+	cursor: pointer;
+	width: 10%;
+	transition: all 0.3s;
+}
+.La{
+	background-color: #EEB1D5;
+	cursor: pointer;
+	width: 10%;
+	transition: all 0.3s;
+}
+.Pb{
+	background-color: #777;
+	cursor: pointer;
+	width: 10%;
+	transition: all 0.3s;
+}
+.Mg{
+	background-color: #ADD9F4;
+	cursor: pointer;
+	width: 10%;
+	transition: all 0.3s;
+}
+.Ag{
+	background-color: #c0c0c0;
+	cursor: pointer;
+	width: 10%;
+	transition: all 0.3s;
+}
+.Bi{
+	background-color: #3A2449;
+	cursor: pointer;
+	width: 10%;
+	transition: all 0.3s;
+}
+.Fe{
+	background-color: #aaa;
+	cursor: pointer;
+	width: 10%;
+	transition: all 0.3s;
+}
+
+
+
+.C:hover::after, .Si:hover::after, .Mn:hover::after, .P:hover::after, .S:hover::after, .Ni:hover::after, .Cr:hover::after, .Mo:hover::after, .Ti:hover::after, .Nb:hover::after, .Ce:hover::after, .Cu:hover::after, .W:hover::after, .Ta:hover::after, .Al:hover::after, .N:hover::after, .Fe:hover::after, .Co:hover::after, .B:hover::after, .V:hover::after, .Zr:hover::after, .RE:hover::after, .Y2O3:hover::after, .La:hover::after, .Pb:hover::after, .Mg:hover::after, .Other:hover::after{
+	opacity: 1;
+}
+
+
+
+.C:hover, .Si:hover, .Mn:hover, .P:hover, .S:hover, .Ni:hover, .Cr:hover, .Mo:hover, .Ti:hover, .Nb:hover, .Ce:hover, .Cu:hover, .W:hover, .Ta:hover, .Al:hover, .N:hover, .Fe:hover, .Co:hover, .B:hover, .V:hover, .Zr:hover, .RE:hover, .Y2O3:hover, .La:hover, .Pb:hover, .Mg:hover, .Other:hover{
+	opacity: 1;
+}
+
+
+
+@media screen and (min-width: 600px) {
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+.C::after, .Si::after, .Mn::after, .P::after, .S::after, .Ni::after, .Cr::after, .Mo::after, .Ti::after, .Nb::after, .Ce::after, .Cu::after, .W::after, .Ta::after, .Al::after, .N::after, .Fe::after, .Co::after, .B::after, .V::after, .Zr::after, .RE::after, .Y2O3::after, .La::after, .Pb::after, .Mg::after, .Other::after, .Ag::after, .Bi::after{
+	content: "";
+	position: absolute;
+	top: -3.8vw;
+	font-size: 2.8vw;
+	text-align: center;
+	width: 60vw;
+	left: 0;
+	opacity: 0;
+	transition: all 0.3s;
+	color: #333333;
+}
+}
+
+
+#G400 .C{
+	width: 2.4%;
+}
+#G400 .Mn{
+	width: 9.4%;
+}
+#G400 .Fe{
+	width: 7.6%;
+}
+#G400 .P{
+	width: 1.4%;
+}
+#G400 .S{
+	width: 1.35%;
+}
+#G400 .Si{
+	width: 6.4%;
+}
+#G400 .Cu{
+	width: 31.15%;
+}
+#G400 .Ni{
+	width: 49.25%;
+}
+#G400 .Al{
+	width: 4.8%;
+}
+#G400 .Ti{
+	width: 5.8%;
+}
+	
+#GK-500 .C{
+	width: 2.8%;
+}
+#GK-500 .Mn{
+	width: 6.4%;
+}
+#GK-500 .Fe{
+	width: 7%;
+}
+#GK-500 .P{
+	width: 1.5%;
+}
+#GK-500 .S{
+	width: 1.35%;
+}
+#GK-500 .Si{
+	width: 5.8%;
+}
+#GK-500 .Cu{
+	width: 29%;
+}
+#GK-500 .Ni{
+	width: 49.75%;
+}
+#GK-500 .Al{
+	width: 8.2%;
+}
+#GK-500 .Ti{
+	width: 4.2%;
+}
+	
+#G600 .C{
+	width: 2.2%;
+}
+#G600 .Mn{
+	width: 13.3%;
+}
+#G600 .Fe{
+	width: 16.6%;
+}
+#G600 .P{
+	width: 1.5%;
+}
+#G600 .S{
+	width: 1.35%;
+}
+#G600 .Si{
+	width: 5.8%;
+}
+#G600 .Cu{
+	width: 3.8%;
+}
+#G600 .Ni{
+	width: 46%;
+}
+#G600 .Ti{
+	width: 5.8%;
+}
+#G600 .Cr{
+	width: 22%;
+}
+#G600 .Nb{
+	width: 3.35%;
+}
+#G600 .Ta{
+	width: 3.35%;
+}
+	
+#G601 .C{
+	width: 2.2%;
+}
+#G601 .Mn{
+	width: 5.8%;
+}
+#G601 .Fe{
+	width: 19.5%;
+}
+#G601 .P{
+	width: 1.5%;
+}
+#G601 .S{
+	width: 1.35%;
+}
+#G601 .Si{
+	width: 3.8%;
+}
+#G601 .Cu{
+	width: 5.8%;
+}
+#G601 .Ni{
+	width: 46.75%;
+}
+#G601 .Al{
+	width: 5.8%;
+}
+#G601 .Cr{
+	width: 28%;
+}
+
+
+#G602CA .C{
+	width: 2.5%;
+}
+#G602CA .Mn{
+	width: 5.8%;
+}
+#G602CA .Fe{
+	width: 16%;
+}
+#G602CA .P{
+	width: 1.6%;
+}
+#G602CA .S{
+	width: 1.4%;
+}
+#G602CA .Si{
+	width: 5.8%;
+}
+#G602CA .Cu{
+	width: 2.6%;
+}
+#G602CA .Ni{
+	width: 47.2%;
+}
+#G602CA .Co{
+	width: 5.8%;
+}
+#G602CA .Al{
+	width: 7.35%;
+}
+#G602CA .Ti{
+	width: 2.8%;
+}
+#G602CA .Cr{
+	width: 29%;
+}
+	
+#G617 .C{
+	width: 2.2%;
+}
+#G617 .Mn{
+	width: 4.8%;
+}
+#G617 .Fe{
+	width: 10.6%;
+}
+#G617 .P{
+	width: 1.5%;
+}
+#G617 .S{
+	width: 1.35%;
+}
+#G617 .Si{
+	width: 5.8%;
+}
+#G617 .Cu{
+	width: 3.8%;
+}
+#G617 .Ni{
+	width: 41.55%;
+}
+#G617 .Co{
+	width: 19%;
+}
+#G617 .Nb{
+	width: 2.9%;
+}
+#G617 .Ta{
+	width: 2.9%;
+}
+#G617 .Cr{
+	width: 28.25%;
+}
+#G617 .Mo{
+	width: 15.4%;
+}
+	
+#G625 .C{
+	width: 2.2%;
+}
+#G625 .Mn{
+	width: 5.8%;
+}
+#G625 .Fe{
+	width: 13%;
+}
+#G625 .P{
+	width: 1.5%;
+}
+#G625 .S{
+	width: 1.4%;
+}
+#G625 .Si{
+	width: 4.8%;
+}
+#G625 .Cu{
+	width: 3.8%;
+}
+#G625 .Ni{
+	width: 44%;
+}
+#G625 .Cr{
+	width: 27.25%;
+}
+#G625 .Nb{
+	width: 4.4%;
+}
+#G625 .Ta{
+	width: 4.4%;
+}
+#G625 .Mo{
+	width: 15.4%;
+}
+	
+#G686 .C{
+	width: 1.4%;
+}
+#G686 .Mn{
+	width: 5.8%;
+}
+#G686 .Fe{
+	width: 10.6%;
+}
+#G686 .P{
+	width: 1.4%;
+}
+#G686 .S{
+	width: 1.4%;
+}
+#G686 .Si{
+	width: 2.8%;
+}
+#G686 .Cu{
+	width: 3.8%;
+}
+#G686 .Ni{
+	width: 44.255%;
+}
+#G686 .Ti{
+	width: 2.8%;
+}
+#G686 .Cr{
+	width: 27%;
+}
+#G686 .Mo{
+	width: 23%;
+}
+#G686 .W{
+	width: 8.8%;
+}
+	
+#G690 .C{
+	width: 1.7%;
+}
+#G690 .Mn{
+	width: 10.6%;
+}
+#G690 .Fe{
+	width: 16%;
+}
+#G690 .P{
+	width: 1.5%;
+}
+#G690 .S{
+	width: 1.35%;
+}
+#G690 .Si{
+	width: 4.8%;
+}
+#G690 .Cu{
+	width: 3.8%;
+}
+#G690 .Ni{
+	width: 43.95%;
+}
+#G690 .Co{
+	width: 2.28%;
+}
+#G690 .Al{
+	width: 3.8%;
+}
+#G690 .Ti{
+	width: 3.8%;
+}
+#G690 .Cr{
+	width: 31.375%;
+}
+#G690 .Nb{
+	width: 3.35%;
+}
+#G690 .Ta{
+	width: 3.35%;
+}
+#G690 .Mo{
+	width: 3.8%;
+}
+	
+#G693 .C{
+	width: 2.4%;
+}
+#G693 .Mn{
+	width: 5.8%;
+}
+#G693 .Fe{
+	width: 9.4%;
+}
+#G693 .P{
+	width: 1.5%;
+}
+#G693 .S{
+	width: 1.3%;
+}
+#G693 .Si{
+	width: 3.8%;
+}
+#G693 .Cu{
+	width: 3.8%;
+}
+#G693 .Ni{
+	width: 45.75%;
+}
+#G693 .Al{
+	width: 8.2%;
+}
+#G693 .Ti{
+	width: 5.8%;
+}
+#G693 .Cr{
+	width: 31%;
+}
+#G693 .Nb{
+	width: 3.2%;
+}
+#G693 .Ta{
+	width: 3.2%;
+}
+	
+#G718 .C{
+	width: 2%;
+}
+#G718 .Mn{
+	width: 3.2%;
+}
+#G718 .Fe{
+	width: 24.5%;
+}
+#G718 .P{
+	width: 1.35%;
+}
+#G718 .S{
+	width: 1.35%;
+}
+#G718 .Si{
+	width: 3.2%;
+}
+#G718 .Cu{
+	width: 3%;
+}
+#G718 .Ni{
+	width: 42.75%;
+}
+#G718 .Al{
+	width: 3.8%;
+}
+#G718 .Ti{
+	width: 5.2%;
+}
+#G718 .Cr{
+	width: 26%;
+}
+#G718 .Nb{
+	width: 5.3%;
+}
+#G718 .Ta{
+	width: 5.3%;
+}
+#G718 .Mo{
+	width: 8.2%;
+}
+	
+#G725 .C{
+	width: 1.5%;
+}
+#G725 .Mn{
+	width: 3.2%;
+}
+#G725 .Fe{
+	width: 14.2%;
+}
+#G725 .P{
+	width: 1.35%;
+}
+#G725 .S{
+	width: 1.3%;
+}
+#G725 .Si{
+	width: 2.6%;
+}
+#G725 .Ni{
+	width: 45%;
+}
+#G725 .Al{
+	width: 3.2%;
+}
+#G725 .Ti{
+	width: 5.8%;
+}
+#G725 .Cr{
+	width: 26.75%;
+}
+#G725 .Nb{
+	width: 4.1%;
+}
+#G725 .Ta{
+	width: 4.1%;
+}
+#G725 .Mo{
+	width: 14.2%;
+}
+	
+#G740H .C{
+	width: 1.5%;
+}
+#G740H .Mn{
+	width: 5.8%;
+}
+#G740H .Fe{
+	width: 8.2%;
+}
+#G740H .P{
+	width: 1.5%;
+}
+#G740H .S{
+	width: 1.35%;
+}
+#G740H .Si{
+	width: 5.8%;
+}
+#G740H .Cu{
+	width: 3.8%;
+}
+#G740H .Ni{
+	width: 38.75%;
+}
+#G740H .Co{
+	width: 25.5%;
+}
+#G740H .Al{
+	width: 5.8%;
+}
+#G740H .Ti{
+	width: 6.4%;
+}
+#G740H .Cr{
+	width: 28.75%;
+}
+#G740H .Nb{
+	width: 3.2%;
+}
+#G740H .Ta{
+	width: 3.2%;
+}
+#G740H .Mo{
+	width: 7%;
+}
+	
+#G825 .C{
+	width: 1.7%;
+}
+#G825 .Mn{
+	width: 5.8%;
+}
+#G825 .Fe{
+	width: 27.5%;
+}
+#G825 .P{
+	width: 1.5%;
+}
+#G825 .S{
+	width: 1.5%;
+}
+#G825 .Si{
+	width: 3.8%;
+}
+#G825 .Cu{
+	width: 7%;
+}
+#G825 .Ni{
+	width: 37.5%;
+}
+#G825 .Al{
+	width: 2.6%;
+}
+#G825 .Ti{
+	width: 5.2%;
+}
+#G825 .Cr{
+	width: 27.25%;
+}
+#G825 .Mo{
+	width: 8.2%;
+}
+	
+#G945X .C{
+	width: 1.4%;
+}
+#G945X .Mn{
+	width: 5.8%;
+}
+#G945X .Fe{
+	width: 23%;
+}
+#G945X .P{
+	width: 1.5%;
+}
+#G945X .S{
+	width: 1.35%;
+}
+#G945X .Si{
+	width: 3.8%;
+}
+#G945X .Cu{
+	width: 7%;
+}
+#G945X .Ni{
+	width: 41.5%;
+}
+#G945X .Al{
+	width: 3.2%;
+}
+#G945X .Ti{
+	width: 6.4%;
+}
+#G945X .Cr{
+	width: 27%;
+}
+#G945X .Nb{
+	width: 4.4%;
+}
+#G945X .Ta{
+	width: 4.4%;
+}
+#G945X .Mo{
+	width: 8.8%;
+}
+	
+#GB .C{
+	width: 1.9%;
+}
+#GB .Mn{
+	width: 5.8%;
+}
+#GB .Fe{
+	width: 11.2%;
+}
+#GB .P{
+	width: 1.6%;
+}
+#GB .S{
+	width: 1.5%;
+}
+#GB .Si{
+	width: 5.8%;
+}
+#GB .Cu{
+	width: 3.8%;
+}
+#GB .Ni{
+	width: 47.7%;
+}
+#GB .Co{
+	width: 7.6%;
+}
+#GB .Cr{
+	width: 5.8%;
+}
+#GB .Mo{
+	width: 30.5%;
+}
+#GB .V{
+	width: 4.2%;
+}
+#GB .W{
+	width: 5.8%;
+}
+	
+#GB-2 .C{
+	width: 1.4%;
+}
+#GB-2 .Mn{
+	width: 6.7%;
+}
+#GB-2 .Fe{
+	width: 7.3%;
+}
+#GB-2 .P{
+	width: 1.6%;
+}
+#GB-2 .S{
+	width: 1.5%;
+}
+#GB-2 .Si{
+	width: 2.6%;
+}
+#GB-2 .Cu{
+	width: 3.8%;
+}
+#GB-2 .Ni{
+	width: 50.45%;
+}
+#GB-2 .Co{
+	width: 5.8%;
+}
+#GB-2 .Cr{
+	width: 5.8%;
+}
+#GB-2 .Mo{
+	width: 30.5%;
+}
+#GB-2 .W{
+	width: 5.8%;
+}
+	
+#GB-3 .C{
+	width: 1.4%;
+}
+#GB-3 .Mn{
+	width: 7%;
+}
+#GB-3 .Fe{
+	width: 7%;
+}
+#GB-3 .P{
+	width: 1.6%;
+}
+#GB-3 .S{
+	width: 1.5%;
+}
+#GB-3 .Si{
+	width: 2.6%;
+}
+#GB-3 .Cu{
+	width: 3.8%;
+}
+#GB-3 .Ni{
+	width: 47.45%;
+}
+#GB-3 .Co{
+	width: 8.2%;
+}
+#GB-3 .Cr{
+	width: 7%;
+}
+#GB-3 .Mo{
+	width: 31.25%;
+}
+#GB-3 .W{
+	width: 8.2%;
+}
+	
+#GC-4 .C{
+	width: 1.35%;
+}
+#GC-4 .Mn{
+	width: 6.4%;
+}
+#GC-4 .Fe{
+	width: 8.2%;
+}
+#GC-4 .P{
+	width: 1.6%;
+}
+#GC-4 .S{
+	width: 1.5%;
+}
+#GC-4 .Si{
+	width: 2.6%;
+}
+#GC-4 .Cu{
+	width: 3.8%;
+}
+#GC-4 .Ni{
+	width: 48.55%;
+}
+#GC-4 .Co{
+	width: 7%;
+}
+#GC-4 .Ti{
+	width: 4.6%;
+}
+#GC-4 .Cr{
+	width: 23%;
+}
+#GC-4 .Mo{
+	width: 22.5%;
+}
+#GC-4 .W{
+	width: 3.8%;
+}
+	
+#GC-22 .C{
+	width: 1.4%;
+}
+#GC-22 .Mn{
+	width: 5.8%;
+}
+#GC-22 .Fe{
+	width: 9.4%;
+}
+#GC-22 .P{
+	width: 1.5%;
+}
+#GC-22 .S{
+	width: 1.35%;
+}
+#GC-22 .Si{
+	width: 2.6%;
+}
+#GC-22 .Cu{
+	width: 3.8%;
+}
+#GC-22 .Ni{
+	width: 44.375%;
+}
+#GC-22 .Co{
+	width: 7.6%;
+}
+#GC-22 .Cr{
+	width: 27%;
+}
+#GC-22 .Mo{
+	width: 20.5%;
+}
+#GC-22 .V{
+	width: 3.2%;
+}
+#GC-22 .W{
+	width: 8.2%;
+}
+	
+#GC-276 .C{
+	width: 1.4%;
+}
+#GC-276 .Mn{
+	width: 5.8%;
+}
+#GC-276 .Fe{
+	width: 11.2%;
+}
+#GC-276 .P{
+	width: 1.6%;
+}
+#GC-276 .S{
+	width: 1.5%;
+}
+#GC-276 .Si{
+	width: 2.6%;
+}
+#GC-276 .Cu{
+	width: 3.8%;
+}
+#GC-276 .Ni{
+	width: 44.8%;
+}
+#GC-276 .Co{
+	width: 7.6%;
+}
+#GC-276 .Cr{
+	width: 22.5%;
+}
+#GC-276 .Mo{
+	width: 23%;
+}
+#GC-276 .V{
+	width: 3.2%;
+}
+#GC-276 .W{
+	width: 8.8%;
+}
+	
+#GC-2000 .C{
+	width: 1.4%;
+}
+#GC-2000 .Mn{
+	width: 3.8%;
+}
+#GC-2000 .Fe{
+	width: 8.2%;
+}
+#GC-2000 .P{
+	width: 1.5%;
+}
+#GC-2000 .S{
+	width: 1.35%;
+}
+#GC-2000 .Si{
+	width: 2.6%;
+}
+#GC-2000 .Cu{
+	width: 6.4%;
+}
+#GC-2000 .Ni{
+	width: 44.65%;
+}
+#GC-2000 .Co{
+	width: 7%;
+}
+#GC-2000 .Cr{
+	width: 28%;
+}
+#GC-2000 .Mo{
+	width: 23%;
+}
+	
+#GG-3 .C{
+	width: 1.4%;
+}
+#GG-3 .Mn{
+	width: 5.8%;
+}
+#GG-3 .Fe{
+	width: 26.25%;
+}
+#GG-3 .P{
+	width: 1.6%;
+}
+#GG-3 .S{
+	width: 1.5%;
+}
+#GG-3 .Si{
+	width: 5.8%;
+}
+#GG-3 .Cu{
+	width: 7%;
+}
+#GG-3 .Ni{
+	width: 38.75%;
+}
+#GG-3 .Co{
+	width: 10.6%;
+}
+#GG-3 .Cr{
+	width: 27.5%;
+}
+#GG-3 .Nb{
+	width: 1.9%;
+}
+#GG-3 .Ta{
+	width: 1.9%;
+}
+#GG-3 .Mo{
+	width: 13%;
+}
+#GG-3 .W{
+	width: 6.4%;
+}
+	
+#GG-30 .C{
+	width: 1.5%;
+}
+#GG-30 .Mn{
+	width: 6.4%;
+}
+#GG-30 .Fe{
+	width: 22%;
+}
+#GG-30 .P{
+	width: 1.6%;
+}
+#GG-30 .S{
+	width: 1.4%;
+}
+#GG-30 .Si{
+	width: 5.8%;
+}
+#GG-30 .Cu{
+	width: 6.4%;
+}
+#GG-30 .Ni{
+	width: 36.95%;
+}
+#GG-30 .Co{
+	width: 10.6%;
+}
+#GG-30 .Cr{
+	width: 31.25%;
+}
+#GG-30 .Nb{
+	width: 2.7%;
+}
+#GG-30 .Ta{
+	width: 2.7%;
+}
+#GG-30 .Mo{
+	width: 10.6%;
+}
+#GG-30 .W{
+	width: 7.6%;
+}
+	
+#GG-35 .C{
+	width: 1.7%;
+}
+#GG-35 .Mn{
+	width: 3.8%;
+}
+#GG-35 .Fe{
+	width: 7%;
+}
+#GG-35 .P{
+	width: 1.5%;
+}
+#GG-35 .S{
+	width: 1.35%;
+}
+#GG-35 .Si{
+	width: 4.2%;
+}
+#GG-35 .Cu{
+	width: 3%;
+}
+#GG-35 .Ni{
+	width: 44.125%;
+}
+#GG-35 .Co{
+	width: 5.8%;
+}
+#GG-35 .Al{
+	width: 3.4%;
+}
+#GG-35 .Ti{
+	width: 2.6%;
+}
+#GG-35 .Cr{
+	width: 33%;
+}
+#GG-35 .Nb{
+	width: 1.9%;
+}
+#GG-35 .Ta{
+	width: 1.9%;
+}
+#GG-35 .Mo{
+	width: 14.2%;
+}
+#GG-35 .V{
+	width: 2.6%;
+}
+#GG-35 .W{
+	width: 4.2%;
+}
+	
+#GW .C{
+	width: 2.2%;
+}
+#GW .Mn{
+	width: 5.8%;
+}
+#GW .Fe{
+	width: 11.2%;
+}
+#GW .P{
+	width: 1.6%;
+}
+#GW .S{
+	width: 1.5%;
+}
+#GW .Si{
+	width: 5.8%;
+}
+#GW .Cu{
+	width: 3.8%;
+}
+#GW .Ni{
+	width: 45.5%;
+}
+#GW .Co{
+	width: 7.6%;
+}
+#GW .Cr{
+	width: 10.6%;
+}
+#GW .Mo{
+	width: 28.75%;
+}
+#GW .V{
+	width: 4.2%;
+}
+#GW .W{
+	width: 5.8%;
+}
+	
+#GX .C{
+	width: 2.2%;
+}
+#GX .Mn{
+	width: 5.8%;
+}
+#GX .Fe{
+	width: 25.5%;
+}
+#GX .P{
+	width: 1.6%;
+}
+#GX .S{
+	width: 1.5%;
+}
+#GX .Si{
+	width: 5.8%;
+}
+#GX .Cu{
+	width: 3.8%;
+}
+#GX .Ni{
+	width: 40.125%;
+}
+#GX .Co{
+	width: 6.4%;
+}
+#GX .Cr{
+	width: 27.25%;
+}
+#GX .Mo{
+	width: 15.4%;
+}
+#GX .W{
+	width: 4.2%;
+}
+
+
+
+
+#G400 .C::after{
+	content: "C ≤ 0.15%";
+}
+#G400 .Mn::after{
+	content: "Mn ≤ 4.0%";
+}
+#G400 .Fe::after{
+	content: "Fe ≤ 2.5%";
+}
+#G400 .P::after{
+	content: "P ≤ 0.02%";
+}
+#G400 .S::after{
+	content: "S ≤ 0.015%";
+}
+#G400 .Si::after{
+	content: "Si ≤ 1.5%";
+}
+#G400 .Cu::after{
+	content: "Cu: 20.6% ~ 38.0%";
+}
+#G400 .Ni::after{
+	content: "Ni: 62% ~ 69%";
+}
+#G400 .Al::after{
+	content: "Al ≤ 0.75%";
+}
+#G400 .Ti::after{
+	content: "Ti ≤ 1.0%";
+}
+
+#GK-500 .C::after{
+	content: "C ≤ 0.25%";
+}
+#GK-500 .Mn::after{
+	content: "Mn ≤ 1.5%";
+}
+#GK-500 .Fe::after{
+	content: "Fe ≤ 2.0%";
+}
+#GK-500 .P::after{
+	content: "P ≤ 0.03%";
+}
+#GK-500 .S::after{
+	content: "S ≤ 0.015%";
+}
+#GK-500 .Si::after{
+	content: "Si ≤ 1.00%";
+}
+#GK-500 .Cu::after{
+	content: "Cu: 20.2% ~ 30.0%";
+}
+#GK-500 .Ni::after{
+	content: "Ni: 63% ~ 70%";
+}
+#GK-500 .Al::after{
+	content: "Al: 2.0% ~ 4.0%";
+}
+#GK-500 .Ti::after{
+	content: "Ti: 0.25% ~ 1.00%";
+}
+
+#G600 .C::after{
+	content: "C ≤ 0.10%";
+}
+#G600 .Mn::after{
+	content: "Mn: 5% ~ 9.5%";
+}
+#G600 .Fe::after{
+	content: "Fe ≤ 10.0%";
+}
+#G600 .P::after{
+	content: "P ≤ 0.03%";
+}
+#G600 .S::after{
+	content: "S ≤ 0.015%";
+}
+#G600 .Si::after{
+	content: "Si ≤ 1.0%";
+}
+#G600 .Cu::after{
+	content: "Cu ≤ 0.50%";
+}
+#G600 .Ni::after{
+	content: "Ni ≥ 59%";
+}
+#G600 .Ti::after{
+	content: "Ti ≤ 1.0%";
+}
+#G600 .Cr::after{
+	content: "Cr: 13.0% ~ 17.0%";
+}
+#G600 .Nb::after{
+	content: "Nb + Ta: 1.0% ~ 2.5%";
+}
+#G600 .Ta::after{
+	content: "Nb + Ta: 1.0% ~ 2.5%";
+}
+
+#G602CA .C::after{
+	content: "C: 0.10% ~ 0.25%";
+}
+#G602CA .Mn::after{
+	content: "Mn ≤ 1.0%";
+}
+#G602CA .Fe::after{
+	content: "Fe: 8.0% ~ 11.0%";
+}
+#G602CA .P::after{
+	content: "P ≤ 0.04%";
+}
+#G602CA .S::after{
+	content: "S ≤ 0.02%";
+}
+#G602CA .Si::after{
+	content: "Si ≤ 1.0%";
+}
+#G602CA .Cu::after{
+	content: "Cu ≤ 0.20%";
+}
+#G602CA .Ni::after{
+	content: "Ni: 56.5% ~ 66.3%";
+}
+#G602CA .Co::after{
+	content: "Co ≤ 1.0%";
+}
+#G602CA .Al::after{
+	content: "Al: 1.5% ~ 2.2%";
+}
+#G602CA .Ti::after{
+	content: "Ti: 0.10% ~ 0.40%";
+}
+#G602CA .Cr::after{
+	content: "Cr: 24.0% ~ 26.0%";
+}
+
+#G601 .C::after{
+	content: "C ≤ 0.10%";
+}
+#G601 .Mn::after{
+	content: "Mn ≤ 1.0%";
+}
+#G601 .Fe::after{
+	content: "Fe: 7.7% ~ 17.4%";
+}
+#G601 .P::after{
+	content: "P ≤ 0.03%";
+}
+#G601 .S::after{
+	content: "S ≤ 0.015%";
+}
+#G601 .Si::after{
+	content: "Si ≤ 0.50%";
+}
+#G601 .Cu::after{
+	content: "Cu ≤ 1.0%";
+}
+#G601 .Ni::after{
+	content: "Ni: 58.0% ~ 63.0%";
+}
+#G601 .Al::after{
+	content: "Al: 1.0% ~ 1.7%";
+}
+#G601 .Cr::after{
+	content: "Cr: 21.0% ~ 25.0%";
+}
+
+#G617 .C::after{
+	content: "C: 0.05% ~ 0.15%";
+}
+#G617 .Mn::after{
+	content: "Mn: 0.3% ~ 2.5%";
+}
+#G617 .Fe::after{
+	content: "Fe ≤ 5.0%";
+}
+#G617 .P::after{
+	content: "P ≤ 0.03%";
+}
+#G617 .S::after{
+	content: "S ≤ 0.015%";
+}
+#G617 .Si::after{
+	content: "Si ≤ 0.75%";
+}
+#G617 .Cu::after{
+	content: "Cu ≤ 0.50%";
+}
+#G617 .Ni::after{
+	content: "Ni: 38.6% ~ 61.6%";
+}
+#G617 .Co::after{
+	content: "Co: 9.0% ~ 15.0%";
+}
+#G617 .Nb::after{
+	content: "Nb + Ta ≤ 1.0%";
+}
+#G617 .Ta::after{
+	content: "Nb + Ta ≤ 1.0%";
+}
+#G617 .Cr::after{
+	content: "Cr: 21.0% ~ 26.0%";
+}
+#G617 .Mo::after{
+	content: "Mo: 8.0% ~ 10.0%";
+}
+
+#G625 .C::after{
+	content: "C ≤ 0.10%";
+}
+#G625 .Mn::after{
+	content: "Mn ≤ 1.0%";
+}
+#G625 .Fe::after{
+	content: "Fe ≤ 7.0%";
+}
+#G625 .P::after{
+	content: "P ≤ 0.03%";
+}
+#G625 .S::after{
+	content: "S ≤ 0.02%";
+}
+#G625 .Si::after{
+	content: "Si ≤ 0.75%";
+}
+#G625 .Cu::after{
+	content: "Cu ≤ 0.50%";
+}
+#G625 .Ni::after{
+	content: "Ni ≥ 55.0%";
+}
+#G625 .Al::after{
+	content: "Al ≤ 0.40%";
+}
+#G625 .Ti::after{
+	content: "Ti ≤ 0.40%";
+}
+#G625 .Cr::after{
+	content: "Cr: 20.0% ~ 23.0%";
+}
+#G625 .Nb::after{
+	content: "Nb + Ta: 3.15% ~ 4.15%";
+}
+#G625 .Ta::after{
+	content: "Nb + Ta: 3.15% ~ 4.15%";
+}
+#G625 .Mo::after{
+	content: "Mo: 8.0% ~ 10.0%";
+}
+
+#G686 .C::after{
+	content: "C ≤ 0.02%";
+}
+#G686 .Mn::after{
+	content: "Mn ≤ 1.0%";
+}
+#G686 .Fe::after{
+	content: "Fe ≤ 5.0%";
+}
+#G686 .P::after{
+	content: "P ≤ 0.02%";
+}
+#G686 .S::after{
+	content: "S ≤ 0.02%";
+}
+#G686 .Si::after{
+	content: "Si ≤ 0.25%";
+}
+#G686 .Cu::after{
+	content: "Cu ≤ 0.5%";
+}
+#G686 .Ni::after{
+	content: "Ni: 48.1% ~ 63.0%";
+}
+#G686 .Ti::after{
+	content: "Ti ≤ 0.25%";
+}
+#G686 .Cr::after{
+	content: "Cr: 19.0% ~ 23.0%";
+}
+#G686 .Mo::after{
+	content: "Mo: 15.0% ~ 17.0%";
+}
+#G686 .W::after{
+	content: "W: 3.0% ~ 4.4%";
+}
+
+#G690 .C::after{
+	content: "C ≤ 0.05%";
+}
+#G690 .Mn::after{
+	content: "Mn ≤ 5.0%";
+}
+#G690 .Fe::after{
+	content: "Fe: 7.0% ~ 12.0%";
+}
+#G690 .P::after{
+	content: "P ≤ 0.03%";
+}
+#G690 .S::after{
+	content: "S ≤ 0.015%";
+}
+#G690 .Si::after{
+	content: "Si ≤ 0.75%";
+}
+#G690 .Cu::after{
+	content: "Cu ≤ 0.50%";
+}
+#G690 .Ni::after{
+	content: "Ni: 45.6% ~ 64.0%";
+}
+#G690 .Co::after{
+	content: "Co ≤ 0.12%";
+}
+#G690 .Al::after{
+	content: "Al ≤ 0.50%";
+}
+#G690 .Ti::after{
+	content: "Ti ≤ 0.50%";
+}
+#G690 .Cr::after{
+	content: "Cr: 28.0% ~ 31.5%";
+}
+#G690 .Nb::after{
+	content: "Nb + Ta: 1.0% ~ 2.5%";
+}
+#G690 .Ta::after{
+	content: "Nb + Ta: 1.0% ~ 2.5%";
+}
+#G690 .Mo::after{
+	content: "Mo ≤ 0.5%";
+}
+
+#G693 .C::after{
+	content: "C ≤ 0.15%";
+}
+#G693 .Mn::after{
+	content: "Mn ≤ 1.0%";
+}
+#G693 .Fe::after{
+	content: "Fe: 2.5% ~ 6.0%";
+}
+#G693 .P::after{
+	content: "P ≤ 0.03%";
+}
+#G693 .S::after{
+	content: "S ≤ 0.01%";
+}
+#G693 .Si::after{
+	content: "Si ≤ 0.5%";
+}
+#G693 .Cu::after{
+	content: "Cu ≤ 0.5%";
+}
+#G693 .Ni::after{
+	content: "Ni: 53.3% ~ 64.3%";
+}
+#G693 .Al::after{
+	content: "Al: 2.5% ~ 4.0%";
+}
+#G693 .Ti::after{
+	content: "Ti ≤ 1.0%";
+}
+#G693 .Cr::after{
+	content: "Cr: 27.0% ~ 31.0%";
+}
+#G693 .Nb::after{
+	content: "Nb + Ta: 0.5% ~ 2.5%";
+}
+#G693 .Ta::after{
+	content: "Nb + Ta: 0.5% ~ 2.5%";
+}
+
+#G718 .C::after{
+	content: "C ≤ 0.08%";
+}
+#G718 .Mn::after{
+	content: "Mn ≤ 0.35%";
+}
+#G718 .Fe::after{
+	content: "Fe: 12.1% ~ 23.5%";
+}
+#G718 .P::after{
+	content: "P ≤ 0.015%";
+}
+#G718 .S::after{
+	content: "S ≤ 0.015%";
+}
+#G718 .Si::after{
+	content: "Si ≤ 0.35%";
+}
+#G718 .Cu::after{
+	content: "Cu ≤ 0.30%";
+}
+#G718 .Ni::after{
+	content: "Ni: 50.0% ~ 55.0%";
+}
+#G718 .Al::after{
+	content: "Al: 0.20% ~ 0.80%";
+}
+#G718 .Ti::after{
+	content: "Ti: 0.65% ~ 1.15%";
+}
+#G718 .Cr::after{
+	content: "Cr: 17.0% ~ 21.0%";
+}
+#G718 .Nb::after{
+	content: "Nb + Ta: 4.75% ~ 5.50%";
+}
+#G718 .Ta::after{
+	content: "Nb + Ta: 4.75% ~ 5.50%";
+}
+#G718 .Mo::after{
+	content: "Mo: 2.80% ~ 3.30%";
+}
+
+#G725 .C::after{
+	content: "C ≤ 0.03%";
+}
+#G725 .Mn::after{
+	content: "Mn ≤ 0.35%";
+}
+#G725 .Fe::after{
+	content: "Fe: 2.3% ~ 14.3%";
+}
+#G725 .P::after{
+	content: "P ≤ 0.015%";
+}
+#G725 .S::after{
+	content: "S ≤ 0.01%";
+}
+#G725 .Si::after{
+	content: "Si ≤ 0.20%";
+}
+#G725 .Ni::after{
+	content: "Ni: 55.0% ~ 59.0%";
+}
+#G725 .Al::after{
+	content: "Al ≤ 0.35%";
+}
+#G725 .Ti::after{
+	content: "Ti: 1.0% ~ 1.7%";
+}
+#G725 .Cr::after{
+	content: "Cr: 19.0% ~ 22.5%";
+}
+#G725 .Nb::after{
+	content: "Nb + Ta: 2.75% ~ 4.00%";
+}
+#G725 .Ta::after{
+	content: "Nb + Ta: 2.75% ~ 4.00%";
+}
+#G725 .Mo::after{
+	content: "Mo: 7.0% ~ 9.5%";
+}
+
+#G740H .C::after{
+	content: "C: 0.01% ~ 0.06%";
+}
+#G740H .Mn::after{
+	content: "Mn ≤ 1.0%";
+}
+#G740H .Fe::after{
+	content: "Fe ≤ 3.0%";
+}
+#G740H .P::after{
+	content: "P ≤ 0.03%";
+}
+#G740H .S::after{
+	content: "S ≤ 0.015%";
+}
+#G740H .Si::after{
+	content: "Si ≤ 1.0%";
+}
+#G740H .Cu::after{
+	content: "Cu ≤ 0.50%";
+}
+#G740H .Ni::after{
+	content: "Ni: 37.0% ~ 52.1%";
+}
+#G740H .Co::after{
+	content: "Co: 15.0% ~ 22.9%";
+}
+#G740H .Al::after{
+	content: "Al: 0.5% ~ 2.0%";
+}
+#G740H .Ti::after{
+	content: "Ti: 0.8% ~ 2.5%";
+}
+#G740H .Cr::after{
+	content: "Cr: 23.5% ~ 25.5%";
+}
+#G740H .Nb::after{
+	content: "Nb + Ta: 0.5% ~ 2.5%";
+}
+#G740H .Ta::after{
+	content: "Nb + Ta: 0.5% ~ 2.5%";
+}
+#G740H .Mo::after{
+	content: "Mo ≤ 2.0%";
+}
+
+#G825 .C::after{
+	content: "C ≤ 0.05%";
+}
+#G825 .Mn::after{
+	content: "Mn ≤ 1.0%";
+}
+#G825 .Fe::after{
+	content: "Fe ≥ 22.0%";
+}
+#G825 .P::after{
+	content: "P ≤ 0.03%";
+}
+#G825 .S::after{
+	content: "S ≤ 0.03%";
+}
+#G825 .Si::after{
+	content: "Si ≤ 0.50%";
+}
+#G825 .Cu::after{
+	content: "Cu: 1.5% ~ 3.0%";
+}
+#G825 .Ni::after{
+	content: "Ni: 38.0% ~ 46.0%";
+}
+#G825 .Al::after{
+	content: "Al ≤ 0.20%";
+}
+#G825 .Ti::after{
+	content: "Ti: 0.6% ~ 1.2%";
+}
+#G825 .Cr::after{
+	content: "Cr: 19.5% ~ 23.5%";
+}
+#G825 .Mo::after{
+	content: "Mo: 2.5% ~ 3.5%";
+}
+
+#G945X .C::after{
+	content: "C: 0.005% ~ 0.040%";
+}
+#G945X .Mn::after{
+	content: "Mn ≤ 1.0%";
+}
+#G945X .Fe::after{
+	content: "Fe: 5.8% ~ 26.4%";
+}
+#G945X .P::after{
+	content: "P ≤ 0.03%";
+}
+#G945X .S::after{
+	content: "S ≤ 0.015%";
+}
+#G945X .Si::after{
+	content: "Si ≤ 0.5%";
+}
+#G945X .Cu::after{
+	content: "Cu: 1.5% ~ 3.0%";
+}
+#G945X .Ni::after{
+	content: "Ni: 45.0% ~ 55.0%";
+}
+#G945X .Al::after{
+	content: "Al: 0.01% ~ 0.70%";
+}
+#G945X .Ti::after{
+	content: "Ti: 0.5% ~ 2.5%";
+}
+#G945X .Cr::after{
+	content: "Cr: 19.5% ~ 23.0%";
+}
+#G945X .Nb::after{
+	content: "Nb + Ta: 2.5% ~ 4.5%";
+}
+#G945X .Ta::after{
+	content: "Nb + Ta: 2.5% ~ 4.5%";
+}
+#G945X .Mo::after{
+	content: "Mo: 3.0% ~ 4.0%";
+}
+
+#GB .C::after{
+	content: "C ≤ 0.07%";
+}
+#GB .Mn::after{
+	content: "Mn ≤ 1.0%";
+}
+#GB .Fe::after{
+	content: "Fe: 4.0% ~ 7.0%";
+}
+#GB .P::after{
+	content: "P ≤ 0.04%";
+}
+#GB .S::after{
+	content: "S ≤ 0.03%";
+}
+#GB .Si::after{
+	content: "Si ≤ 1.0%";
+}
+#GB .Cu::after{
+	content: "Cu ≤ 0.50%";
+}
+#GB .Ni::after{
+	content: "Ni: 54.8% ~ 70.0%";
+}
+#GB .Co::after{
+	content: "Co ≤ 2.5%";
+}
+#GB .Cr::after{
+	content: "Cr ≤ 1.0%";
+}
+#GB .Mo::after{
+	content: "Mo: 26.0% ~ 30.0%";
+}
+#GB .V::after{
+	content: "V ≤ 0.6%";
+}
+#GB .W::after{
+	content: "W ≤ 1.0%";
+}
+
+#GB-2 .C::after{
+	content: "C ≤ 0.02%";
+}
+#GB-2 .Mn::after{
+	content: "Mn ≤ 1.75%";
+}
+#GB-2 .Fe::after{
+	content: "Fe ≤ 2.25%";
+}
+#GB-2 .P::after{
+	content: "P ≤ 0.04%";
+}
+#GB-2 .S::after{
+	content: "S ≤ 0.03%";
+}
+#GB-2 .Si::after{
+	content: "Si ≤ 0.2%";
+}
+#GB-2 .Cu::after{
+	content: "Cu ≤ 0.50%";
+}
+#GB-2 .Ni::after{
+	content: "Ni: 61.8% ~ 74.0%";
+}
+#GB-2 .Co::after{
+	content: "Co ≤ 1.0%";
+}
+#GB-2 .Cr::after{
+	content: "Cr ≤ 1.0%";
+}
+#GB-2 .Mo::after{
+	content: "Mo: 26.0% ~ 30.0%";
+}
+#GB-2 .W::after{
+	content: "W ≤ 1.0%";
+}
+
+
+#GB-3 .C::after{
+	content: "C ≤ 0.02%";
+}
+#GB-3 .Mn::after{
+	content: "Mn ≤ 2.0%";
+}
+#GB-3 .Fe::after{
+	content: "Fe: 1.0% ~ 3.0%";
+}
+#GB-3 .P::after{
+	content: "P ≤ 0.04%";
+}
+#GB-3 .S::after{
+	content: "S ≤ 0.03%";
+}
+#GB-3 .Si::after{
+	content: "Si ≤ 0.2%";
+}
+#GB-3 .Cu::after{
+	content: "Cu ≤ 0.50%";
+}
+#GB-3 .Ni::after{
+	content: "Ni: 52.8% ~ 71.0%";
+}
+#GB-3 .Co::after{
+	content: "Co ≤ 3.0%";
+}
+#GB-3 .Cr::after{
+	content: "Cr: 1.0% ~ 3.0%";
+}
+#GB-3 .Mo::after{
+	content: "Mo: 27.0% ~ 32.0%";
+}
+#GB-3 .W::after{
+	content: "W ≤ 3%";
+}
+
+#GC-4 .C::after{
+	content: "C ≤ 0.015%";
+}
+#GC-4 .Mn::after{
+	content: "Mn ≤ 1.5%";
+}
+#GC-4 .Fe::after{
+	content: "Fe ≤ 3.0%";
+}
+#GC-4 .P::after{
+	content: "P ≤ 0.04%";
+}
+#GC-4 .S::after{
+	content: "S ≤ 0.03%";
+}
+#GC-4 .Si::after{
+	content: "Si ≤ 0.2%";
+}
+#GC-4 .Cu::after{
+	content: "Cu ≤ 0.50%";
+}
+#GC-4 .Ni::after{
+	content: "Ni: 56.1% ~ 72.0%";
+}
+#GC-4 .Co::after{
+	content: "Co ≤ 2.0%";
+}
+#GC-4 .Ti::after{
+	content: "Ti ≤ 0.70%";
+}
+#GC-4 .Cr::after{
+	content: "Cr: 14.0% ~ 18.0%";
+}
+#GC-4 .Mo::after{
+	content: "Mo: 14.0% ~ 17.0%";
+}
+#GC-4 .W::after{
+	content: "W ≤ 0.5%";
+}
+
+#GC-22 .C::after{
+	content: "C ≤ 0.02%";
+}
+#GC-22 .Mn::after{
+	content: "Mn ≤ 1.0%";
+}
+#GC-22 .Fe::after{
+	content: "Fe: 2.0% ~ 6.0%";
+}
+#GC-22 .P::after{
+	content: "P ≤ 0.03%";
+}
+#GC-22 .S::after{
+	content: "S ≤ 0.015%";
+}
+#GC-22 .Si::after{
+	content: "Si ≤ 0.2%";
+}
+#GC-22 .Cu::after{
+	content: "Cu ≤ 0.50%";
+}
+#GC-22 .Ni::after{
+	content: "Ni: 48.5% ~ 63.0%";
+}
+#GC-22 .Co::after{
+	content: "Co ≤ 2.5%";
+}
+#GC-22 .Cr::after{
+	content: "Cr: 20.0% ~ 22.5%";
+}
+#GC-22 .Mo::after{
+	content: "Mo: 12.5% ~ 14.5%";
+}
+#GC-22 .V::after{
+	content: "V ≤ 0.35%";
+}
+#GC-22 .W::after{
+	content: "W: 2.5% ~ 3.5%";
+}
+
+#GC-276 .C::after{
+	content: "C ≤ 0.02%";
+}
+#GC-276 .Mn::after{
+	content: "Mn ≤ 1.0%";
+}
+#GC-276 .Fe::after{
+	content: "Fe: 4.0% ~ 7.0%";
+}
+#GC-276 .P::after{
+	content: "P ≤ 0.04%";
+}
+#GC-276 .S::after{
+	content: "S ≤ 0.03%";
+}
+#GC-276 .Si::after{
+	content: "Si ≤ 0.2%";
+}
+#GC-276 .Cu::after{
+	content: "Cu ≤ 0.50%";
+}
+#GC-276 .Ni::after{
+	content: "Ni: 49.9% ~ 63.5%";
+}
+#GC-276 .Co::after{
+	content: "Co ≤ 2.5%";
+}
+#GC-276 .Cr::after{
+	content: "Cr: 14.5% ~ 16.5%";
+}
+#GC-276 .Mo::after{
+	content: "Mo: 15.0% ~ 17.0%";
+}
+#GC-276 .V::after{
+	content: "V ≤ 0.35%";
+}
+#GC-276 .W::after{
+	content: "W: 3.0% ~ 4.5%";
+}
+
+#GC-2000 .C::after{
+	content: "C ≤ 0.020%";
+}
+#GC-2000 .Mn::after{
+	content: "Mn ≤ 0.5%";
+}
+#GC-2000 .Fe::after{
+	content: "Fe ≤ 3.0%";
+}
+#GC-2000 .P::after{
+	content: "P ≤ 0.030%";
+}
+#GC-2000 .S::after{
+	content: "S ≤ 0.015%";
+}
+#GC-2000 .Si::after{
+	content: "Si ≤ 0.2%";
+}
+#GC-2000 .Cu::after{
+	content: "Cu: 1.3% ~ 1.9%";
+}
+#GC-2000 .Ni::after{
+	content: "Ni: 50.9% ~ 61.7%";
+}
+#GC-2000 .Co::after{
+	content: "Co ≤ 2.0%";
+}
+#GC-2000 .Cr::after{
+	content: "Cr: 22.0% ~ 24.0%";
+}
+#GC-2000 .Mo::after{
+	content: "Mo: 15.0% ~ 17.0%";
+}
+
+#GG-3 .C::after{
+	content: "C ≤ 0.02%";
+}
+#GG-3 .Mn::after{
+	content: "Mn ≤ 1.0%";
+}
+#GG-3 .Fe::after{
+	content: "Fe: 18.0% ~ 21.0%";
+}
+#GG-3 .P::after{
+	content: "P ≤ 0.04%";
+}
+#GG-3 .S::after{
+	content: "S ≤ 0.03%";
+}
+#GG-3 .Si::after{
+	content: "Si ≤ 1.0%";
+}
+#GG-3 .Cu::after{
+	content: "Cu: 1.5% ~ 2.5%";
+}
+#GG-3 .Ni::after{
+	content: "Ni: 35.5% ~ 53.5%";
+}
+#GG-3 .Co::after{
+	content: "Co ≤ 5.0%";
+}
+#GG-3 .Cr::after{
+	content: "Cr: 21.0% ~ 23.5%";
+}
+#GG-3 .Nb::after{
+	content: "Nb + Ta ≤ 0.50%";
+}
+#GG-3 .Ta::after{
+	content: "Nb + Ta ≤ 0.50%";
+}
+#GG-3 .Mo::after{
+	content: "Mo: 6.0% ~ 8.0%";
+}
+#GG-3 .W::after{
+	content: "W ≤ 1.5%";
+}
+
+#GG-30 .C::after{
+	content: "C ≤ 0.03%";
+}
+#GG-30 .Mn::after{
+	content: "Mn ≤ 1.5%";
+}
+#GG-30 .Fe::after{
+	content: "Fe: 13.0% ~ 17.0%";
+}
+#GG-30 .P::after{
+	content: "P ≤ 0.04%";
+}
+#GG-30 .S::after{
+	content: "S ≤ 0.02%";
+}
+#GG-30 .Si::after{
+	content: "Si ≤ 1.0%";
+}
+#GG-30 .Cu::after{
+	content: "Cu: 1.0% ~ 2.4%";
+}
+#GG-30 .Ni::after{
+	content: "Ni: 29.6% ~ 52.2%";
+}
+#GG-30 .Co::after{
+	content: "Co ≤ 5.0%";
+}
+#GG-30 .Cr::after{
+	content: "Cr: 28.0% ~ 31.5%";
+}
+#GG-30 .Nb::after{
+	content: "Nb + Ta: 0.3% ~ 1.5%";
+}
+#GG-30 .Ta::after{
+	content: "Nb + Ta: 0.3% ~ 1.5%";
+}
+#GG-30 .Mo::after{
+	content: "Mo: 4.0% ~ 6.0%";
+}
+#GG-30 .W::after{
+	content: "W: 1.5% ~ 4.0%";
+}
+
+#GG-35 .C::after{
+	content: "C ≤ 0.05%";
+}
+#GG-35 .Mn::after{
+	content: "Mn ≤ 0.50%";
+}
+#GG-35 .Fe::after{
+	content: "Fe ≤ 2.00%";
+}
+#GG-35 .P::after{
+	content: "P ≤ 0.030%";
+}
+#GG-35 .S::after{
+	content: "S ≤ 0.015%";
+}
+#GG-35 .Si::after{
+	content: "Si ≤ 0.60%";
+}
+#GG-35 .Cu::after{
+	content: "Cu ≤ 0.30%";
+}
+#GG-35 .Ni::after{
+	content: "Ni: 50.4% ~ 60.1%";
+}
+#GG-35 .Co::after{
+	content: "Co ≤ 1.00%";
+}
+#GG-35 .Al::after{
+	content: "Al ≤ 0.40%";
+}
+#GG-35 .Ti::after{
+	content: "Ti ≤ 0.2%";
+}
+#GG-35 .Cr::after{
+	content: "Cr: 32.25% ~ 34.25%";
+}
+#GG-35 .Nb::after{
+	content: "Nb + Ta ≤ 0.50%";
+}
+#GG-35 .Ta::after{
+	content: "Nb + Ta ≤ 0.50%";
+}
+#GG-35 .Mo::after{
+	content: "Mo: 7.60% ~ 9.00%";
+}
+#GG-35 .V::after{
+	content: "V ≤ 0.20%";
+}
+#GG-35 .W::after{
+	content: "W ≤ 0.60%";
+}
+
+
+#GW .C::after{
+	content: "C ≤ 0.12%";
+}
+#GW .Mn::after{
+	content: "Mn ≤ 1.0%";
+}
+#GW .Fe::after{
+	content: "Fe: 4.0% ~ 7.0%";
+}
+#GW .P::after{
+	content: "P ≤ 0.04%";
+}
+#GW .S::after{
+	content: "S ≤ 0.03%";
+}
+#GW .Si::after{
+	content: "Si ≤ 1.0%";
+}
+#GW .Cu::after{
+	content: "Cu ≤ 0.50%";
+}
+#GW .Ni::after{
+	content: "Ni: 54.2% ~ 62.2%";
+}
+#GW .Co::after{
+	content: "Co ≤ 2.5%";
+}
+#GW .Cr::after{
+	content: "Cr: 4.0% ~ 6.0%";
+}
+#GW .Mo::after{
+	content: "Mo: 23.0% ~ 26.0%";
+}
+#GW .V::after{
+	content: "V ≤ 0.60%";
+}
+#GW .W::after{
+	content: "W ≤ 1.0%";
+}
+
+#GX .C::after{
+	content: "C: 0.05% ~ 0.15%";
+}
+#GX .Mn::after{
+	content: "Mn ≤ 1.0%";
+}
+#GX .Fe::after{
+	content: "Fe: 17.0% ~ 20.0%";
+}
+#GX .P::after{
+	content: "P ≤ 0.04%";
+}
+#GX .S::after{
+	content: "S ≤ 0.03%";
+}
+#GX .Si::after{
+	content: "Si ≤ 1.0%";
+}
+#GX .Cu::after{
+	content: "Cu ≤ 0.50%";
+}
+#GX .Ni::after{
+	content: "Ni: 40.8% ~ 53.7%";
+}
+#GX .Co::after{
+	content: "Co: 0.50% ~ 2.50%";
+}
+#GX .Cr::after{
+	content: "Cr: 20.5% ~ 23.0%";
+}
+#GX .Mo::after{
+	content: "Mo: 8.0% ~ 10.0%";
+}
+#GX .W::after{
+	content: "W: 0.2% ~ 1.0%";
+}
+
+
+
+
+#G400::after{
+	animation: G400 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G400{
+	0% {content: "ENiCu-7";}
+	50% {content: "N04060";}
+	100% {content: "ENiCu-7";}
+}
+#GK-500::after{
+	animation: GK-500 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes GK-500{
+	0% {content: "ENiCu-8";}
+	50% {content: "N05500";}
+	100% {content: "ENiCu-8";}
+}
+#G600::after{
+	animation: G600 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G600{
+	0% {content: "ENiCrFe-3";}
+	50% {content: "N06082";}
+	100% {content: "ENiCrFe-3";}
+}
+#G601::after{
+	animation: G601 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G601{
+	0% {content: "ENiCrFe-11";}
+	50% {content: "N06601";}
+	100% {content: "ENiCrFe-11";}
+}
+#G602CA::after{
+	animation: G602CA 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G602CA{
+	0% {content: "ENiCrFe-12";}
+	50% {content: "N06025";}
+	100% {content: "ENiCrFe-12";}
+}
+#G617::after{
+	animation: G617 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G617{
+	0% {content: "ENiCrCoMo-1";}
+	50% {content: "N06617";}
+	100% {content: "ENiCrCoMo-1";}
+}
+#G625::after{
+	animation: G625 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G625{
+	0% {content: "ENiCrMo-3";}
+	50% {content: "N06625";}
+	100% {content: "ENiCrMo-3";}
+}
+#G686::after{
+	animation: G686 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G686{
+	0% {content: "ENiCrMo-14";}
+	50% {content: "N06686";}
+	100% {content: "ENiCrMo-14";}
+}
+#G690::after{
+	animation: G690 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G690{
+	0% {content: "ENiCrFe-7";}
+	50% {content: "N06052";}
+	100% {content: "ENiCrFe-7";}
+}
+#G693::after{
+	animation: G693 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G693{
+	0% {content: "ENiCrFeAl-1";}
+	50% {content: "N06693";}
+	100% {content: "ENiCrFeAl-1";}
+}
+#G718::after{
+	animation: G718 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G718{
+	0% {content: "ENiFeCr-2";}
+	50% {content: "N07718";}
+	100% {content: "ENiFeCr-2";}
+}
+#G725::after{
+	animation: G725 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G725{
+	0% {content: "ENiCrMo-15";}
+	50% {content: "N07725";}
+	100% {content: "ENiCrMo-15";}
+}
+#G740H::after{
+	animation: G740H 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G740H{
+	0% {content: "ENiCrCo-1";}
+	50% {content: "N07740";}
+	100% {content: "ENiCrCo-1";}
+}
+#G825::after{
+	animation: G825 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G825{
+	0% {content: "ENiFeCr-1";}
+	50% {content: "N08825";}
+	100% {content: "ENiFeCr-1";}
+}
+#G945X::after{
+	animation: G945X 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G945X{
+	0% {content: "ENiFeCr-3";}
+	50% {content: "N09946";}
+	100% {content: "ENiFeCr-3";}
+}
+#GB::after{
+	animation: GB 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes GB{
+	0% {content: "ENiMo-1";}
+	50% {content: "N10001";}
+	100% {content: "ENiMo-1";}
+}
+#GB-2::after{
+	animation: GB-2 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes GB-2{
+	0% {content: "ENiMo-7";}
+	50% {content: "N10665";}
+	100% {content: "ENiMo-7";}
+}
+#GB-3::after{
+	animation: GB-3 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes GB-3{
+	0% {content: "ENiMo-10";}
+	50% {content: "N10675";}
+	100% {content: "ENiMo-10";}
+}
+#GC-4::after{
+	animation: GC-4 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes GC-4{
+	0% {content: "ENiCrMo-7";}
+	50% {content: "N06455";}
+	100% {content: "ENiCrMo-7";}
+}
+#GC-22::after{
+	animation: GC-22 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes GC-22{
+	0% {content: "ENiCrMo-10";}
+	50% {content: "N06022";}
+	100% {content: "ENiCrMo-10";}
+}
+#GC-276::after{
+	animation: GC-276 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes GC-276{
+	0% {content: "ENiCrMo-4";}
+	50% {content: "N10276";}
+	100% {content: "ENiCrMo-4";}
+}
+#GC-2000::after{
+	animation: GC-2000 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes GC-2000{
+	0% {content: "ENiCrMo-17";}
+	50% {content: "N06200";}
+	100% {content: "ENiCrMo-17";}
+}
+#GG-3::after{
+	animation: GG-3 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes GG-3{
+	0% {content: "ENiCrMo-9";}
+	50% {content: "N06985";}
+	100% {content: "ENiCrMo-9";}
+}
+#GG-30::after{
+	animation: GG-30 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes GG-30{
+	0% {content: "ENiCrMo-11";}
+	50% {content: "N06030";}
+	100% {content: "ENiCrMo-11";}
+}
+#GG-35::after{
+	animation: GG-35 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes GG-35{
+	0% {content: "ENiCrMo-22";}
+	50% {content: "N06035";}
+	100% {content: "ENiCrMo-22";}
+}
+#GW::after{
+	animation: GW 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes GW{
+	0% {content: "ENiMo-3";}
+	50% {content: "N10004";}
+	100% {content: "ENiMo-3";}
+}
+#GX::after{
+	animation: GX 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes GX{
+	0% {content: "ENiCrMo-2";}
+	50% {content: "N06002";}
+	100% {content: "ENiCrMo-2";}
+}

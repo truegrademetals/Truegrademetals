@@ -1,0 +1,1038 @@
+.C{
+	background-color: #333333;
+}
+.Si{
+	background-color: #e83719;
+}
+.Mn{
+	background-color: #7E4E60;
+}
+.P{
+	background-color: #17BEBB;
+}
+.S{
+	background-color: #FFD151;
+}
+.B{
+	background-color: #3A405A;
+}
+.Ni{
+	background-color: #32558e;
+}
+.Cr{
+	background-color: #FBA971;
+}
+.Mo{
+	background-color: #B7C8B5;
+}
+.Al{
+	background-color: #C4AF9A;
+}
+.Ti{
+	background-color: #F6D8AE;
+}
+.Cu{
+	background-color: #D5AD71;
+}
+.Co{
+	background-color: #7FB285;
+}
+.Nb{
+	background-color: #B9314F;
+}
+.Ta{
+	background-color: #566E3D;
+}
+.Ce{
+	background-color: #A1D2CE;
+}
+.V{
+	background-color: #9268B3;
+}
+.W{
+	background-color: #544343;
+}
+.N{
+	background-color: #3B8EA5;
+}
+.Zr{
+	background-color: #EEE5E9;
+}
+.RE{
+	background-color: #f6f6f6;
+}
+.Y2O3{
+	background-color: #AD6A6C;
+}
+.Y{
+	background-color: #AE6B6D;
+}
+.La{
+	background-color: #EEB1D5;
+}
+.Pb{
+	background-color: #777;
+}
+.Mg{
+	background-color: #ADD9F4;
+}
+.Ag{
+	background-color: #c0c0c0;
+}
+.Bi{
+	background-color: #3A2449;
+}
+.Fe{
+	background-color: #aaa;
+}
+.Au{
+	background-color: #E69D13;
+}
+
+
+
+.C, .Si, .Mn, .P, .S, .Ni, .Cr, .Mo, .Ti, .Nb, .Ce, .Cu, .W, .Ta, .Al, .N, .Fe, .Co, .B, .V, .Zr, .RE, .Y2O3, .La, .Pb, .Mg, .Ag, .Bi, .Au{
+	cursor: pointer;
+	opacity: 1;
+	transition: all 0.3s;
+}
+
+.C:hover::after, .Si:hover::after, .Mn:hover::after, .P:hover::after, .S:hover::after, .Ni:hover::after, .Cr:hover::after, .Mo:hover::after, .Ti:hover::after, .Nb:hover::after, .Ce:hover::after, .Cu:hover::after, .W:hover::after, .Ta:hover::after, .Al:hover::after, .N:hover::after, .Fe:hover::after, .Co:hover::after, .B:hover::after, .V:hover::after, .Zr:hover::after, .RE:hover::after, .Y2O3:hover::after, .La:hover::after, .Pb:hover::after, .Mg:hover::after, .Other:hover::after{
+	opacity: 1;
+}
+
+
+
+.C:hover, .Si:hover, .Mn:hover, .P:hover, .S:hover, .Ni:hover, .Cr:hover, .Mo:hover, .Ti:hover, .Nb:hover, .Ce:hover, .Cu:hover, .W:hover, .Ta:hover, .Al:hover, .N:hover, .Fe:hover, .Co:hover, .B:hover, .V:hover, .Zr:hover, .RE:hover, .Y2O3:hover, .La:hover, .Pb:hover, .Mg:hover, .Other:hover{
+	opacity: 1;
+}
+
+
+
+@media screen and (min-width: 600px) {
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+.C::after, .Si::after, .Mn::after, .P::after, .S::after, .Ni::after, .Cr::after, .Mo::after, .Ti::after, .Nb::after, .Ce::after, .Cu::after, .W::after, .Ta::after, .Al::after, .N::after, .Fe::after, .Co::after, .B::after, .V::after, .Zr::after, .RE::after, .Y2O3::after, .La::after, .Pb::after, .Mg::after, .Other::after, .Ag::after, .Bi::after{
+	content: "";
+	position: absolute;
+	top: -3.8vw;
+	font-size: 2.8vw;
+	text-align: center;
+	width: 60vw;
+	left: 0;
+	opacity: 0;
+	transition: all 0.3s;
+	color: #333333;
+}
+}
+
+
+
+#G400::after{
+	animation: G400 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G400{
+	0% {content: "N04400";}
+	50% {content: "2.4360";}
+	100% {content: "N04400";}
+}
+#G401::after{
+	animation: G401 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G401{
+	0% {content: "N04401";}
+	50% {content: "N04401";}
+	100% {content: "N04401";}
+}
+#G404::after{
+	animation: G404 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G404{
+	0% {content: "N04404";}
+	50% {content: "2.4867";}
+	100% {content: "N04404";}
+}
+#GK-500::after{
+	animation: GK-500 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GK-500{
+	0% {content: "N05500";}
+	50% {content: "2.4375";}
+	100% {content: "N05500";}
+}
+#G600::after{
+	animation: G600 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G600{
+	0% {content: "N06600";}
+	50% {content: "2.4816";}
+	100% {content: "N06600";}
+}
+#G601::after{
+	animation: G601 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G601{
+	0% {content: "N06601";}
+	50% {content: "2.4851";}
+	100% {content: "N06601";}
+}
+#G625::after{
+	animation: G625 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G625{
+	0% {content: "N06625";}
+	50% {content: "2.4856";}
+	100% {content: "N06625";}
+}
+#G718::after{
+	animation: G718 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G718{
+	0% {content: "N07718";}
+	50% {content: "2.4668";}
+	100% {content: "N07718";}
+}
+#G800::after{
+	animation: G800 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G800{
+	0% {content: "N08800";}
+	50% {content: "1.4876";}
+	100% {content: "N08800";}
+}
+#G800H::after{
+	animation: G800H 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G800H{
+	0% {content: "N08810";}
+	50% {content: "1.4958";}
+	100% {content: "N08810";}
+}
+#G825::after{
+	animation: G825 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G825{
+	0% {content: "N08825";}
+	50% {content: "2.4858";}
+	100% {content: "N08825";}
+}
+#GA-286::after{
+	animation: GA-286 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GA-286{
+	0% {content: "S66286";}
+	50% {content: "1.4980";}
+	100% {content: "S66286";}
+}
+#GB::after{
+	animation: GB 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GB{
+	0% {content: "N10001";}
+	50% {content: "N10001";}
+	100% {content: "N10001";}
+}
+#GB-2::after{
+	animation: GB-2 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GB-2{
+	0% {content: "N10665";}
+	50% {content: "2.4617";}
+	100% {content: "N10665";}
+}
+#GC-276::after{
+	animation: GC-276 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GC-276{
+	0% {content: "N10276";}
+	50% {content: "2.4819";}
+	100% {content: "N10276";}
+}
+#GC-22::after{
+	animation: GC-22 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GC-22{
+	0% {content: "N06022";}
+	50% {content: "2.4602";}
+	100% {content: "N06022";}
+}
+#GR-405::after{
+	animation: GR-405 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GR-405{
+	0% {content: "N04405";}
+	50% {content: "N04405";}
+	100% {content: "N04405";}
+}
+#G502::after{
+	animation: G502 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G502{
+	0% {content: "N05502";}
+	50% {content: "N05502";}
+	100% {content: "N05502";}
+}
+#G502::after{
+	animation: G502 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G502{
+	0% {content: "N05502";}
+	50% {content: "N05502";}
+	100% {content: "N05502";}
+}
+#G617::after{
+	animation: G617 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G617{
+	0% {content: "N06617";}
+	50% {content: "2.4663a";}
+	100% {content: "N06617";}
+}
+#G625LCF::after{
+	animation: G625LCF 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G625LCF{
+	0% {content: "N06626";}
+	50% {content: "2.4856";}
+	100% {content: "N06626";}
+}
+#G686::after{
+	animation: G686 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G686{
+	0% {content: "N06686";}
+	50% {content: "2.4606";}
+	100% {content: "N06686";}
+}
+#G690::after{
+	animation: G690 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G690{
+	0% {content: "N06690";}
+	50% {content: "2.4642";}
+	100% {content: "N06690";}
+}
+#G693::after{
+	animation: G693 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G693{
+	0% {content: "N06693";}
+	50% {content: "N06693";}
+	100% {content: "N06693";}
+}
+#G706::after{
+	animation: G706 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G706{
+	0% {content: "N09706";}
+	50% {content: "N09706";}
+	100% {content: "N09706";}
+}
+#G718SPF::after{
+	animation: G718SPF 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G718SPF{
+	0% {content: "N07719";}
+	50% {content: "N07719";}
+	100% {content: "N07719";}
+}
+#G725::after{
+	animation: G725 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G725{
+	0% {content: "N07725";}
+	50% {content: "N07725";}
+	100% {content: "N07725";}
+}
+#G740H::after{
+	animation: G740H 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G740H{
+	0% {content: "N07740";}
+	50% {content: "N07740";}
+	100% {content: "N07740";}
+}
+#GX-750::after{
+	animation: GX-750 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GX-750{
+	0% {content: "N07750";}
+	50% {content: "2.4669";}
+	100% {content: "N07750";}
+}
+#G751::after{
+	animation: G751 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G751{
+	0% {content: "N07751";}
+	50% {content: "N07751";}
+	100% {content: "N07751";}
+}
+#G783::after{
+	animation: G783 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G783{
+	0% {content: "R30783";}
+	50% {content: "R30783";}
+	100% {content: "R30783";}
+}
+#GMA754::after{
+	animation: GMA754 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GMA754{
+	0% {content: "N07754";}
+	50% {content: "N07754";}
+	100% {content: "N07754";}
+}
+#GMA758::after{
+	animation: GMA758 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GMA758{
+	0% {content: "/";}
+	50% {content: "/";}
+	100% {content: "/";}
+}
+#G601GC::after{
+	animation: G601GC 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G601GC{
+	0% {content: "/";}
+	50% {content: "/";}
+	100% {content: "/";}
+}
+#G602CA::after{
+	animation: G602CA 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes G602CA{
+	0% {content: "N06025";}
+	50% {content: "2.4633";}
+	100% {content: "N06025";}
+}
+#G603XL::after{
+	animation: G603XL 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G603XL{
+	0% {content: "/";}
+	50% {content: "/";}
+	100% {content: "/";}
+}
+#G800HT::after{
+	animation: G800HT 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G800HT{
+	0% {content: "N08811";}
+	50% {content: "N08811";}
+	100% {content: "N08811";}
+}
+#G803::after{
+	animation: G803 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G803{
+	0% {content: "S35045";}
+	50% {content: "S35045";}
+	100% {content: "S35045";}
+}
+#G832::after{
+	animation: G832 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G832{
+	0% {content: "/";}
+	50% {content: "/";}
+	100% {content: "/";}
+}
+#G864::after{
+	animation: G864 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G864{
+	0% {content: "S35135";}
+	50% {content: "S35135";}
+	100% {content: "S35135";}
+}
+#G890::after{
+	animation: G890 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G890{
+	0% {content: "N08890";}
+	50% {content: "N08890";}
+	100% {content: "N08890";}
+}
+#G903::after{
+	animation: G903 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G903{
+	0% {content: "N19903";}
+	50% {content: "N19903";}
+	100% {content: "N19903";}
+}
+#G907::after{
+	animation: G907 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G907{
+	0% {content: "N19907";}
+	50% {content: "N19907";}
+	100% {content: "N19907";}
+}
+#G908::after{
+	animation: G908 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G908{
+	0% {content: "N09908";}
+	50% {content: "N09908";}
+	100% {content: "N09908";}
+}
+#G909::after{
+	animation: G909 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G909{
+	0% {content: "N19909";}
+	50% {content: "N19909";}
+	100% {content: "N19909";}
+}
+#G925::after{
+	animation: G925 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G925{
+	0% {content: "N09925";}
+	50% {content: "N09925";}
+	100% {content: "N09925";}
+}
+#G926::after{
+	animation: G926 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G926{
+	0% {content: "N08926";}
+	50% {content: "1.4529";}
+	100% {content: "N08926";}
+}
+#G945::after{
+	animation: G945 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G945{
+	0% {content: "N09945";}
+	50% {content: "N09945";}
+	100% {content: "N09945";}
+}
+#GMA956::after{
+	animation: GMA956 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GMA956{
+	0% {content: "S67956";}
+	50% {content: "S67956";}
+	100% {content: "S67956";}
+}
+#G020::after{
+	animation: G020 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G020{
+	0% {content: "N08020";}
+	50% {content: "2.4660";}
+	100% {content: "N08020";}
+}
+#G028::after{
+	animation: G028 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G028{
+	0% {content: "N08028";}
+	50% {content: "1.4563";}
+	100% {content: "N08028";}
+}
+#GDS::after{
+	animation: GDS 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GDS{
+	0% {content: "1.4862";}
+	50% {content: "1.4862";}
+	100% {content: "1.4862";}
+}
+#G25-6HN::after{
+	animation: G25-6HN 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G25-6HN{
+	0% {content: "N08367";}
+	50% {content: "N08367";}
+	100% {content: "N08367";}
+}
+#G330::after{
+	animation: G330 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G330{
+	0% {content: "N08330";}
+	50% {content: "1.4886";}
+	100% {content: "N08330";}
+}
+#G27-7MO::after{
+	animation: G27-7MO 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G27-7MO{
+	0% {content: "S31277";}
+	50% {content: "S31277";}
+	100% {content: "S31277";}
+}
+#G945X::after{
+	animation: G945X 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G945X{
+	0% {content: "N09946";}
+	50% {content: "N09946";}
+	100% {content: "N09946";}
+}
+#GB-3::after{
+	animation: GB-3 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GB-3{
+	0% {content: "N10675";}
+	50% {content: "2.4600";}
+	100% {content: "N10675";}
+}
+#GC::after{
+	animation: GC 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GC{
+	0% {content: "/";}
+	50% {content: "/";}
+	100% {content: "/";}
+}
+#GC-4::after{
+	animation: GC-4 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GC-4{
+	0% {content: "N06455";}
+	50% {content: "2.4610";}
+	100% {content: "N06455";}
+}
+#GC-22HS::after{
+	animation: C-22HS 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes C-22HS{
+	0% {content: "N07022";}
+	50% {content: "N07022";}
+	100% {content: "N07022";}
+}
+#GC-2000::after{
+	animation: GC-2000 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GC-2000{
+	0% {content: "N06200";}
+	50% {content: "2.4675";}
+	100% {content: "N06200";}
+}
+#GG-3::after{
+	animation: GG-3 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GG-3{
+	0% {content: "N06985";}
+	50% {content: "N06985";}
+	100% {content: "N06985";}
+}
+#GG-30::after{
+	animation: GG-30 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GG-30{
+	0% {content: "N06030";}
+	50% {content: "2.4603";}
+	100% {content: "N06030";}
+}
+#GG-35::after{
+	animation: GG-35 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GG-35{
+	0% {content: "N06035";}
+	50% {content: "N06035";}
+	100% {content: "N06035";}
+}
+#GN::after{
+	animation: GN 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GN{
+	0% {content: "N10003";}
+	50% {content: "N10003";}
+	100% {content: "N10003";}
+}
+#GS::after{
+	animation: GS 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GS{
+	0% {content: "N06635";}
+	50% {content: "N06635";}
+	100% {content: "N06635";}
+}
+#GW::after{
+	animation: GW 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GW{
+	0% {content: "N10004";}
+	50% {content: "N10004";}
+	100% {content: "N10004";}
+}
+#GX::after{
+	animation: GX 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GX{
+	0% {content: "N06002";}
+	50% {content: "2.4665";}
+	100% {content: "N06002";}
+}
+#G75::after{
+	animation: G75 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G75{
+	0% {content: "N06075";}
+	50% {content: "2.4951";}
+	100% {content: "N06075";}
+}
+#G80A::after{
+	animation: G80A 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G80A{
+	0% {content: "N07080";}
+	50% {content: "2.4952";}
+	100% {content: "N07080";}
+}
+#G81::after{
+	animation: G81 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G81{
+	0% {content: "/";}
+	50% {content: "/";}
+	100% {content: "/";}
+}
+#G86::after{
+	animation: G86 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G86{
+	0% {content: "/";}
+	50% {content: "/";}
+	100% {content: "/";}
+}
+#G90::after{
+	animation: G90 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G90{
+	0% {content: "N07090";}
+	50% {content: "2.4632";}
+	100% {content: "N07090";}
+}
+#G105::after{
+	animation: G105 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G105{
+	0% {content: "2.4634";}
+	50% {content: "2.4634";}
+	100% {content: "2.4634";}
+}
+#G50::after{
+	animation: G50 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G50{
+	0% {content: "S20910";}
+	50% {content: "XM-19";}
+	100% {content: "S20910";}
+}
+#G60::after{
+	animation: G60 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G60{
+	0% {content: "S21800";}
+	50% {content: "S21800";}
+	100% {content: "S21800";}
+}
+#G4J36::after{
+	animation: G4J36 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G4J36{
+	0% {content: "Invar 36";}
+	50% {content: "Invar 36";}
+	100% {content: "Invar 36";}
+}
+#G200::after{
+	animation: G200 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G200{
+	0% {content: "N02200";}
+	50% {content: "2.4060";}
+	100% {content: "N02200";}
+}
+#G201::after{
+	animation: G201 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G201{
+	0% {content: "N02201";}
+	50% {content: "2.4061";}
+	100% {content: "N02201";}
+}
+#G270::after{
+	animation: G270 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G270{
+	0% {content: "N02270";}
+	50% {content: "2.4050";}
+	100% {content: "N02270";}
+}
+#G115::after{
+	animation: G115 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G115{
+	0% {content: "2.4636";}
+	50% {content: "2.4636";}
+	100% {content: "2.4636";}
+}
+#G263::after{
+	animation: G263 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G263{
+	0% {content: "N07263";}
+	50% {content: "2.4650";}
+	100% {content: "N07263";}
+}
+#G901::after{
+	animation: G901 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes G901{
+	0% {content: "N09901";}
+	50% {content: "2.4662";}
+	100% {content: "N09901";}
+}
+#GPE11::after{
+	animation: GPE11 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GPE11{
+	0% {content: "/";}
+	50% {content: "/";}
+	100% {content: "/";}
+}
+#GPE16::after{
+	animation: GPE16 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GPE16{
+	0% {content: "/";}
+	50% {content: "/";}
+	100% {content: "/";}
+}
+#GPK33::after{
+	animation: GPK33 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes GPK33{
+	0% {content: "/";}
+	50% {content: "/";}
+	100% {content: "/";}
+}
+
+
+#G1::after{
+	content: "R30001";
+}
+#G3::after{
+	content: "/";
+}
+#G4::after{
+	content: "R30004";
+}
+#G6::after{
+	content: "R30006";
+}
+#G6B::after{
+	content: "R30016";
+}
+#G6K::after{
+	content: "/";
+}
+#G12::after{
+	content: "R30012";
+}
+#G19::after{
+	content: "/";
+}
+#G20::after{
+	content: "/";
+}
+#G21::after{
+	content: "R30021";
+}
+#G31::after{
+	content: "R30031";
+}
+#G107::after{
+	content: "/";
+}
+#G190::after{
+	content: "R30014";
+}
+#G694::after{
+	content: "/";
+}
