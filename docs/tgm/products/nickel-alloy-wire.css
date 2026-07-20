@@ -1,0 +1,80 @@
+#background-thing{
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	opacity: 0;
+	animation: opacity 3s forwards;
+}
+.background-logo{
+	width: 50vmin;
+	height: 1vmin;
+	border-radius: 5vmin;
+	opacity: 0.1;
+	position: absolute;
+	transform: translate(100vw, 0);
+	background-color: #aaaaaa;
+}
+.background-logo:nth-child(1){
+	left: 2vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -0s;
+}
+.background-logo:nth-child(2){
+	right: calc(50vw - 20vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -8s;
+}
+.background-logo:nth-child(3){
+	left: 8vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -16s;
+}
+.background-logo:nth-child(4){
+	right: 5vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -24s;
+}
+.background-logo:nth-child(5){
+	left: calc(50vw - 20vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -32s;
+}
+.background-logo:nth-child(6){
+	right: 2vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -40s;
+}
+.background-logo:nth-child(7){
+	right: 8vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -48s;
+}
+.background-logo:nth-child(8){
+	left: calc(50vw - 20vmin);
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -56s;
+}
+.background-logo:nth-child(9){
+	right: 20vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -64s;
+}
+.background-logo:nth-child(10){
+	left: 5vmin;
+	animation: backgroundthing 80s linear infinite;
+	animation-delay: -72s;
+}
+@keyframes backgroundthing{
+	0%{transform: translate(0, 100vh);}
+	100%{transform: translate(0, -50vh);}
+}
+@keyframes opacity{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+#specifications-features-2{
+    background-image: url("../image/products/wire/model.jpg");
+}
