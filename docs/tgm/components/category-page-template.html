@@ -1,0 +1,473 @@
+<!--
+  TrueGrade Metals — Enterprise Category Page Template
+  ============================================================
+  A master template for product category pages (pipes, fittings,
+  bars, sheets, wires, etc.).
+
+  Usage:
+    1. Copy this file to tgm/{{category-slug}}.html
+    2. Replace all {{PLACEHOLDERS}} with category-specific content.
+    3. Keep the existing HTML structure and IDs so the shared
+       category-enterprise.css and category-enterprise.js continue to work.
+    4. Update internal links and image paths.
+
+  Real reference implementation:
+    tgm/nickel-alloy-pipes.html
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M2WGSR9');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8"/>
+<title>{{Category Title}} Supplier &amp; Manufacturer -- TrueGrade Metals</title>
+<meta content="{{keywords}}" name="keywords"/>
+<meta content="TrueGrade Metals" name="author"/>
+<meta content="{{Meta description: TrueGrade Metals supplies full range of ...}}" name="description"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no" name="viewport"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="{{Category Title}} Supplier &amp; Manufacturer -- TrueGrade Metals" property="og:title"/>
+<meta content="Products" property="og:type"/>
+<meta content="https://www.truegrademetals.com/tgm/{{category-slug}}.html" property="og:url"/>
+<meta content="https://www.truegrademetals.com/tgm/image/products/{{product-folder}}/main-photo-1.jpg" property="og:image"/>
+<meta content="truegrademetals.com" property="og:site_name"/>
+<meta content="{{Meta description}}" property="og:description"/>
+<link href="favicon.ico" rel="shortcut icon"/>
+<link href="favicon.ico" rel="Bookmark"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="/tgm/components/tgm-tokens.css" rel="stylesheet"/>
+<link href="category-enterprise.css" rel="stylesheet"/>
+<link href="/tgm/components/tgm-tables-graphs.css" rel="stylesheet"/>
+<link href="chemical-all.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.truegrademetals.com/",
+      "name": "TrueGrade Metals",
+      "url": "https://www.truegrademetals.com/",
+      "brand": {"@type": "Brand", "name": "TrueGrade Metals"},
+      "logo": "https://www.truegrademetals.com/tgm/LOGO.svg",
+      "description": "Leading Nickel Alloy / Superalloy (Monel, Inconel, Incoloy & Hastelloy) Supplier in China",
+      "email": "info@truegrademetals.com",
+      "telephone": "+1 (555) 000-0000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "TrueGrade Metals HQ, Industrial District",
+        "addressLocality": "Houston",
+        "addressRegion": "TX",
+        "postalCode": "77001",
+        "addressCountry": "US"
+      },
+      "sameAs": ["https://www.truegrademetals.com"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.truegrademetals.com/",
+      "url": "https://www.truegrademetals.com/",
+      "name": "TrueGrade Metals",
+      "publisher": {"@id": "https://www.truegrademetals.com/"}
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.truegrademetals.com/tgm/{{category-slug}}.html",
+      "url": "https://www.truegrademetals.com/tgm/{{category-slug}}.html",
+      "name": "{{Category Title}} Supplier & Manufacturer -- TrueGrade Metals",
+      "description": "{{Meta description}}",
+      "inLanguage": "en",
+      "isPartOf": {"@id": "https://www.truegrademetals.com/"}
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-M2WGSR9" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Global Navigation -->
+<div id="global-nav" style="min-height:122px"></div>
+<script src="/tgm/components/global-nav.js"></script>
+
+<main id="main-content">
+  <!-- HERO -->
+  <section id="main-page">
+    <div id="title-bread">
+      <h1><span>{{Category eyebrow}}</span> <br/>{{Category Name}}</h1>
+      <ol id="breadol">
+        <li><a href="../index.html"><b>TrueGrade Metals</b></a></li>
+        <li><a href="nickel-alloy.html"><b>PRODUCTS</b></a></li>
+        <li>{{Category Name}}</li>
+      </ol>
+    </div>
+    <div id="detail-description">
+      <p>{{One-sentence category value proposition.}}</p>
+      <div class="grade-point">
+        <a class="monel-point" href="grades/monel.html">MONEL</a>
+        <a class="inconel-point" href="grades/inconel.html">INCONEL</a>
+        <a class="incoloy-point" href="grades/incoloy.html">INCOLOY</a>
+        <a class="hastelloy-point" href="grades/hastelloy.html">HASTELLOY</a>
+      </div>
+    </div>
+    <div class="cat-hero-trust" aria-label="Sourcing confidence">
+      <span class="cat-hero-trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg> MTC included</span>
+      <span class="cat-hero-trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Full traceability</span>
+      <span class="cat-hero-trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Global shipping</span>
+      <span class="cat-hero-trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Engineering support</span>
+    </div>
+    <div class="cat-hero-cta">
+      <button class="click-event" id="contactbutton" type="button">
+        <img alt="Get a quote" src="image/emaillogo.svg"/>
+        <p>Get a Free Quote NOW</p>
+      </button>
+      <a class="cat-hero-secondary" href="contact-us.html">Speak to an engineer</a>
+    </div>
+  </section>
+
+  <!-- INTRODUCTION -->
+  <section id="cat-introduction" aria-labelledby="cat-intro-heading">
+    <div class="cat-section-head">
+      <h2 id="cat-intro-heading"><span>Overview</span>{{Category Name}}</h2>
+      <p>{{2-3 sentence category overview.}}</p>
+    </div>
+    <div class="cat-authority-grid">
+      <article class="cat-authority-card">
+        <div class="cat-authority-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+        <h3>{{Authority card 1 title}}</h3>
+        <p>{{Authority card 1 description.}}</p>
+      </article>
+      <article class="cat-authority-card">
+        <div class="cat-authority-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></div>
+        <h3>{{Authority card 2 title}}</h3>
+        <p>{{Authority card 2 description.}}</p>
+      </article>
+      <article class="cat-authority-card">
+        <div class="cat-authority-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>{{Authority card 3 title}}</h3>
+        <p>{{Authority card 3 description.}}</p>
+      </article>
+      <article class="cat-authority-card">
+        <div class="cat-authority-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>{{Authority card 4 title}}</h3>
+        <p>{{Authority card 4 description.}}</p>
+      </article>
+    </div>
+    <div class="cat-section-cta">
+      <button class="cat-btn click-event" type="button">Request a quote</button>
+      <a class="cat-btn-ghost" href="grades.html">Explore grades</a>
+    </div>
+  </section>
+
+  <!-- PRODUCT FORMS -->
+  <section id="choose-page">
+    <div id="pro-dot"><div></div><div></div><div></div><div></div><div></div></div>
+    <div id="choose-div">
+      <!-- Repeat .products-frame for each product form in this category -->
+      <div class="products-frame">
+        <a href="products/{{product-page}}.html">
+          <picture class="choose-img">
+            <source media="(max-width: 600px)" srcset="image/products/{{folder}}/main-photo-small-1.jpg"/>
+            <img alt="{{Product form name}}" src="image/products/{{folder}}/main-photo-1.jpg"/>
+          </picture>
+          <img alt="" class="choose-logo-1" src="image/logos/{{logo}}.svg"/>
+          <h2>
+            <span>{{Material family}}</span>
+            <span class="pr-gr">(Monel, Inconel, Incoloy, Hastelloy &amp; etc.)</span>
+            <br/>{{Product form name}}
+          </h2>
+          <ul>
+            <li>• OD: ...</li>
+            <li>• WT: ...</li>
+            <li>• Length ...</li>
+            <li>• Standards: ...</li>
+          </ul>
+          <div class="m-d-1">Learn More</div>
+          <div class="background-logo-1"></div>
+        </a>
+        <div class="s-e-1 click-event"></div>
+      </div>
+    </div>
+  </section>
+  <!-- TRUST BAND -->
+  <section id="cat-trust-band" aria-label="Sourcing confidence">
+    <div class="cat-trust-inner">
+      <div class="cat-trust-item">
+        <div class="cat-trust-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+        </div>
+        <div>
+          <h4>{{Trust item 1 title}}</h4>
+          <p>{{Trust item 1 description}}</p>
+        </div>
+      </div>
+      <div class="cat-trust-item">
+        <div class="cat-trust-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div>
+          <h4>{{Trust item 2 title}}</h4>
+          <p>{{Trust item 2 description}}</p>
+        </div>
+      </div>
+      <div class="cat-trust-item">
+        <div class="cat-trust-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg>
+        </div>
+        <div>
+          <h4>{{Trust item 3 title}}</h4>
+          <p>{{Trust item 3 description}}</p>
+        </div>
+      </div>
+      <div class="cat-trust-item">
+        <div class="cat-trust-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div>
+          <h4>{{Trust item 4 title}}</h4>
+          <p>{{Trust item 4 description}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cat-section-cta cat-contained">
+</section>
+  <div class="cat-section-cta cat-contained">
+    <button class="cat-btn click-event" type="button">Request quote for this product form</button>
+    <a class="cat-btn-ghost" href="contact-us.html">Speak to an engineer</a>
+  </div>
+
+  <!-- GRADES AVAILABLE -->
+  <section id="grades-page">
+    <div class="cat-section-head">
+      <h2><span>Grades Available</span>Material overview</h2>
+      <p>{{Short intro to grades carousel.}}</p>
+    </div>
+    <div id="leftbutton1"></div>
+    <div id="rightbutton1"></div>
+    <div id="alloypage-out">
+      <div id="alloypage">
+        <div class="gradeframe1" id="gradeframe1">
+          <a class="grade-class monel-class" href="grades/monel.html" target="_blank"><h3>MONEL</h3></a>
+          <!-- gradebar blocks go here -->
+        </div>
+      </div>
+    </div>
+    <div class="cat-section-cta">
+      <a class="cat-btn" href="grades.html">View all grades</a>
+      <button class="cat-btn-ghost click-event" type="button">Ask about grade selection</button>
+    </div>
+  </section>
+
+  <!-- APPLICATIONS -->
+  <section id="cat-applications" aria-labelledby="cat-app-heading">
+    <div class="cat-section-head">
+      <h2 id="cat-app-heading"><span>Applications</span>{{Applications heading}}</h2>
+      <p>{{Applications intro.}}</p>
+    </div>
+    <div class="cat-card-grid cat-card-grid-3">
+      <a class="cat-info-card" href="media/applications/index.html">
+        <div class="cat-info-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></div>
+        <h3>{{Application 1}}</h3>
+        <p>{{Application 1 description.}}</p>
+        <span class="cat-info-link">Browse applications →</span>
+      </a>
+      <!-- repeat -->
+    </div>
+    <div class="cat-section-cta">
+      <button class="cat-btn click-event" type="button">Discuss your application</button>
+      <a class="cat-btn-ghost" href="media/applications/index.html">All applications</a>
+    </div>
+  </section>
+
+  <!-- INDUSTRY CARDS -->
+  <section id="cat-industries" aria-labelledby="cat-ind-heading">
+    <div class="cat-section-head">
+      <h2 id="cat-ind-heading"><span>Industries</span>{{Industries heading}}</h2>
+      <p>{{Industries intro.}}</p>
+    </div>
+    <div class="cat-card-grid cat-card-grid-3">
+      <a class="cat-industry-card" href="solutions/{{industry-slug}}.html">
+        <img loading="lazy" src="image/solutions/{{industry-slug}}.jpg" alt="{{Industry name}}"/>
+        <span>{{Industry name}}</span>
+      </a>
+      <!-- repeat -->
+    </div>
+    <div class="cat-section-cta">
+      <a class="cat-btn" href="solutions.html">View all industries</a>
+    </div>
+  </section>
+
+  <!-- TECHNICAL RESOURCES -->
+  <section id="cat-resources" aria-labelledby="cat-res-heading">
+    <div class="cat-section-head">
+      <h2 id="cat-res-heading"><span>Tools &amp; Resources</span>{{Resources heading}}</h2>
+      <p>{{Resources intro.}}</p>
+    </div>
+    <div class="cat-card-grid cat-card-grid-3">
+      <a class="cat-resource-card" href="tools/{{tool-page}}.html">
+        <div class="cat-resource-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+        <h3>{{Resource title}}</h3>
+        <p>{{Resource description.}}</p>
+      </a>
+      <!-- repeat -->
+    </div>
+    <div class="cat-section-cta">
+      <button class="cat-btn click-event" type="button">Get technical help</button>
+      <a class="cat-btn-ghost" href="tools.html">All tools</a>
+    </div>
+  </section>
+
+  <!-- QUICK LINKS -->
+  <section id="cat-quick-links" aria-label="Related links">
+    <div class="cat-quick-links-inner">
+      <span>Quick links:</span>
+      <a href="grades/{{grade-family}}.html">{{Grade family}}</a>
+      <!-- repeat for standards and related categories -->
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="cat-faq" aria-labelledby="cat-faq-heading">
+    <div class="cat-section-head">
+      <h2 id="cat-faq-heading"><span>FAQ</span>{{FAQ heading}}</h2>
+      <p>{{FAQ intro.}}</p>
+    </div>
+    <div class="cat-faq-list" itemscope itemtype="https://schema.org/FAQPage">
+      <details class="cat-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary itemprop="name">{{Question}}</summary>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">{{Answer}}</p>
+        </div>
+      </details>
+      <!-- repeat 4-6 times -->
+    </div>
+    <div class="cat-section-cta">
+      <button class="cat-btn click-event" type="button">Ask a question</button>
+      <a class="cat-btn-ghost" href="contact-us.html">Contact us</a>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery-page">
+    <div class="cat-section-head">
+      <h2><span>Gallery</span>{{Gallery heading}}</h2>
+      <p>{{Gallery intro.}}</p>
+    </div>
+    <div id="gallery-page-2">
+      <div class="gallery-1">
+        <picture><source media="(max-width: 600px)" srcset="image/gallery/{{folder}}-mobile/p01.jpg"/><img alt="photo" src="image/gallery/{{folder}}/p01.jpg"/></picture>
+      </div>
+      <!-- repeat -->
+    </div>
+  </section>
+
+  <!-- RELATED CATEGORIES -->
+  <section class="products-page-1" id="products-page">
+    <div class="cat-section-head">
+      <h2 class="products-h2"><span>Related categories</span>Explore related products</h2>
+      <p>{{Related categories intro.}}</p>
+    </div>
+    <div id="card-frame">
+      <div>
+        <div class="products-card">
+          <a class="products-main" href="{{related-category-url}}.html">
+            <img alt="{{Category}}" src="image/products/{{folder}}/main-photo-1.jpg"/>
+            <p><span>Nickel Alloy</span> <br/>{{Category}}</p>
+            <div>Learn More</div>
+          </a>
+          <div class="contactbutton-2 click-event">
+            <img alt="Contact" src="image/emaillogo.svg"/>
+            <p>Contact Now</p>
+          </div>
+          <div class="point point-2"></div>
+          <div class="products-detail">
+            <a href="products/{{product-page}}.html"><img alt="" src="image/logos/{{logo}}.svg"/><p>{{Product form}}</p></a>
+          </div>
+        </div>
+        <!-- repeat -->
+      </div>
+    </div>
+    <div class="cat-section-cta">
+      <button class="cat-btn click-event" type="button">Request a project quote</button>
+      <a class="cat-btn-ghost" href="nickel-alloy.html">All nickel alloy products</a>
+    </div>
+  </section>
+</main>
+
+<!-- FLOAT QUOTE FORM -->
+<aside id="float-form" itemscope="" itemtype="https://schema.org/WPSideBar">
+  <div class="click-event" id="floatbutton">
+    <img alt="press and contact us" id="floatlogo" src="image/emaillogo.svg"/>
+  </div>
+  <div class="floatcontact1" id="floatcontact">
+    <div id="floatcross"></div>
+    <form action="mailto:info@truegrademetals.com" id="floatform" method="GET" enctype="text/plain" name="sendmail">
+      <div class="short-input">
+        <label class="label" for="aside-email">Your E-mail:</label>
+        <input class="form1" id="aside-email" name="email" placeholder="Please input your E-mail" type="text"/>
+      </div>
+      <div class="short-input">
+        <label class="label" for="aside-subject">Subject:</label>
+        <input class="form1" id="aside-subject" name="subject" placeholder="Please input the project name" type="text"/>
+      </div>
+      <div class="long-input">
+        <label class="label" for="aside-content">Your Request:</label>
+        <textarea class="form2" id="aside-content" name="body" placeholder="Please tell us the following information: 
+Grade (such as Monel 400, Inconel 600, Incoloy 800, Hastelloy C-276, etc.); 
+Product form (Pipe, Bar, Sheet, Plate, Wire or Others); 
+Size &amp; Quantity."></textarea>
+      </div>
+      <div id="aside-submit">
+        <input id="submit2" name="submit" type="submit" value="Submit"/>
+        <p id="errorMessage2">&emsp;</p>
+      </div>
+    </form>
+    <ul id="floatinformation">
+      <li id="email">
+        <img alt="email TrueGrade Metals" class="contactslogo" itemprop="image" src="image/emaillogo-2.svg"/>
+        <div class="contact-div">E-mail: <a href="mailto:info@truegrademetals.com">info@truegrademetals.com</a></div>
+        <div class="copy-button"></div>
+        <div class="copy-text">✔ E-mail has been Copied</div>
+      </li>
+      <li id="tel">
+        <img alt="telephone of TrueGrade Metals" class="contactslogo" itemprop="image" src="image/tellogo.svg"/>
+        <div class="contact-div">Tel: +1 (555) 000-0000</div>
+      </li>
+      <li id="fax">
+        <img alt="fax TrueGrade Metals" class="contactslogo" itemprop="image" src="image/faxlogo.svg"/>
+        <div class="contact-div">Fax: +1 (555) 000-0001</div>
+      </li>
+    </ul>
+    <div id="float-back"></div>
+  </div>
+</aside>
+
+<aside id="input-copy">
+  <label for="copy-input">Our E-mail</label>
+  <input id="copy-input" type="text" value="info@truegrademetals.com"/>
+</aside>
+
+<aside id="tariff">
+  <div id="tariff-head">
+    <img alt="American Flag" src="image/countries/US.svg"/>
+    <p>To All U.S. Customers:</p>
+  </div>
+  <div id="tariff-body">
+    <p>To celebrate the return of normal trade between China and the United States, we have prepared a <b class="click-event"><u>2.5% Discount</u></b> for all U.S. customers (valid for one month). If you have any inquiries, please don't hesitate to <b class="click-event"><u>Contact Us</u></b>.</p>
+  </div>
+</aside>
+
+<!-- Global Footer -->
+<div id="global-footer"></div>
+<script src="/tgm/components/global-footer.js"></script>
+<script src="/tgm/tgm-core.js"></script>
+<script src="category-enterprise.js"></script>
+</body>
+</html>

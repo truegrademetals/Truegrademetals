@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /tgm/catalog/
+Disallow: /cgi-bin/
+Disallow: /*?*
+Sitemap: https://www.truegrademetals.com/sitemap.xml

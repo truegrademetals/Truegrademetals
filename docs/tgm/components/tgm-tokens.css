@@ -1,0 +1,68 @@
+:root {
+  /* ============================================================
+     TrueGrade Metals — Enterprise Design Tokens
+     ============================================================
+     Shared variables for every page, component and template.
+     Link this file before any page stylesheet:
+       <link href="/tgm/components/tgm-tokens.css" rel="stylesheet"/>
+     ============================================================ */
+
+  /* Brand */
+  --tgm-navy-950: #050d18;
+  --tgm-navy-900: #0B1F33;
+  --tgm-navy-800: #14304d;
+  --tgm-navy-700: #1d4167;
+  --tgm-navy-600: #2a5685;
+  --tgm-navy-500: #3d70a6;
+  --tgm-navy-100: #d6e3f0;
+  --tgm-navy-50: #f2f7fb;
+
+  --tgm-ember-600: #c44b10;
+  --tgm-ember-500: #EE5D16;
+  --tgm-ember-400: #f27a3f;
+  --tgm-ember-100: #ffe7db;
+  --tgm-ember-50: #fff6f2;
+
+  /* Neutral */
+  --tgm-white: #ffffff;
+  --tgm-gray-50: #f7f8fa;
+  --tgm-gray-100: #eef0f4;
+  --tgm-gray-200: #e2e5eb;
+  --tgm-gray-300: #c8cdd6;
+  --tgm-gray-400: #9aa3b2;
+  --tgm-gray-500: #6b7280;
+  --tgm-gray-600: #4b5563;
+  --tgm-gray-700: #374151;
+
+  /* Typography */
+  --tgm-font-display: 'Space Grotesk', sans-serif;
+  --tgm-font-body: 'Inter', sans-serif;
+  --tgm-font-mono: 'IBM Plex Mono', monospace;
+
+  /* Spacing scale */
+  --tgm-space-1: 4px;
+  --tgm-space-2: 8px;
+  --tgm-space-3: 12px;
+  --tgm-space-4: 16px;
+  --tgm-space-5: 24px;
+  --tgm-space-6: 32px;
+  --tgm-space-7: 48px;
+  --tgm-space-8: 64px;
+  --tgm-space-9: 80px;
+  --tgm-space-10: 100px;
+
+  /* Layout */
+  --tgm-max-w: 1320px;
+  --tgm-radius: 20px;
+  --tgm-radius-sm: 14px;
+  --tgm-radius-pill: 9999px;
+
+  /* Elevation */
+  --tgm-shadow-xs: 0 1px 2px rgba(11,31,51,0.04);
+  --tgm-shadow-sm: 0 4px 12px rgba(11,31,51,0.06);
+  --tgm-shadow: 0 12px 36px rgba(11,31,51,0.1);
+  --tgm-shadow-lg: 0 24px 60px rgba(11,31,51,0.14);
+
+  /* Motion */
+  --tgm-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}

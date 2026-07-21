@@ -1,0 +1,489 @@
+/* ============================================================
+   TrueGrade Metals — Procurement Trust Layer
+   ============================================================
+   Reusable, evidence-based trust sections for every page type.
+   Use these components to reduce buyer uncertainty and reinforce
+   quality, traceability, documentation and engineering support.
+
+   Load after tgm-tokens.css.
+   ============================================================ */
+
+.tg-trust {
+  --tg-trust-navy: var(--tgm-navy-900);
+  --tg-trust-navy-50: var(--tgm-navy-50);
+  --tg-trust-ember: var(--tgm-ember-500);
+  --tg-trust-ember-50: var(--tgm-ember-50);
+  --tg-trust-gray: var(--tgm-gray-500);
+  --tg-trust-bg: var(--tgm-white);
+  --tg-trust-radius: var(--tgm-radius);
+  --tg-trust-radius-sm: var(--tgm-radius-sm);
+  --tg-trust-shadow: var(--tgm-shadow);
+  --tg-trust-shadow-sm: var(--tgm-shadow-sm);
+  --tg-trust-max: var(--tgm-max-w);
+  --tg-trust-display: var(--tgm-font-display);
+  --tg-trust-body: var(--tgm-font-body);
+  --tg-trust-mono: var(--tgm-font-mono);
+
+  font-family: var(--tg-trust-body);
+  color: var(--tg-trust-navy);
+}
+
+.tg-trust-container {
+  width: min(92%, var(--tg-trust-max));
+  margin-inline: auto;
+}
+
+.tg-trust img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ------------------------------------------------------------
+   Section header
+   ------------------------------------------------------------ */
+.tg-trust-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 48px;
+}
+
+.tg-trust-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: var(--tgm-radius-pill);
+  background: var(--tg-trust-ember-50);
+  color: var(--tg-trust-ember);
+  font-family: var(--tg-trust-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.tg-trust-header h2 {
+  font-family: var(--tg-trust-display);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 14px;
+}
+
+.tg-trust-header p {
+  color: var(--tg-trust-gray);
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------
+   Evidence band (small trust pills)
+   ------------------------------------------------------------ */
+.tg-trust-band {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.tg-trust-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: var(--tgm-radius-pill);
+  background: var(--tg-trust-bg);
+  border: 1px solid var(--tgm-gray-200);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--tg-trust-navy);
+  box-shadow: var(--tg-trust-shadow-sm);
+}
+
+.tg-trust-pill svg {
+  color: var(--tg-trust-ember);
+  flex-shrink: 0;
+}
+
+/* ------------------------------------------------------------
+   Large process timeline
+   ------------------------------------------------------------ */
+.tg-trust-timeline {
+  position: relative;
+  display: grid;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.tg-trust-timeline::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--tg-trust-ember), var(--tgm-navy-200));
+}
+
+@media (min-width: 768px) {
+  .tg-trust-timeline {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+  .tg-trust-timeline::before {
+    display: none;
+  }
+}
+
+.tg-trust-timeline-step {
+  position: relative;
+  padding: 24px 20px;
+  background: var(--tg-trust-bg);
+  border: 1px solid var(--tgm-gray-200);
+  border-radius: var(--tg-trust-radius-sm);
+  box-shadow: var(--tg-trust-shadow-sm);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tg-trust-timeline-step:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--tg-trust-shadow);
+}
+
+@media (min-width: 768px) {
+  .tg-trust-timeline-step::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    right: -16px;
+    width: 16px;
+    height: 2px;
+    background: var(--tgm-gray-200);
+  }
+  .tg-trust-timeline-step:last-child::after {
+    display: none;
+  }
+}
+
+.tg-trust-timeline-step .step-number {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--tg-trust-ember);
+  color: var(--tg-trust-bg);
+  font-family: var(--tg-trust-mono);
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 14px;
+}
+
+.tg-trust-timeline-step h3 {
+  font-family: var(--tg-trust-display);
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+
+.tg-trust-timeline-step p {
+  font-size: 0.88rem;
+  color: var(--tg-trust-gray);
+  margin: 0;
+}
+
+/* ------------------------------------------------------------
+   Evidence cards
+   ------------------------------------------------------------ */
+.tg-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.tg-trust-card {
+  padding: 28px;
+  background: var(--tg-trust-bg);
+  border: 1px solid var(--tgm-gray-200);
+  border-radius: var(--tg-trust-radius-sm);
+  box-shadow: var(--tg-trust-shadow-sm);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tg-trust-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--tg-trust-shadow);
+}
+
+.tg-trust-card-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--tg-trust-navy-50);
+  color: var(--tg-trust-ember);
+  margin-bottom: 18px;
+}
+
+.tg-trust-card h3 {
+  font-family: var(--tg-trust-display);
+  font-size: 1.15rem;
+  margin: 0 0 10px;
+}
+
+.tg-trust-card p {
+  font-size: 0.92rem;
+  color: var(--tg-trust-gray);
+  margin: 0 0 14px;
+}
+
+.tg-trust-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--tgm-gray-700);
+}
+
+.tg-trust-card li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.tg-trust-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--tg-trust-ember);
+  font-weight: 700;
+}
+
+/* ------------------------------------------------------------
+   Certificate / documentation panel
+   ------------------------------------------------------------ */
+.tg-trust-docs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.tg-trust-doc {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  background: var(--tg-trust-bg);
+  border: 1px solid var(--tgm-gray-200);
+  border-radius: var(--tg-trust-radius-sm);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.tg-trust-doc:hover {
+  border-color: var(--tg-trust-ember);
+  box-shadow: var(--tg-trust-shadow-sm);
+}
+
+.tg-trust-doc-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--tg-trust-ember-50);
+  color: var(--tg-trust-ember);
+}
+
+.tg-trust-doc-title {
+  font-weight: 600;
+  color: var(--tg-trust-navy);
+}
+
+.tg-trust-doc-meta {
+  font-size: 0.8rem;
+  color: var(--tg-trust-gray);
+}
+
+/* ------------------------------------------------------------
+   Stats row
+   ------------------------------------------------------------ */
+.tg-trust-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  margin: 40px 0;
+}
+
+.tg-trust-stat {
+  text-align: center;
+  padding: 24px 16px;
+  background: var(--tg-trust-bg);
+  border: 1px solid var(--tgm-gray-200);
+  border-radius: var(--tg-trust-radius-sm);
+}
+
+.tg-trust-stat-value {
+  font-family: var(--tg-trust-display);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--tg-trust-ember);
+  line-height: 1;
+}
+
+.tg-trust-stat-label {
+  font-size: 0.82rem;
+  color: var(--tg-trust-gray);
+  margin-top: 8px;
+}
+
+/* ------------------------------------------------------------
+   Quote / support panel
+   ------------------------------------------------------------ */
+.tg-trust-support {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 32px 0;
+}
+
+.tg-trust-support-card {
+  padding: 22px;
+  border-radius: var(--tg-trust-radius-sm);
+  background: linear-gradient(180deg, var(--tg-trust-navy-50) 0%, var(--tg-trust-bg) 100%);
+  border: 1px solid var(--tgm-gray-200);
+}
+
+.tg-trust-support-card h4 {
+  font-family: var(--tg-trust-display);
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+
+.tg-trust-support-card p {
+  font-size: 0.88rem;
+  color: var(--tg-trust-gray);
+  margin: 0;
+}
+
+/* ------------------------------------------------------------
+   Section backgrounds
+   ------------------------------------------------------------ */
+.tg-trust-section {
+  padding: 80px 0;
+}
+
+.tg-trust-section.bg-light {
+  background: var(--tg-trust-navy-50);
+}
+
+.tg-trust-section.bg-dark {
+  background: linear-gradient(135deg, var(--tg-trust-navy) 0%, var(--tgm-navy-800) 100%);
+  color: var(--tg-trust-bg);
+}
+
+.tg-trust-section.bg-dark .tg-trust-header p,
+.tg-trust-section.bg-dark .tg-trust-card p,
+.tg-trust-section.bg-dark .tg-trust-timeline-step p,
+.tg-trust-section.bg-dark .tg-trust-stat-label,
+.tg-trust-section.bg-dark .tg-trust-support-card p {
+  color: var(--tgm-gray-300);
+}
+
+.tg-trust-section.bg-dark .tg-trust-card,
+.tg-trust-section.bg-dark .tg-trust-timeline-step,
+.tg-trust-section.bg-dark .tg-trust-stat,
+.tg-trust-section.bg-dark .tg-trust-support-card {
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(255,255,255,0.1);
+}
+
+/* ------------------------------------------------------------
+   Final procurement CTA
+   ------------------------------------------------------------ */
+.tg-trust-cta {
+  padding: 56px;
+  border-radius: var(--tg-trust-radius);
+  text-align: center;
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(238,93,22,0.08) 0%, transparent 50%),
+    linear-gradient(135deg, var(--tg-trust-navy) 0%, var(--tgm-navy-800) 100%);
+  color: var(--tg-trust-bg);
+}
+
+.tg-trust-cta h2 {
+  font-family: var(--tg-trust-display);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  margin: 0 0 12px;
+}
+
+.tg-trust-cta p {
+  color: var(--tgm-gray-300);
+  max-width: 620px;
+  margin: 0 auto 24px;
+}
+
+.tg-trust-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: var(--tgm-radius-pill);
+  font-weight: 600;
+  background: var(--tg-trust-ember);
+  color: var(--tg-trust-bg);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.tg-trust-btn:hover {
+  background: var(--tgm-ember-600);
+  transform: translateY(-2px);
+}
+
+.tg-trust-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: var(--tgm-radius-pill);
+  font-weight: 600;
+  background: transparent;
+  color: var(--tg-trust-bg);
+  border: 1px solid rgba(255,255,255,0.35);
+  margin-left: 12px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.tg-trust-btn-ghost:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.6);
+}
+
+@media (max-width: 640px) {
+  .tg-trust-cta {
+    padding: 36px 24px;
+  }
+  .tg-trust-btn,
+  .tg-trust-btn-ghost {
+    width: 100%;
+    justify-content: center;
+    margin: 8px 0 0;
+  }
+}
+
+/* ------------------------------------------------------------
+   Responsive tweaks
+   ------------------------------------------------------------ */
+@media (max-width: 640px) {
+  .tg-trust-section {
+    padding: 56px 0;
+  }
+  .tg-trust-timeline::before {
+    left: 16px;
+  }
+}

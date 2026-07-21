@@ -12,8 +12,7 @@
   var container = document.getElementById('global-nav');
   if (!container) return;
 
-  var base = document.querySelector('base') ? document.querySelector('base').href : '';
-  var url = base + 'tgm/components/global-nav.html';
+  var url = '/tgm/components/global-nav.html';
 
   fetch(url)
     .then(function (response) {

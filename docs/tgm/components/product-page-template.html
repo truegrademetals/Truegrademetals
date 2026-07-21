@@ -1,0 +1,343 @@
+<!--
+  TrueGrade Metals — Enterprise Product Page Master Template
+  ============================================================
+  A reusable template for every product detail page.
+
+  Usage:
+    1. Copy this file to tgm/products/{{product-slug}}.html
+    2. Replace all {{PLACEHOLDERS}} with product-specific content.
+    3. Keep existing HTML structure and IDs so shared
+       product-enterprise.css and product-enterprise.js continue to work.
+    4. Link to parent category and related product pages.
+
+  Real reference implementation:
+    tgm/products/nickel-alloy-seamless-pipe-tube.html
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M2WGSR9');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8"/>
+<title>{{PAGE_TITLE}}</title>
+<meta content="{{META_KEYWORDS}}" name="keywords"/>
+<meta content="TrueGrade Metals" name="author"/>
+<meta content="{{META_DESCRIPTION}}" name="description"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no" name="viewport"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="{{OG_TITLE}}" property="og:title"/>
+<meta content="Products" property="og:type"/>
+<meta content="{{CANONICAL_URL}}" property="og:url"/>
+<meta content="{{OG_IMAGE}}" property="og:image"/>
+<meta content="truegrademetals.com" property="og:site_name"/>
+<meta content="{{OG_DESCRIPTION}}" property="og:description"/>
+<link href="../favicon.ico" rel="shortcut icon"/>
+<link href="../favicon.ico" rel="Bookmark"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="/tgm/components/tgm-tokens.css" rel="stylesheet"/>
+<link href="/tgm/product-enterprise.css" rel="stylesheet"/>
+<link href="/tgm/components/tgm-tables-graphs.css" rel="stylesheet"/>
+<link href="/tgm/chemical-all.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.truegrademetals.com/",
+      "name": "TrueGrade Metals",
+      "url": "https://www.truegrademetals.com/",
+      "brand": {"@type": "Brand", "name": "TrueGrade Metals"},
+      "logo": "https://www.truegrademetals.com/tgm/LOGO.svg",
+      "description": "Leading Nickel Alloy / Superalloy (Monel, Inconel, Incoloy & Hastelloy) Supplier in China",
+      "email": "info@truegrademetals.com",
+      "telephone": "+1 (555) 000-0000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "TrueGrade Metals HQ, Industrial District",
+        "addressLocality": "Houston",
+        "addressRegion": "TX",
+        "postalCode": "77001",
+        "addressCountry": "US"
+      },
+      "sameAs": ["https://www.truegrademetals.com"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.truegrademetals.com/",
+      "url": "https://www.truegrademetals.com/",
+      "name": "TrueGrade Metals",
+      "publisher": {"@id": "https://www.truegrademetals.com/"}
+    },
+    {
+      "@type": "WebPage",
+      "@id": "{{CANONICAL_URL}}",
+      "url": "{{CANONICAL_URL}}",
+      "name": "{{PAGE_TITLE}}",
+      "description": "{{META_DESCRIPTION}}",
+      "inLanguage": "en",
+      "isPartOf": {"@id": "https://www.truegrademetals.com/"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{CANONICAL_URL}}#breadol",
+      "itemListElement": [
+        {"@type": "ListItem", "name": "Home", "position": 1, "item": "https://www.truegrademetals.com/"},
+        {"@type": "ListItem", "name": "Products", "position": 2, "item": "https://www.truegrademetals.com/tgm/nickel-alloy.html"},
+        {"@type": "ListItem", "name": "{{PARENT_CATEGORY_NAME}}", "position": 3, "item": "{{PARENT_CATEGORY_URL}}"},
+        {"@type": "ListItem", "name": "{{PRODUCT_NAME}}", "position": 4, "item": "{{CANONICAL_URL}}"}
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "{{CANONICAL_URL}}",
+      "name": "{{PRODUCT_NAME}}",
+      "description": "{{PRODUCT_DESCRIPTION}}",
+      "image": ["{{PRODUCT_IMAGE_1}}", "{{PRODUCT_IMAGE_2}}", "{{PRODUCT_IMAGE_3}}", "{{PRODUCT_IMAGE_4}}", "{{PRODUCT_IMAGE_5}}"],
+      "brand": {"@type": "Brand", "name": "TrueGrade Metals"},
+      "manufacturer": {"@type": "Organization", "name": "TrueGrade Metals"},
+      "category": "{{PRODUCT_CATEGORY}}",
+      "potentialAction": {"@type": "ViewAction", "name": "Get a Free Quote Now", "target": "https://www.truegrademetals.com/tgm/contact-us.html"},
+      "offers": {"@type": "AggregateOffer", "offerCount": 1, "priceCurrency": "USD", "lowPrice": 0.0, "highPrice": 0.0, "price": 0.0},
+      "additionalProperty": [
+        {"@type": "PropertyValue", "name": "Outside Diameter", "value": "{{SPEC_OD}}"},
+        {"@type": "PropertyValue", "name": "Wall Thickness", "value": "{{SPEC_WT}}"},
+        {"@type": "PropertyValue", "name": "Length", "value": "{{SPEC_LENGTH}}"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "{{CANONICAL_URL}}#faq",
+      "isPartOf": {"@id": "{{CANONICAL_URL}}"},
+      "mainEntity": {{FAQ_SCHEMA}}
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-M2WGSR9" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Global Navigation -->
+<div id="global-nav" style="min-height:122px"></div>
+<script src="/tgm/components/global-nav.js"></script>
+
+<main id="main-content">
+
+<!-- 1. Hero -->
+<section id="main-page">
+  <ol id="breadol">
+    <li><a href="/"><b>TrueGrade Metals</b></a></li>
+    <li><a href="/tgm/nickel-alloy.html"><b>Products</b></a></li>
+    <li><a href="{{PARENT_CATEGORY_URL}}"><b>{{PARENT_CATEGORY_NAME}}</b></a></li>
+    <li>{{PRODUCT_NAME}}</li>
+  </ol>
+  <div id="title-bread">
+    <h1><span>{{HERO_EYEBROW}}</span>{{PRODUCT_NAME}}</h1>
+  </div>
+  <div id="detail-description">
+    <p>{{HERO_VALUE_PROPOSITION}}</p>
+  </div>
+  <div class="grade-point">
+    {{GRADE_CHIPS}}
+  </div>
+  <div class="cat-hero-trust" aria-label="Sourcing confidence">
+    {{HERO_TRUST_PILLS}}
+  </div>
+  <div class="cat-hero-cta">
+    <button class="click-event" id="contactbutton" type="button">
+      <img alt="Get a quote" src="../image/emaillogo.svg"/>
+      <p>Get a Free Quote NOW</p>
+    </button>
+    <a class="cat-hero-secondary" href="/tgm/contact-us.html">Speak to an engineer</a>
+  </div>
+</section>
+
+<!-- 2. Quick Specification Summary -->
+<section id="prod-quick-spec" aria-labelledby="prod-spec-heading">
+  <div class="cat-section-head">
+    <h2 id="prod-spec-heading"><span>Specifications</span>Quick specification summary</h2>
+  </div>
+  <div class="prod-spec-grid">
+    {{QUICK_SPEC_CARDS}}
+  </div>
+</section>
+
+<!-- 3. Product Gallery -->
+<section id="prod-gallery" aria-labelledby="prod-gallery-heading">
+  <div class="cat-section-head">
+    <h2 id="prod-gallery-heading"><span>Gallery</span>Product photos</h2>
+  </div>
+  <div class="prod-gallery-grid">
+    <div class="prod-gallery-main">
+      {{GALLERY_MAIN_IMAGES}}
+    </div>
+    <div class="prod-gallery-thumbs">
+      {{GALLERY_THUMBNAILS}}
+    </div>
+  </div>
+</section>
+
+<!-- 4. Product Overview -->
+<section id="prod-overview" aria-labelledby="prod-overview-heading">
+  <div class="cat-section-head">
+    <h2 id="prod-overview-heading"><span>Overview</span>Product overview</h2>
+  </div>
+  <div class="prod-overview-inner">
+    {{OVERVIEW_PARAGRAPHS}}
+  </div>
+</section>
+
+<!-- 5. Engineering Benefits -->
+<section id="prod-benefits" aria-labelledby="prod-benefits-heading">
+  <div class="cat-section-head">
+    <h2 id="prod-benefits-heading"><span>Engineering</span>Engineering benefits</h2>
+  </div>
+  <div class="prod-benefits-grid">
+    {{BENEFIT_CARDS}}
+  </div>
+</section>
+
+<!-- 6. Applications -->
+<section id="prod-applications" aria-labelledby="prod-app-heading">
+  <div class="cat-section-head">
+    <h2 id="prod-app-heading"><span>Applications</span>Where it is used</h2>
+  </div>
+  <div class="prod-app-grid">
+    {{APPLICATION_CARDS}}
+  </div>
+</section>
+
+<!-- 7. Chemical Composition / Grades -->
+{{CHEMICAL_COMPOSITION_SECTION}}
+
+<!-- 8. Mechanical Properties & Technical Data -->
+{{MECHANICAL_PROPERTIES_SECTION}}
+
+<!-- 9. Technical Graphs / Manufacturing Process -->
+{{TECHNICAL_GRAPHS_SECTION}}
+
+<!-- 10. Standards & Equivalent Grades -->
+<section id="prod-standards" aria-labelledby="prod-standards-heading">
+  <div class="cat-section-head">
+    <h2 id="prod-standards-heading"><span>Standards</span>Standards &amp; equivalent grades</h2>
+    <p>{{STANDARDS_INTRO}}</p>
+  </div>
+  <div class="prod-standards-grid">
+    <div class="prod-standards-card">
+      <h3>ASTM / ASME Standards</h3>
+      <ul>
+        {{STANDARDS_LIST}}
+      </ul>
+    </div>
+    <div class="prod-standards-card">
+      <h3>Equivalent Grades</h3>
+      <ul>
+        {{EQUIVALENT_GRADES_LIST}}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 11. Quality Assurance -->
+<section id="prod-quality" aria-labelledby="prod-quality-heading">
+  <div class="cat-section-head">
+    <h2 id="prod-quality-heading"><span>Quality</span>Quality assurance</h2>
+  </div>
+  {{QUALITY_ASSURANCE_CARDS}}
+</section>
+
+<!-- 12. Downloads -->
+<section id="prod-downloads" aria-labelledby="prod-download-heading">
+  <div class="prod-download-card">
+    <h3 id="prod-download-heading">Download catalogue</h3>
+    {{DOWNLOAD_CARD}}
+  </div>
+</section>
+
+<!-- 13. Package -->
+<section id="prod-package" aria-labelledby="prod-package-heading">
+  <div class="cat-section-head">
+    <h2 id="prod-package-heading"><span>Shipping</span>Package</h2>
+  </div>
+  <div class="prod-container">
+    <div class="prod-package-grid">
+      {{PACKAGE_CONTENT}}
+    </div>
+  </div>
+</section>
+
+<!-- 14. Logistics -->
+<section id="prod-logistics" aria-labelledby="prod-logistics-heading">
+  <div class="cat-section-head">
+    <h2 id="prod-logistics-heading"><span>Shipping</span>Logistics</h2>
+  </div>
+  <div class="prod-container">
+    <div class="prod-logistics-grid">
+      {{LOGISTICS_CONTENT}}
+    </div>
+  </div>
+</section>
+
+<!-- 15. FAQs -->
+<section id="prod-faq" aria-labelledby="prod-faq-heading">
+  <div class="cat-section-head">
+    <h2 id="prod-faq-heading"><span>FAQ</span>Frequently asked questions</h2>
+  </div>
+  <div class="prod-faq-list">
+    {{FAQ_CONTENT}}
+  </div>
+</section>
+
+<!-- 16. Related Products -->
+{{RELATED_PRODUCTS_SECTION}}
+
+<!-- 17. Related Resources -->
+<section id="prod-resources" aria-labelledby="prod-resources-heading">
+  <div class="cat-section-head">
+    <h2 id="prod-resources-heading"><span>Resources</span>Related resources</h2>
+  </div>
+  {{RELATED_RESOURCES_CARDS}}
+</section>
+
+<!-- 18. RFQ Section -->
+<section id="prod-rfq" aria-labelledby="prod-rfq-heading">
+  <div class="prod-rfq-card">
+    <h2 id="prod-rfq-heading">Request a competitive quotation</h2>
+    <p>{{RFQ_DESCRIPTION}}</p>
+    <div class="prod-rfq-actions">
+      <a class="cat-btn" href="/tgm/contact-us.html">Get a Free Quote</a>
+      <a class="cat-btn-ghost" href="mailto:info@truegrademetals.com">Email us directly</a>
+    </div>
+  </div>
+</section>
+
+<!-- 19. Final Trust CTA -->
+<section id="prod-final-cta" aria-label="Final call to action">
+  <div class="prod-final-cta-inner">
+    <div>
+      <h2>{{FINAL_CTA_HEADING}}</h2>
+      <p>{{FINAL_CTA_TEXT}}</p>
+    </div>
+    <a class="cat-btn" href="/tgm/contact-us.html">Request a Technical Quotation</a>
+  </div>
+</section>
+
+</main>
+
+{{FLOAT_FORM}}
+{{INPUT_COPY}}
+{{TARIFF_BANNER}}
+
+<!-- Global Footer -->
+<div id="global-footer"></div>
+<script src="/tgm/components/global-footer.js"></script>
+<script src="/tgm/tgm-core.js"></script>
+<script src="/tgm/product-enterprise.js"></script>
+</body>
+</html>

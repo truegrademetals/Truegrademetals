@@ -1,0 +1,156 @@
+{
+  "generic": {
+    "trust_band": {
+      "title1": "Certified Material",
+      "desc1": "Every batch ships with Mill Test Certificate per EN 10204/3.1.",
+      "title2": "Full Size Range",
+      "desc2": "Dimensions from stock or produced to your specification.",
+      "title3": "Quality Controlled",
+      "desc3": "Chemical, mechanical and dimensional checks before dispatch.",
+      "title4": "Global Delivery",
+      "desc4": "Sea, air and express shipment arranged to your door."
+    },
+    "authority_cards": [
+      {
+        "title": "ISO-Aligned Production",
+        "desc": "Controlled melting, rolling and finishing processes for consistent properties."
+      },
+      {
+        "title": "Flexible Supply",
+        "desc": "From prototype quantities to full mill orders, cut to length on request."
+      },
+      {
+        "title": "Application Engineering",
+        "desc": "Our team helps you select the right grade and temper for your service conditions."
+      },
+      {
+        "title": "Traceable Documentation",
+        "desc": "Heat numbers, certificates and third-party inspection support available."
+      }
+    ],
+    "applications": {
+      "heading": "Where nickel alloy is used",
+      "intro": "Nickel alloy materials combine corrosion resistance, high-temperature strength and toughness for demanding environments.",
+      "cards": [
+        {"title": "Chemical Processing", "desc": "Resists acids, chlorides and caustic media in reactors, columns and piping.", "href": "media/applications/index.html"},
+        {"title": "Oil & Gas", "desc": "Suitable for downhole, subsea and refinery components exposed to sour service.", "href": "media/applications/index.html"},
+        {"title": "Power Generation", "desc": "High-temperature grades for turbines, boilers and heat-recovery systems.", "href": "media/applications/index.html"},
+        {"title": "Aerospace", "desc": "Creep-resistant superalloys for engine and exhaust applications.", "href": "media/applications/index.html"},
+        {"title": "Marine Engineering", "desc": "Seawater-resistant grades for propulsion, desalination and offshore hardware.", "href": "media/applications/index.html"},
+        {"title": "Pollution Control", "desc": "Scrubbers, flue-gas systems and waste-treatment equipment grades.", "href": "media/applications/index.html"}
+      ]
+    },
+    "industries": {
+      "heading": "Industries we serve",
+      "intro": "TrueGrade Metals supplies nickel alloy products to engineers across a wide range of industrial sectors.",
+      "cards": [
+        {"name": "Chemical & Petrochemical", "slug": "chemical-petrochemical"},
+        {"name": "Oil & Gas", "slug": "oil-gas"},
+        {"name": "Power & Energy", "slug": "power-energy"},
+        {"name": "Aerospace & Defense", "slug": "aerospace-defense"},
+        {"name": "Marine & Offshore", "slug": "marine-offshore"},
+        {"name": "Pharmaceutical & Food", "slug": "pharmaceutical-food"}
+      ]
+    },
+    "resources": {
+      "heading": "Engineering resources",
+      "intro": "Useful tools and reference materials to help you specify and order nickel alloy products.",
+      "cards": [
+        {"title": "Weight Calculator", "desc": "Estimate weight by dimensions and alloy density.", "href": "tools/nickel-alloy-weight-calculator.html"},
+        {"title": "Grade Comparison", "desc": "Cross-reference ASTM, DIN, EN and UNS designations.", "href": "tools/nickel-alloy-grades-comparison.html"},
+        {"title": "Pipe Schedule Calculator", "desc": "Find OD and wall thickness combinations for standard schedules.", "href": "tools/pipe-schedule-calculator.html"}
+      ]
+    },
+    "faq": {
+      "heading": "Common questions",
+      "intro": "Quick answers about ordering, specifications and delivery from TrueGrade Metals.",
+      "items": [
+        {"q": "What certificates do you provide?", "a": "We provide Mill Test Certificate per EN 10204/3.1 as standard, covering chemical composition and mechanical properties. Third-party inspection can be arranged on request."},
+        {"q": "Can you supply custom sizes?", "a": "Yes. We can cut, machine, polish and finish nickel alloy products to your drawing or specification."},
+        {"q": "What is your typical delivery time?", "a": "Standard items are usually ready within 2–5 weeks. Custom or large quantities may require additional lead time."},
+        {"q": "Which grades do you stock?", "a": "We focus on Monel, Inconel, Incoloy and Hastelloy families, plus nickel, Nimonic, Nitronic and precision alloys on request."},
+        {"q": "Do you ship internationally?", "a": "Yes. We ship by sea, air and express to customers across the Americas, Europe, Middle East and Asia-Pacific."}
+      ]
+    }
+  },
+  "categories": {
+    "nickel-alloy.html": {
+      "category_name": "Nickel Alloy",
+      "eyebrow": "Products",
+      "value_prop": "A complete range of nickel alloy pipes, fittings, bars, sheets and wires from a single China-based supplier.",
+      "overview": "TrueGrade Metals manufactures and supplies nickel alloy products in five major forms: pipes, fittings, bars, sheets and wires. Our materials cover Monel, Inconel, Incoloy, Hastelloy and other special alloys, with full quality documentation and flexible sizing.",
+      "gallery_heading": "Product gallery",
+      "gallery_intro": "Selected images from our nickel alloy product ranges.",
+      "related_intro": "Explore the full family of nickel alloy product categories.",
+      "quick_links": [
+        {"text": "Monel grades", "href": "grades/monel.html"},
+        {"text": "Inconel grades", "href": "grades/inconel.html"},
+        {"text": "Incoloy grades", "href": "grades/incoloy.html"},
+        {"text": "Hastelloy grades", "href": "grades/hastelloy.html"}
+      ],
+      "hide_applications": false,
+      "hide_industries": false,
+      "hide_resources": false
+    },
+    "nickel-alloy-fittings.html": {
+      "category_name": "Fittings",
+      "eyebrow": "Nickel Alloy",
+      "value_prop": "Precision nickel alloy pipe fittings in elbows, flanges, tees, reducers and caps.",
+      "overview": "TrueGrade Metals produces nickel alloy fittings to match our pipes and tubes. Products include elbows, flanges, tees, reducers and pipe caps in Monel, Inconel, Incoloy and Hastelloy grades.",
+      "gallery_heading": "Fittings gallery",
+      "gallery_intro": "Photos of nickel alloy elbows, flanges, tees, reducers and caps.",
+      "related_intro": "Browse related nickel alloy product categories.",
+      "quick_links": [
+        {"text": "ASTM B366 fittings", "href": "tools/nickel-alloy-grades-comparison.html"},
+        {"text": "Elbows", "href": "products/nickel-alloy-elbow.html"},
+        {"text": "Flanges", "href": "products/nickel-alloy-flange.html"},
+        {"text": "Tees", "href": "products/nickel-alloy-tee.html"}
+      ]
+    },
+    "nickel-alloy-bars.html": {
+      "category_name": "Bars",
+      "eyebrow": "Nickel Alloy",
+      "value_prop": "Nickel alloy round, flat, square and hexagon bars with bright or black finish.",
+      "overview": "Our nickel alloy bar program includes round bar & rod, flat bar, square bar and hexagon bar in a wide range of sizes and surface finishes. Custom cutting and heat treatment are available.",
+      "gallery_heading": "Bars gallery",
+      "gallery_intro": "Images of nickel alloy round, flat, square and hexagon bars.",
+      "related_intro": "Browse related nickel alloy product categories.",
+      "quick_links": [
+        {"text": "ASTM B160 bars", "href": "tools/nickel-alloy-grades-comparison.html"},
+        {"text": "Round bar & rod", "href": "products/nickel-alloy-round-bar-rod.html"},
+        {"text": "Flat bar", "href": "products/nickel-alloy-flat-bar.html"},
+        {"text": "Hexagon bar", "href": "products/nickel-alloy-hexagon-bar.html"}
+      ]
+    },
+    "nickel-alloy-sheets.html": {
+      "category_name": "Sheets",
+      "eyebrow": "Nickel Alloy",
+      "value_prop": "Nickel alloy sheet, plate, coil and strip for corrosion and heat-resistant applications.",
+      "overview": "TrueGrade Metals supplies nickel alloy sheets, plates, coils and strips in standard and custom dimensions. Materials are available in hot-rolled, cold-rolled and surface-finished conditions.",
+      "gallery_heading": "Sheets gallery",
+      "gallery_intro": "Images of nickel alloy sheet, plate, coil and strip products.",
+      "related_intro": "Browse related nickel alloy product categories.",
+      "quick_links": [
+        {"text": "ASTM B127 sheet & plate", "href": "tools/nickel-alloy-grades-comparison.html"},
+        {"text": "Sheet", "href": "products/nickel-alloy-sheet.html"},
+        {"text": "Plate", "href": "products/nickel-alloy-plate.html"},
+        {"text": "Strip", "href": "products/nickel-alloy-strip.html"}
+      ]
+    },
+    "nickel-alloy-wires.html": {
+      "category_name": "Wires",
+      "eyebrow": "Nickel Alloy",
+      "value_prop": "Nickel alloy wire, wire rod, filler metal and welding electrode for industrial and fabrication use.",
+      "overview": "Our wire range includes nickel alloy wire, wire rod, filler metal and welding electrodes. Products are supplied in coils, spools or cut lengths to meet welding and manufacturing requirements.",
+      "gallery_heading": "Wires gallery",
+      "gallery_intro": "Images of nickel alloy wire, wire rod, filler metal and welding electrodes.",
+      "related_intro": "Browse related nickel alloy product categories.",
+      "quick_links": [
+        {"text": "ASTM B164 wire", "href": "tools/nickel-alloy-grades-comparison.html"},
+        {"text": "Welding wire", "href": "products/nickel-alloy-wire.html"},
+        {"text": "Filler metal", "href": "products/nickel-alloy-filler-metal.html"},
+        {"text": "Welding electrode", "href": "products/nickel-alloy-welding-electrode.html"}
+      ]
+    }
+  }
+}

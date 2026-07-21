@@ -1,0 +1,411 @@
+<!--
+  TrueGrade Metals — Enterprise Technical Guide Master Template
+  ============================================================
+  Reusable template for engineering knowledge resources:
+    • Material Comparison Pages
+    • Grade Equivalency Pages
+    • Material Selection Guides
+    • Heat Treatment Guides
+    • Machining Guides
+    • Welding Guides
+    • Corrosion Resistance Guides
+    • Material Property References
+    • Technical Downloads
+    • Engineering FAQs
+
+  Usage:
+    1. Copy this file to the appropriate resource path.
+    2. Replace all {{PLACEHOLDERS}} with guide-specific content.
+    3. Remove any sections that are not relevant to the guide.
+    4. Ensure internal links point to real product/category/grade/industry pages.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M2WGSR9');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8"/>
+  <title>{{GUIDE_TITLE}} | TrueGrade Metals</title>
+  <meta content="{{META_KEYWORDS}}" name="keywords"/>
+  <meta content="TrueGrade Metals" name="author"/>
+  <meta content="{{META_DESCRIPTION}}" name="description"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no" name="viewport"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="{{OG_TITLE}}" property="og:title"/>
+  <meta content="article" property="og:type"/>
+  <meta content="{{CANONICAL_URL}}" property="og:url"/>
+  <meta content="{{OG_IMAGE}}" property="og:image"/>
+  <meta content="truegrademetals.com" property="og:site_name"/>
+  <meta content="{{OG_DESCRIPTION}}" property="og:description"/>
+  <link href="{{FAVICON_PATH}}favicon.ico" rel="shortcut icon"/>
+  <link href="{{FAVICON_PATH}}favicon.ico" rel="Bookmark"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="/tgm/components/tgm-tokens.css" rel="stylesheet"/>
+  <link href="/tgm/components/tgm-guides.css" rel="stylesheet"/>
+  <link href="/tgm/components/tgm-tables-graphs.css" rel="stylesheet"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.truegrademetals.com/",
+        "name": "TrueGrade Metals",
+        "url": "https://www.truegrademetals.com/",
+        "brand": {"@type": "Brand", "name": "TrueGrade Metals"},
+        "logo": "https://www.truegrademetals.com/tgm/LOGO.svg",
+        "description": "Leading Nickel Alloy / Superalloy (Monel, Inconel, Incoloy & Hastelloy) Supplier in China",
+        "email": "info@truegrademetals.com",
+        "telephone": "+86-519-81809659"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.truegrademetals.com/",
+        "url": "https://www.truegrademetals.com/",
+        "name": "TrueGrade Metals"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "{{CANONICAL_URL}}",
+        "url": "{{CANONICAL_URL}}",
+        "name": "{{GUIDE_TITLE}}",
+        "description": "{{META_DESCRIPTION}}",
+        "inLanguage": "en",
+        "isPartOf": {"@id": "https://www.truegrademetals.com/"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "{{CANONICAL_URL}}#breadcrumb",
+        "itemListElement": {{BREADCRUMB_SCHEMA}}
+      },
+      {
+        "@type": "Article",
+        "@id": "{{CANONICAL_URL}}#article",
+        "headline": "{{GUIDE_TITLE}}",
+        "description": "{{META_DESCRIPTION}}",
+        "author": {"@type": "Organization", "name": "TrueGrade Metals"},
+        "publisher": {"@id": "https://www.truegrademetals.com/"},
+        "dateModified": "{{LAST_UPDATED_ISO}}",
+        "datePublished": "{{DATE_PUBLISHED_ISO}}",
+        "mainEntityOfPage": {"@id": "{{CANONICAL_URL}}"}
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "{{CANONICAL_URL}}#faq",
+        "mainEntity": {{FAQ_SCHEMA}}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-M2WGSR9" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Global Navigation -->
+  <div id="global-nav" style="min-height:122px"></div>
+  <script src="/tgm/components/global-nav.js"></script>
+
+  <!-- ========================================================
+       Hero
+       ======================================================== -->
+  <header class="tg-guide-hero">
+    <div class="tg-guide-container tg-guide-hero-inner tg-guide-reveal">
+      <span class="tg-guide-eyebrow">{{GUIDE_TYPE}}</span>
+      <h1>{{HERO_TITLE}}</h1>
+      <p class="tg-guide-lead">{{HERO_LEAD}}</p>
+      <div class="tg-guide-meta">
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          {{READING_TIME}} read
+        </span>
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Updated {{LAST_UPDATED}}
+        </span>
+        <span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          Applies to: {{APPLICABLE_GRADES}}
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main class="tg-guide-main" id="main-content">
+    <div class="tg-guide-container tg-guide-layout">
+
+      <!-- ====================================================
+           Table of contents
+           ==================================================== -->
+      <aside class="tg-guide-toc" aria-label="Page contents">
+        <h2>On this page</h2>
+        <ul>
+          {{TOC_ITEMS}}
+          <!-- Example:
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#comparison">Material comparison</a></li>
+          <li><a href="#selection">Selection guide</a></li>
+          <li><a href="#standards">Standards</a></li>
+          <li><a href="#downloads">Downloads</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          -->
+        </ul>
+      </aside>
+
+      <!-- ====================================================
+           Article content
+           ==================================================== -->
+      <article class="tg-guide-article">
+
+        <nav aria-label="Breadcrumb">
+          <ol class="tg-guide-breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            {{BREADCRUMB_ITEMS}}
+            <!-- Example:
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+              <meta itemprop="position" content="1"/>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="/tgm/media.html"><span itemprop="name">Resources</span></a>
+              <meta itemprop="position" content="2"/>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <span itemprop="name">{{GUIDE_TITLE}}</span>
+              <meta itemprop="item" content="{{CANONICAL_URL}}"/>
+              <meta itemprop="position" content="3"/>
+            </li>
+            -->
+          </ol>
+        </nav>
+
+        <!-- INTRODUCTION -->
+        <section class="tg-guide-section tg-guide-reveal" id="introduction">
+          <span class="tg-guide-kicker">Engineering overview</span>
+          <h2>Introduction</h2>
+          {{INTRODUCTION_CONTENT}}
+        </section>
+
+        <!-- WHEN TO USE THIS GUIDE -->
+        <section class="tg-guide-section tg-guide-reveal" id="when-to-use">
+          <h2>When to use this guide</h2>
+          <ul class="tg-guide-checklist">
+            {{WHEN_TO_USE_ITEMS}}
+            <!-- Example:
+            <li><strong>Comparing alloys</strong> — understand trade-offs between Monel, Inconel, Incoloy and Hastelloy families.</li>
+            <li><strong>Specifying a grade</strong> — match temperature, corrosion and mechanical requirements to a proven alloy.</li>
+            <li><strong>Preparing an RFQ</strong> — identify the form, size range and standard you need before requesting a quote.</li>
+            -->
+          </ul>
+        </section>
+
+        <!-- MATERIAL COMPARISON TABLE -->
+        <section class="tg-guide-section tg-guide-reveal" id="comparison">
+          <span class="tg-guide-kicker">Side-by-side data</span>
+          <h2>Material comparison</h2>
+          {{COMPARISON_INTRO}}
+          <div class="tg-guide-table-wrap">
+            <table class="tg-guide-table">
+              <caption>{{COMPARISON_TABLE_CAPTION}}</caption>
+              <thead>
+                <tr>
+                  {{COMPARISON_TABLE_HEADERS}}
+                </tr>
+              </thead>
+              <tbody>
+                {{COMPARISON_TABLE_ROWS}}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- GRADE EQUIVALENCY -->
+        <section class="tg-guide-section tg-guide-reveal" id="equivalency">
+          <span class="tg-guide-kicker">Cross-reference</span>
+          <h2>Grade equivalency</h2>
+          {{EQUIVALENCY_INTRO}}
+          <div class="tg-guide-table-wrap">
+            <table class="tg-guide-table">
+              <thead>
+                <tr>
+                  {{EQUIVALENCY_TABLE_HEADERS}}
+                </tr>
+              </thead>
+              <tbody>
+                {{EQUIVALENCY_TABLE_ROWS}}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- MATERIAL SELECTION GUIDE -->
+        <section class="tg-guide-section tg-guide-reveal" id="selection">
+          <span class="tg-guide-kicker">Decision support</span>
+          <h2>Material selection guide</h2>
+          {{SELECTION_INTRO}}
+          <div class="tg-guide-decision">
+            {{SELECTION_DECISION_CARDS}}
+            <!-- Example:
+            <div class="tg-guide-decision-card">
+              <h4>High temperature &gt; 650 °C</h4>
+              <p>Consider Inconel 625 or 718 for creep resistance and oxidation protection.</p>
+              <a href="/tgm/grades/625.html">View Inconel 625 →</a>
+            </div>
+            -->
+          </div>
+          <div class="tg-guide-note">
+            <strong>Need help specifying?</strong> Our engineering team can review your operating environment, mechanical loads and certification requirements. <a href="/tgm/contact-us.html">Request a technical consultation</a>.
+          </div>
+        </section>
+
+        <!-- HEAT TREATMENT -->
+        <section class="tg-guide-section tg-guide-reveal" id="heat-treatment">
+          <span class="tg-guide-kicker">Processing guidance</span>
+          <h2>Heat treatment</h2>
+          {{HEAT_TREATMENT_CONTENT}}
+        </section>
+
+        <!-- MACHINING -->
+        <section class="tg-guide-section tg-guide-reveal" id="machining">
+          <span class="tg-guide-kicker">Processing guidance</span>
+          <h2>Machining guidelines</h2>
+          {{MACHINING_CONTENT}}
+        </section>
+
+        <!-- WELDING -->
+        <section class="tg-guide-section tg-guide-reveal" id="welding">
+          <span class="tg-guide-kicker">Joining guidance</span>
+          <h2>Welding guidelines</h2>
+          {{WELDING_CONTENT}}
+        </section>
+
+        <!-- CORROSION RESISTANCE -->
+        <section class="tg-guide-section tg-guide-reveal" id="corrosion">
+          <span class="tg-guide-kicker">Performance data</span>
+          <h2>Corrosion resistance</h2>
+          {{CORROSION_CONTENT}}
+        </section>
+
+        <!-- MATERIAL PROPERTY REFERENCE -->
+        <section class="tg-guide-section tg-guide-reveal" id="properties">
+          <span class="tg-guide-kicker">Reference data</span>
+          <h2>Material property reference</h2>
+          {{PROPERTY_INTRO}}
+          <div class="tg-guide-table-wrap">
+            <table class="tg-guide-table">
+              <thead>
+                <tr>
+                  {{PROPERTY_TABLE_HEADERS}}
+                </tr>
+              </thead>
+              <tbody>
+                {{PROPERTY_TABLE_ROWS}}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- STANDARDS & SPECIFICATIONS -->
+        <section class="tg-guide-section tg-guide-reveal" id="standards">
+          <span class="tg-guide-kicker">Specifications</span>
+          <h2>Standards &amp; specifications</h2>
+          {{STANDARDS_CONTENT}}
+          <div class="tg-guide-card-grid">
+            {{STANDARDS_CARDS}}
+            <!-- Example:
+            <article class="tg-guide-card">
+              <div class="tg-guide-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <h3>ASTM B167</h3>
+              <p>Nickel-chromium-iron seamless pipe and tube.</p>
+            </article>
+            -->
+          </div>
+        </section>
+
+        <!-- TECHNICAL DOWNLOADS -->
+        <section class="tg-guide-section tg-guide-reveal" id="downloads">
+          <span class="tg-guide-kicker">Documentation</span>
+          <h2>Technical downloads</h2>
+          {{DOWNLOADS_INTRO}}
+          <div class="tg-guide-downloads">
+            {{DOWNLOAD_ITEMS}}
+            <!-- Example:
+            <a class="tg-guide-download" href="/tgm/downloads/nickel-alloy-guide.pdf" download>
+              <div class="tg-guide-download-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              </div>
+              <div>
+                <div class="tg-guide-download-title">Nickel Alloy Selection Guide</div>
+                <div class="tg-guide-download-meta">PDF · 1.2 MB</div>
+              </div>
+            </a>
+            -->
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="tg-guide-section tg-guide-reveal" id="faq">
+          <span class="tg-guide-kicker">Common questions</span>
+          <h2>Engineering FAQs</h2>
+          <div class="tg-guide-faq-list" itemscope itemtype="https://schema.org/FAQPage">
+            {{FAQ_ITEMS}}
+            <!-- Example:
+            <details class="tg-guide-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <summary itemprop="name">What is the difference between Inconel 625 and 718?</summary>
+              <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p itemprop="text">Inconel 625 offers excellent corrosion resistance and weldability...</p>
+              </div>
+            </details>
+            -->
+          </div>
+        </section>
+
+        <!-- RELATED RESOURCES -->
+        <section class="tg-guide-section tg-guide-reveal" id="related">
+          <span class="tg-guide-kicker">Continue reading</span>
+          <h2>Related resources</h2>
+
+          <h3>Related products</h3>
+          <div class="tg-guide-related">
+            {{RELATED_PRODUCTS}}
+          </div>
+
+          <h3>Related categories</h3>
+          <div class="tg-guide-related">
+            {{RELATED_CATEGORIES}}
+          </div>
+
+          <h3>Related industries</h3>
+          <div class="tg-guide-related">
+            {{RELATED_INDUSTRIES}}
+          </div>
+
+          <h3>Related grades</h3>
+          <div class="tg-guide-related">
+            {{RELATED_GRADES}}
+          </div>
+        </section>
+
+        <!-- RFQ CTA -->
+        <section class="tg-guide-cta tg-guide-reveal" id="rfq">
+          <h2>{{RFQ_HEADING}}</h2>
+          <p>{{RFQ_TEXT}}</p>
+          <a class="tg-guide-btn" href="/tgm/contact-us.html">Request a technical quotation</a>
+          <a class="tg-guide-btn-ghost" href="mailto:info@truegrademetals.com">Email engineering team</a>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <div id="global-footer"></div>
+  <script src="/tgm/components/global-footer.js"></script>
+  <script src="/tgm/tgm-core.js"></script>
+</body>
+</html>

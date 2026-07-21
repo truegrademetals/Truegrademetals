@@ -1,0 +1,152 @@
+<!--
+  TrueGrade Metals — Reusable SEO / Schema Snippets
+  ============================================================
+  Copy the relevant <script type="application/ld+json"> block into a page
+  and replace {{PLACEHOLDERS}} with page-specific values.
+
+  Load order:
+    <link rel="canonical" href="{{CANONICAL_URL}}"/>
+    <meta property="og:url" content="{{CANONICAL_URL}}"/>
+    <script type="application/ld+json">...</script>
+  ============================================================ -->
+
+<!-- 1. Organization (use on every page or include once via global footer JS) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.truegrademetals.com/#organization",
+  "name": "TrueGrade Metals",
+  "url": "https://www.truegrademetals.com/",
+  "logo": "https://www.truegrademetals.com/tgm/LOGO.svg",
+  "description": "Leading nickel alloy / superalloy supplier of Monel, Inconel, Incoloy and Hastelloy in pipes, fittings, bars, sheets and wires.",
+  "email": "info@truegrademetals.com",
+  "telephone": "+86-519-81809659",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "603, Building 4, R&D HUB, No.18-50 Middle Changwu Road, Wujin District",
+    "addressLocality": "Changzhou",
+    "addressRegion": "Jiangsu",
+    "postalCode": "213161",
+    "addressCountry": "CN"
+  },
+  "sameAs": [
+    "https://www.truegrademetals.com"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+86-519-81809659",
+    "contactType": "sales",
+    "email": "info@truegrademetals.com",
+    "availableLanguage": ["English", "Chinese"]
+  }
+}
+</script>
+
+<!-- 2. WebSite (use once, usually on homepage) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://www.truegrademetals.com/#website",
+  "url": "https://www.truegrademetals.com/",
+  "name": "TrueGrade Metals",
+  "publisher": {"@id": "https://www.truegrademetals.com/#organization"},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.truegrademetals.com/tgm/sitemap.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- 3. WebPage (use on every page) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{CANONICAL_URL}}#webpage",
+  "url": "{{CANONICAL_URL}}",
+  "name": "{{PAGE_TITLE}}",
+  "description": "{{META_DESCRIPTION}}",
+  "inLanguage": "en",
+  "isPartOf": {"@id": "https://www.truegrademetals.com/#website"},
+  "about": {"@id": "https://www.truegrademetals.com/#organization"}
+}
+</script>
+
+<!-- 4. BreadcrumbList (use on every page with breadcrumbs) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id": "{{CANONICAL_URL}}#breadcrumb",
+  "itemListElement": {{BREADCRUMB_ITEMS_JSON}}
+}
+</script>
+
+<!-- 5. Product (use on product detail pages) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "{{CANONICAL_URL}}#product",
+  "name": "{{PRODUCT_NAME}}",
+  "description": "{{PRODUCT_DESCRIPTION}}",
+  "image": [{{PRODUCT_IMAGES_JSON}}],
+  "brand": {"@id": "https://www.truegrademetals.com/#organization"},
+  "manufacturer": {"@id": "https://www.truegrademetals.com/#organization"},
+  "category": "{{PRODUCT_CATEGORY}}",
+  "material": "{{MATERIAL_GRADE}}",
+  "potentialAction": {
+    "@type": "ViewAction",
+    "name": "Get a Free Quote Now",
+    "target": "https://www.truegrademetals.com/tgm/contact-us.html"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "offerCount": 1,
+    "priceCurrency": "USD",
+    "lowPrice": 0.0,
+    "highPrice": 0.0,
+    "price": 0.0
+  },
+  "additionalProperty": {{PRODUCT_PROPERTIES_JSON}}
+}
+</script>
+
+<!-- 6. FAQPage (use on pages with FAQ accordions) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "{{CANONICAL_URL}}#faq",
+  "mainEntity": {{FAQ_ITEMS_JSON}}
+}
+</script>
+
+<!-- 7. Article / TechArticle (use on guides and media articles) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "@id": "{{CANONICAL_URL}}#article",
+  "headline": "{{ARTICLE_TITLE}}",
+  "description": "{{META_DESCRIPTION}}",
+  "author": {"@id": "https://www.truegrademetals.com/#organization"},
+  "publisher": {"@id": "https://www.truegrademetals.com/#organization"},
+  "datePublished": "{{DATE_PUBLISHED}}",
+  "dateModified": "{{DATE_MODIFIED}}",
+  "mainEntityOfPage": {"@id": "{{CANONICAL_URL}}#webpage"}
+}
+</script>
+
+<!-- 8. ItemList for category grids -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": "{{CANONICAL_URL}}#itemlist",
+  "itemListElement": {{ITEM_LIST_JSON}}
+}
+</script>

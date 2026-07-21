@@ -1,0 +1,207 @@
+/* ============================================================
+   TrueGrade Metals — Shared Table & Graph System
+   ============================================================
+   One visual language for every technical table, chart and diagram
+   across category, product and grade pages.
+
+   Link this file after the page stylesheet:
+     <link href="/tgm/components/tgm-tables-graphs.css" rel="stylesheet"/>
+
+   Supports:
+     .table-container2  — scroll wrapper used by product pages
+     .tolerence-table   — large dimensional/schedule tables
+     .delivery-table    — delivery-state / packaging tables
+     .tgm-graph         — SVG technical diagrams / process maps
+     .tgm-table         — generic clean tables
+   ============================================================ */
+
+.tgm-table,
+.table-container2 table,
+.tolerence-table,
+.delivery-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #0B1F33;
+}
+
+.table-container2,
+.tgm-table-wrapper {
+  max-width: 1320px;
+  margin: 0 auto 40px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #ffffff;
+  border: 1px solid #e2e5eb;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(11,31,51,0.06);
+}
+
+.tgm-table-wrapper .tolerence-table,
+.tgm-table-wrapper .delivery-table,
+.table-container2 table {
+  min-width: 720px;
+}
+
+.tgm-table caption,
+.table-container2 caption {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e2e5eb;
+  color: #0B1F33;
+}
+
+.tgm-table th,
+.tgm-table td,
+.table-container2 th,
+.table-container2 td,
+.tolerence-table th,
+.tolerence-table td,
+.delivery-table th,
+.delivery-table td {
+  padding: 12px 14px;
+  border: 1px solid #e2e5eb;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tgm-table th,
+.table-container2 th,
+.tolerence-table th,
+.delivery-table th,
+.tolerence-table .head-tr th,
+.delivery-table .head-tr th {
+  background: #0B1F33;
+  color: #ffffff;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.tgm-table tr:nth-child(even) td,
+.table-container2 tr:nth-child(even) td,
+.tolerence-table tr:nth-child(even) td,
+.delivery-table tr:nth-child(even) td {
+  background: #f7f8fa;
+}
+
+.tgm-table tr:hover td,
+.table-container2 tr:hover td,
+.tolerence-table tr:hover td,
+.delivery-table tr:hover td {
+  background: #f2f7fb;
+}
+
+.tgm-table td:first-child,
+.table-container2 td:first-child,
+.tolerence-table td:first-child,
+.delivery-table td:first-child {
+  font-weight: 600;
+  color: #14304d;
+}
+
+/* Scroll hint shadow for tables */
+.table-container2::after,
+.tgm-table-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 24px;
+  background: linear-gradient(90deg, transparent, rgba(11,31,51,0.05));
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.table-container2.is-scrollable::after,
+.tgm-table-wrapper.is-scrollable::after {
+  opacity: 1;
+}
+
+/* Graph / diagram container */
+.tgm-graph {
+  max-width: 1320px;
+  margin: 0 auto 48px;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e2e5eb;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(11,31,51,0.06);
+  text-align: center;
+}
+
+.tgm-graph img,
+.tgm-graph svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.tgm-graph-caption {
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Process / flow diagrams */
+.tgm-process-diagram {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.tgm-process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 110px;
+  padding: 16px 10px;
+  background: #ffffff;
+  border: 1px solid #e2e5eb;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(11,31,51,0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tgm-process-step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(11,31,51,0.08);
+}
+
+.tgm-process-step img {
+  width: 44px;
+  height: 44px;
+}
+
+.tgm-process-step span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #0B1F33;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .tgm-table th,
+  .tgm-table td,
+  .table-container2 th,
+  .table-container2 td,
+  .tolerence-table th,
+  .tolerence-table td,
+  .delivery-table th,
+  .delivery-table td {
+    padding: 10px 12px;
+    font-size: 0.82rem;
+  }
+  .tgm-graph { padding: 20px; }
+}
