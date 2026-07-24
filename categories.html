@@ -6,6 +6,11 @@
 <title>Nickel Alloy Product Categories — Pipe, Fittings, Bar, Sheet, Wire | TrueGrade Metals</title>
 <meta name="description" content="Browse nickel alloy pipes & tubes, fittings, bars & rods, sheets & plates and wires & electrodes in Monel, Inconel, Incoloy and Hastelloy. Grade × form availability matrix, ASTM standards, 24h quote.">
 <meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nickel Alloy Product Categories | TrueGrade Metals">
+<meta property="og:image" content="https://www.truegrademetals.com/assets/og-image.jpg">
+<meta property="og:site_name" content="TrueGrade Metals">
+<link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="canonical" href="https://www.truegrademetals.com/categories.html">
 <meta name="theme-color" content="#0F1E2C">
 <script>document.documentElement.classList.add('js')</script>
@@ -51,7 +56,7 @@
 <style>
 .cat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 @media(max-width:900px){.cat-grid{grid-template-columns:1fr}}
-.cat-card{display:flex;flex-direction:column;padding:30px}
+.cat-card{display:flex;flex-direction:column;padding:30px;overflow:hidden}
 .cat-top{display:flex;gap:16px;align-items:flex-start;margin-bottom:6px}
 .cat-icon{width:50px;height:50px;border-radius:13px;background:var(--tint);color:var(--accent);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .cat-card h3{font-size:1.25rem;margin-bottom:4px}
@@ -111,8 +116,9 @@
 </div>
 
 <!-- ═══ HERO ═══ -->
-<section class="cat-hero">
-  <div class="container">
+<section class="cat-hero" style="position:relative;overflow:hidden">
+  <img src="assets/factory.jpg" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.10">
+  <div class="container" style="position:relative">
     <div class="reveal in" style="max-width:760px">
       <div class="eyebrow">Product categories</div>
       <h1 style="font-size:clamp(2.2rem,4.5vw,3.3rem);margin-bottom:16px">Every nickel-alloy form your BOM needs — <em style="font-style:normal;color:var(--accent)">one quality system.</em></h1>
@@ -130,6 +136,7 @@
   <div class="container">
     <div class="cat-grid">
       <div class="card cat-card reveal" id="pipes">
+        <img src="assets/prod-pipes.jpg" alt="Nickel alloy seamless pipes and tubes" loading="lazy" style="width:calc(100% + 60px);margin:-30px -30px 22px;height:190px;object-fit:cover;display:block">
         <div class="cat-top"><div class="cat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div>
         <div><h3>Pipes &amp; Tubes</h3><span class="cat-std">ASTM B444 · B163 · B165 · B167 · B407 · B423 · B622 · B829</span></div></div>
         <p>Seamless and welded pipe &amp; tube for corrosive, high-pressure and high-temperature service — cold-drawn or solution-annealed, pickled, polished or sand-blasted.</p>
@@ -138,6 +145,7 @@
       </div>
 
       <div class="card cat-card reveal d1" id="fittings">
+        <img src="assets/prod-fittings.jpg" alt="Nickel alloy pipe fittings — elbows, tees, reducers" loading="lazy" style="width:calc(100% + 60px);margin:-30px -30px 22px;height:190px;object-fit:cover;display:block">
         <div class="cat-top"><div class="cat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16M6 16v4M18 16v4M6 16a6 6 0 0 1 12 0"/></svg></div>
         <div><h3>Fittings &amp; Flanges</h3><span class="cat-std">ASTM B366 · B564 · B462</span></div></div>
         <p>Butt-weld and forged fittings matched to your tube or pipe heats — one traceable documentation package for the whole system.</p>
@@ -146,6 +154,7 @@
       </div>
 
       <div class="card cat-card reveal" id="bars">
+        <img src="assets/prod-bars.jpg" alt="Nickel alloy round bars and rods" loading="lazy" style="width:calc(100% + 60px);margin:-30px -30px 22px;height:190px;object-fit:cover;display:block">
         <div class="cat-top"><div class="cat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 12l4-4M3 12l4 4M21 12l-4-4M21 12l-4 4"/></svg></div>
         <div><h3>Bars &amp; Rods</h3><span class="cat-std">ASTM B446 · B164 · B166 · B408 · B425 · B574</span></div></div>
         <p>Hot-rolled, forged and cold-finished bar for machining and structural use — cut-to-length discs and machined blanks available.</p>
@@ -154,6 +163,7 @@
       </div>
 
       <div class="card cat-card reveal d1" id="sheets">
+        <img src="assets/prod-sheets.jpg" alt="Nickel alloy sheets and plates" loading="lazy" style="width:calc(100% + 60px);margin:-30px -30px 22px;height:190px;object-fit:cover;display:block">
         <div class="cat-top"><div class="cat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="10" rx="1"/><path d="M3 12h18"/></svg></div>
         <div><h3>Sheets &amp; Plates</h3><span class="cat-std">ASTM B443 · B168 · B409 · B424 · B575</span></div></div>
         <p>Hot- and cold-rolled plate, sheet and strip — cut-to-size and profile cutting to your drawing, with surface finish options.</p>
@@ -162,6 +172,7 @@
       </div>
 
       <div class="card cat-card reveal" id="wires">
+        <img src="assets/prod-wires.jpg" alt="Nickel alloy welding wire and coil" loading="lazy" style="width:calc(100% + 60px);margin:-30px -30px 22px;height:190px;object-fit:cover;display:block">
         <div class="cat-top"><div class="cat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12c3-6 6 6 8 0s5 6 8 0"/></svg></div>
         <div><h3>Wires &amp; Electrodes</h3><span class="cat-std">AWS A5.14 · AWS A5.11</span></div></div>
         <p>Spooled wire, filler metal and welding electrodes matched to base-alloy grades — for fabrication, overlay and MRO.</p>

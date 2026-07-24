@@ -6,6 +6,7 @@
 <title>TrueGrade Metals | Nickel Alloy Supplier &amp; Manufacturer — 24h Quote</title>
 <meta name="description" content="Certified Monel, Inconel, Incoloy and Hastelloy in pipe, fittings, bar, sheet and wire. EN 10204 3.1 MTC, 30+ years, global shipping, named metallurgist on every order. Quote in 24 hours.">
 <meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="canonical" href="https://www.truegrademetals.com/">
 <meta name="theme-color" content="#0F1E2C">
 <meta property="og:type" content="website">
@@ -13,6 +14,7 @@
 <meta property="og:description" content="Certified Monel, Inconel, Incoloy and Hastelloy with MTC, global shipping and a named metallurgist on every order.">
 <meta property="og:url" content="https://www.truegrademetals.com/">
 <meta property="og:site_name" content="TrueGrade Metals">
+<meta property="og:image" content="https://www.truegrademetals.com/assets/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <script>document.documentElement.classList.add('js')</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -137,7 +139,7 @@
 .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 @media(max-width:1000px){.prod-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.prod-grid{grid-template-columns:1fr}}
-.prod-card{padding:28px;display:flex;flex-direction:column}
+.prod-card{padding:28px;display:flex;flex-direction:column;overflow:hidden}
 .prod-card.featured{background:var(--ink);border-color:var(--ink);color:#fff}
 .prod-card.featured h3,.prod-card.featured .prod-std{color:#fff}
 .prod-card.featured p{color:rgba(255,255,255,.65)}
@@ -266,6 +268,15 @@
         </div>
       </div>
       <div class="reveal in d1">
+        <div class="hero-visual" style="position:relative;margin-bottom:18px">
+          <div class="hero-photo" style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid var(--border)">
+            <img src="assets/factory.jpg" alt="TrueGrade Metals factory — nickel alloy seamless pipe stock" style="width:100%;height:300px;object-fit:cover;display:block">
+          </div>
+          <div style="position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow);padding:12px 16px;display:flex;align-items:center;gap:12px">
+            <div style="width:38px;height:38px;border-radius:10px;background:var(--tint);display:flex;align-items:center;justify-content:center;color:var(--accent);flex-shrink:0"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></div>
+            <div><strong style="display:block;font-family:var(--font-head);font-size:.98rem;color:var(--ink)">0 MTC rejections</strong><span style="font-size:.76rem;color:var(--muted)">across 2024 shipments</span></div>
+          </div>
+        </div>
         <div class="card eng-card">
           <div class="eng-status">Engineer online now</div>
           <div class="eng-head">
@@ -376,6 +387,23 @@
   </div>
 </section>
 
+<!-- ═══ FACILITY ═══ -->
+<section class="section" id="facility" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Inside the works</div>
+      <h2>Real factory. Real stock. Real certificates.</h2>
+      <p>No trading-desk middlemen — what you see is where your material is melted, drawn, tested and packed.</p>
+    </div>
+    <div class="reveal" style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:14px" id="facilityGrid">
+      <a href="assets/factory.jpg" target="_blank" style="border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);display:block"><img src="assets/factory.jpg" alt="Nickel alloy pipe warehouse at TrueGrade Metals factory" style="width:100%;height:100%;object-fit:cover;display:block;min-height:300px"></a>
+      <a href="assets/qc-caliper.jpg" target="_blank" style="border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);display:block"><img src="assets/qc-caliper.jpg" alt="QC technician measuring nickel alloy pipe with digital caliper" style="width:100%;height:100%;object-fit:cover;display:block;min-height:300px"></a>
+      <a href="assets/packing.jpg" target="_blank" style="border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);display:block"><img src="assets/packing.jpg" alt="Export wooden crates with nickel alloy pipe ready for shipment" style="width:100%;height:100%;object-fit:cover;display:block;min-height:300px"></a>
+    </div>
+    <style>@media(max-width:900px){#facilityGrid{grid-template-columns:1fr!important}#facilityGrid img{min-height:220px!important}}</style>
+  </div>
+</section>
+
 <!-- ═══ PRODUCT CATEGORIES ═══ -->
 <section class="section" id="products">
   <div class="container">
@@ -386,30 +414,35 @@
     </div>
     <div class="prod-grid">
       <a href="product.html" class="card prod-card featured reveal">
+        <img src="assets/prod-pipes.jpg" alt="Nickel alloy seamless pipes and tubes" loading="lazy" style="width:calc(100% + 56px);margin:-28px -28px 20px;height:170px;object-fit:cover;display:block;border-radius:16px 16px 0 0;opacity:.95">
         <div class="prod-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div>
         <h3>Pipes &amp; Tubes</h3><div class="prod-std">ASTM B444 · B163 · B165 · B167 · B622</div>
         <p>Seamless, welded, capillary and coil tubing for corrosive and high-pressure service. Our flagship line.</p>
         <span class="prod-link">Open product page →</span>
       </a>
       <a href="categories.html#fittings" class="card prod-card reveal d1">
+        <img src="assets/prod-fittings.jpg" alt="Nickel alloy pipe fittings — elbows, tees, reducers" loading="lazy" style="width:calc(100% + 56px);margin:-28px -28px 20px;height:170px;object-fit:cover;display:block;border-radius:16px 16px 0 0">
         <div class="prod-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20h16M6 16v4M18 16v4M6 16a6 6 0 0 1 12 0"/></svg></div>
         <h3>Fittings</h3><div class="prod-std">ASTM B366</div>
         <p>Elbows, tees, reducers, flanges and caps in matching grades and standards.</p>
         <span class="prod-link">View category →</span>
       </a>
       <a href="categories.html#bars" class="card prod-card reveal d2">
+        <img src="assets/prod-bars.jpg" alt="Nickel alloy round bars and rods" loading="lazy" style="width:calc(100% + 56px);margin:-28px -28px 20px;height:170px;object-fit:cover;display:block;border-radius:16px 16px 0 0">
         <div class="prod-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 12l4-4M3 12l4 4M21 12l-4-4M21 12l-4 4"/></svg></div>
         <h3>Bars &amp; Rods</h3><div class="prod-std">ASTM B446 · B164 · B166 · B574</div>
         <p>Round, flat, hexagon and square profiles for machining and structural use.</p>
         <span class="prod-link">View category →</span>
       </a>
       <a href="categories.html#sheets" class="card prod-card reveal">
+        <img src="assets/prod-sheets.jpg" alt="Nickel alloy sheets and plates" loading="lazy" style="width:calc(100% + 56px);margin:-28px -28px 20px;height:170px;object-fit:cover;display:block;border-radius:16px 16px 0 0">
         <div class="prod-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="7" width="18" height="10" rx="1"/><path d="M3 12h18"/></svg></div>
         <h3>Sheets &amp; Plates</h3><div class="prod-std">ASTM B443 · B168 · B409 · B575</div>
         <p>Hot- and cold-rolled plate and sheet, cut-to-size with surface finishes.</p>
         <span class="prod-link">View category →</span>
       </a>
       <a href="categories.html#wires" class="card prod-card reveal d1">
+        <img src="assets/prod-wires.jpg" alt="Nickel alloy welding wire spools" loading="lazy" style="width:calc(100% + 56px);margin:-28px -28px 20px;height:170px;object-fit:cover;display:block;border-radius:16px 16px 0 0">
         <div class="prod-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12c3-6 6 6 8 0s5 6 8 0"/></svg></div>
         <h3>Wires &amp; Electrodes</h3><div class="prod-std">AWS A5.14 · A5.11</div>
         <p>Filler wire, welding electrodes and coil for fabrication and MRO.</p>
