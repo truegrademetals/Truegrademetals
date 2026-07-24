@@ -242,6 +242,7 @@
       </div>
       <a href="#why">Why Us</a>
       <a href="#faq">FAQ</a>
+      <a href="about.html">About</a>
     </nav>
     <div class="header-actions">
       <a href="#rfq" class="btn btn-primary"><span class="long">Request Quote — </span>24h ↗</a>
@@ -499,6 +500,13 @@
   </div>
 </section>
 
+<!-- ═══ LEAD MAGNET ═══ -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="reveal" data-leadform></div>
+  </div>
+</section>
+
 <!-- ═══ INDUSTRIES ═══ -->
 <section class="section section-white" id="industries">
   <div class="container">
@@ -547,7 +555,7 @@
           <a class="contact-opt" href="https://wa.me/8651981809659" target="_blank" rel="noopener"><span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg></span><span><strong>WhatsApp</strong><span>Fastest for urgent specs &amp; photos</span></span></a>
         </div>
       </div>
-      <form class="card rfq-form reveal d1" id="rfqForm">
+      <form class="card rfq-form reveal d1" id="rfqForm" data-lead>
         <div class="field"><label for="fName">Name *</label><input id="fName" placeholder="Your name"></div>
         <div class="field"><label for="fEmail">Work email *</label><input id="fEmail" type="email" placeholder="you@company.com"></div>
         <div class="field"><label for="fCompany">Company</label><input id="fCompany" placeholder="Company Ltd."></div>
@@ -595,7 +603,7 @@
       </div>
       <div><h4>Products</h4><a href="product.html">Pipes &amp; Tubes</a><a href="categories.html#fittings">Fittings</a><a href="categories.html#bars">Bars &amp; Rods</a><a href="categories.html#sheets">Sheets &amp; Plates</a><a href="categories.html#wires">Wires &amp; Electrodes</a><a href="categories.html">All categories →</a></div>
       <div><h4>Materials</h4><a href="#grades">Monel®</a><a href="#grades">Inconel®</a><a href="#grades">Incoloy®</a><a href="#grades">Hastelloy®</a><a href="#rfq">Pure Nickel</a><a href="#rfq">Specialty grades</a></div>
-      <div><h4>Contact</h4><a href="mailto:info@truegrademetals.com">info@truegrademetals.com</a><a href="tel:+8651981809659">+86-519-81809659</a><a href="https://wa.me/8651981809659" target="_blank" rel="noopener">WhatsApp</a><a href="#rfq">Request a quote</a><a href="#faq">FAQ</a></div>
+      <div><h4>Contact</h4><a href="mailto:info@truegrademetals.com">info@truegrademetals.com</a><a href="tel:+8651981809659">+86-519-81809659</a><a href="https://wa.me/8651981809659" target="_blank" rel="noopener">WhatsApp</a><a href="#rfq">Request a quote</a><a href="#faq">FAQ</a><a href="about.html">About us</a></div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 TrueGrade Metals · Changzhou, Jiangsu, China · Quote response within 24 hours</span>
@@ -617,25 +625,42 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script src="assets/site.js"></script>
+<script src="assets/leadgen.js"></script>
 <script>
 /* ═══ grade explorer ═══ */
 var gradeData = {
   monel: [
-    ['Monel 400','UNS N04400','Excellent seawater and brine resistance; valves, pumps, marine shafts.','pipe, bar, sheet, wire, fitting'],
-    ['Monel K-500','UNS N05500','Age-hardenable with higher strength; fasteners, springs, pump shafts.','bar, rod, wire, forging']
+    ['Monel 400','UNS N04400','Excellent seawater and brine resistance; valves, pumps, marine shafts.','pipe, fitting, bar, sheet, wire'],
+    ['Monel K-500','UNS N05500','Age-hardenable with higher strength; fasteners, springs, pump shafts.','bar, rod, wire, forging'],
+    ['Monel 401 / 404 / R-405','UNS N04401 · N04404 · N04405','Electronics and instrumentation variants — 404 for low Curie temperature, R-405 free-machining.','bar, rod, wire'],
+    ['Monel 502','UNS N05502','Machinable age-hardened grade for precision components.','bar, rod']
   ],
   inconel: [
-    ['Inconel 600','UNS N06600','Oxidation-resistant to 1095 °C; furnace parts, heat-treat fixtures.','sheet, bar, wire, pipe'],
-    ['Inconel 625','UNS N06625','High creep-rupture strength and chloride pitting resistance.','pipe, bar, sheet, wire, fitting'],
-    ['Inconel 718','UNS N07718','Precipitation-hardened superalloy for aerospace and turbines.','round bar, wire, sheet']
+    ['Inconel 600','UNS N06600','Oxidation-resistant to 1095 °C; furnace parts, heat-treat fixtures.','pipe, bar, sheet, wire'],
+    ['Inconel 601 / 602CA','UNS N06601 · N06025','Aluminum-enhanced oxidation resistance for radiant tubes and furnace rollers.','pipe, bar, sheet, wire'],
+    ['Inconel 617','UNS N06617','Ni-Cr-Co-Mo for 1100 °C gas-turbine combustion and ducting.','pipe, bar, sheet, wire'],
+    ['Inconel 625','UNS N06625','High creep-rupture strength and chloride pitting resistance.','pipe, fitting, bar, sheet, wire'],
+    ['Inconel 690 / 693','UNS N06690 · N06693','High-Cr grades for nuclear steam generators and waste processing.','pipe, bar, sheet'],
+    ['Inconel 718','UNS N07718','Precipitation-hardened superalloy for aerospace and turbines.','round bar, wire, sheet'],
+    ['Inconel 725 / X-750','UNS N07725 · N07750','Age-hardenable grades for springs, fasteners and sour-gas service.','bar, wire, strip'],
+    ['Inconel 740H / 751 / MA754','UNS N07740 · N07751 · N07754','Advanced USC boiler, exhaust-valve and ODS variants.','pipe, bar, wire']
   ],
   incoloy: [
-    ['Incoloy 800','UNS N08800','High-temperature strength with carburization resistance.','pipe, tube, sheet, bar'],
-    ['Incoloy 825','UNS N08825','Outstanding resistance to sulfuric and phosphoric acids.','pipe, fitting, sheet, bar, wire']
+    ['Incoloy 800 / 800H / 800HT','UNS N08800 · N08810 · N08811','High-temperature strength with carburization resistance.','pipe, tube, sheet, bar'],
+    ['Incoloy 825','UNS N08825','Outstanding resistance to sulfuric and phosphoric acids.','pipe, fitting, sheet, bar, wire'],
+    ['Incoloy 925 / 945','UNS N09925 · N09945','Age-hardened grades for sour-gas downhole and valve service.','bar, wire'],
+    ['Incoloy 903 / 907 / 909','UNS N19903 · N19907 · N19909','Controlled-expansion superalloys for precision aerospace structures.','bar, sheet, wire'],
+    ['Incoloy 926 / A-286','UNS N08926 · S66286','Super-austenitic 926 for seawater; A-286 iron-based superalloy to 700 °C.','pipe, sheet, bar, wire'],
+    ['Incoloy 330 / DS / MA956','UNS N08330 · N08335 · S67956','Heat-resistant furnace alloys, incl. oxide-dispersion-strengthened MA956.','pipe, bar, sheet, wire']
   ],
   hastelloy: [
     ['Hastelloy C-276','UNS N10276','Universal corrosion resistance in oxidizing and reducing media.','pipe, fitting, sheet, bar, wire'],
-    ['Hastelloy C-22','UNS N06022','Improved resistance to chloride-containing process streams.','sheet, pipe, fitting, wire']
+    ['Hastelloy C-22','UNS N06022','Improved resistance to chloride-containing process streams.','sheet, pipe, fitting, wire'],
+    ['Hastelloy C-2000','UNS N06200','Copper-bearing C-type for mixed oxidizing/reducing acid plants.','pipe, fitting, sheet, wire'],
+    ['Hastelloy B-2 / B-3','UNS N10665 · N10675','Ni-Mo grades for hydrochloric and other reducing acids.','pipe, bar, sheet'],
+    ['Hastelloy G-3 / G-30 / G-35','UNS N06985 · N06030 · N06035','Phosphoric-acid and fertilizer-plant specialists.','pipe, sheet, bar, wire'],
+    ['Hastelloy C-4 / C-22HS / S','UNS N06455 · N07022 · N06635','Thermally stable C-types and high-temperature S grade.','pipe, sheet, bar'],
+    ['Hastelloy N / W / X','UNS N10003 · N10004 · N06002','Molten-salt reactor grade N; X for gas-turbine combustion zones.','pipe, bar, sheet, wire']
   ]
 };
 function renderGrades(fam){
