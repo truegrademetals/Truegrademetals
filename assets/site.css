@@ -145,3 +145,61 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--ink);margin:0;font-weight:6
 @media(max-width:560px){.footer-grid{grid-template-columns:1fr}}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:.78rem;color:rgba(255,255,255,.4)}
 .footer-brand p{font-size:.88rem;line-height:1.7;margin:14px 0 0;max-width:320px}
+
+/* ═══ v3 additions: dropdown nav, matrix, industries, WhatsApp ═══ */
+.nav .has-drop{position:relative}
+.nav .drop{position:absolute;top:calc(100% + 10px);left:0;min-width:280px;background:#fff;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-lg);padding:12px;opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .2s ease,transform .25s var(--ease);z-index:120}
+.nav .has-drop:hover .drop,.nav .has-drop:focus-within .drop{opacity:1;pointer-events:auto;transform:translateY(0)}
+.drop a{display:flex;align-items:flex-start;gap:12px;padding:10px 12px;border-radius:var(--radius-sm);color:var(--ink)}
+.drop a:hover{background:var(--bg);color:var(--accent)}
+.drop-ic{width:34px;height:34px;border-radius:9px;background:var(--tint);color:var(--accent);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.drop a strong{display:block;font-size:.9rem;font-weight:600}
+.drop a small{display:block;font-size:.76rem;color:var(--muted);font-weight:400}
+.drop-all{display:block;margin-top:8px;padding:10px 12px;border-top:1px solid var(--border);font-size:.86rem;font-weight:600;color:var(--accent)}
+.drop-all:hover{background:var(--tint)}
+
+.btn-wa{background:#1fa855;color:#fff}
+.btn-wa:hover{background:#178a45;transform:translateY(-2px)}
+
+/* grade × form matrix */
+.matrix-scroll{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--border);background:#fff}
+.matrix{width:100%;border-collapse:collapse;font-size:.84rem;min-width:760px}
+.matrix thead{background:var(--ink);color:#fff}
+.matrix th{padding:13px 14px;text-align:center;font-family:var(--font-head);font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.matrix th:first-child{text-align:left}
+.matrix td{padding:11px 14px;text-align:center;border-bottom:1px solid var(--border);color:var(--body)}
+.matrix td:first-child{text-align:left;font-weight:600;color:var(--ink);white-space:nowrap}
+.matrix td small{display:block;font-family:var(--font-mono);font-size:.66rem;color:var(--muted);font-weight:400}
+.matrix tbody tr:hover{background:var(--bg)}
+.matrix .yes{color:var(--green);font-weight:700}
+.matrix .no{color:#d7dde5}
+
+/* industries */
+.ind-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+@media(max-width:1000px){.ind-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.ind-grid{grid-template-columns:repeat(2,1fr)}}
+.ind-card{text-align:center;padding:24px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--radius-sm);transition:all .25s ease}
+.ind-card:hover{border-color:var(--accent);transform:translateY(-4px);box-shadow:var(--shadow-sm)}
+.ind-card svg{color:var(--ink);margin-bottom:10px;transition:color .25s}
+.ind-card:hover svg{color:var(--accent)}
+.ind-card span{display:block;font-size:.84rem;font-weight:600;color:var(--ink);line-height:1.3}
+
+/* contact option cards (rfq side) */
+.contact-opts{display:flex;flex-direction:column;gap:12px;margin-top:26px}
+.contact-opt{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:var(--radius-sm);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);transition:all .2s}
+.contact-opt:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)}
+.contact-opt .ci{width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:var(--accent-light);flex-shrink:0}
+.contact-opt strong{display:block;color:#fff;font-size:.92rem}
+.contact-opt span{font-size:.78rem;color:rgba(255,255,255,.55)}
+
+/* category page hero */
+.cat-hero{padding:56px 0 48px;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%)}
+.cat-card{display:flex;flex-direction:column;padding:28px;height:100%}
+.cat-subs{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 18px}
+.cat-subs span{font-size:.74rem;font-weight:500;color:var(--body);background:var(--bg);border:1px solid var(--border);padding:4px 10px;border-radius:var(--pill)}
+.cat-card .prod-link{margin-top:auto}
+
+/* breadcrumb (shared) */
+.breadcrumb{padding:16px 0 0;font-size:.8rem;color:var(--muted)}
+.breadcrumb a:hover{color:var(--accent)}
+.breadcrumb span{color:var(--ink);font-weight:500}
