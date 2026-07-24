@@ -663,9 +663,20 @@ var gradeData = {
     ['Hastelloy N / W / X','UNS N10003 · N10004 · N06002','Molten-salt reactor grade N; X for gas-turbine combustion zones.','pipe, bar, sheet, wire']
   ]
 };
+var GRADE_HUBS = {
+  'Monel 400':'grade-monel-400.html','Monel K-500':'grade-monel-k500.html','Monel 401 / 404 / R-405':'grades.html','Monel 502':'grade-monel-502.html',
+  'Inconel 600':'grade-inconel-600.html','Inconel 601 / 602CA':'grade-inconel-601.html','Inconel 617':'grade-inconel-617.html','Inconel 625':'grade-inconel-625.html',
+  'Inconel 690 / 693':'grade-inconel-690.html','Inconel 718':'grade-inconel-718.html','Inconel 725 / X-750':'grade-inconel-725.html','Inconel 740H / 751 / MA754':'grade-inconel-740h.html',
+  'Incoloy 800 / 800H / 800HT':'grade-incoloy-800.html','Incoloy 825':'grade-incoloy-825.html','Incoloy 925 / 945':'grade-incoloy-925.html',
+  'Incoloy 903 / 907 / 909':'grade-incoloy-903.html','Incoloy 926 / A-286':'grade-incoloy-926.html','Incoloy 330 / DS / MA956':'grade-alloy-330.html',
+  'Hastelloy C-276':'grade-hastelloy-c276.html','Hastelloy C-22':'grade-hastelloy-c22.html','Hastelloy C-2000':'grade-hastelloy-c2000.html',
+  'Hastelloy B-2 / B-3':'grade-hastelloy-b3.html','Hastelloy G-3 / G-30 / G-35':'grade-hastelloy-g30.html','Hastelloy C-4 / C-22HS / S':'grade-hastelloy-c4.html',
+  'Hastelloy N / W / X':'grade-hastelloy-x.html'
+};
 function renderGrades(fam){
   document.getElementById('gradeGrid').innerHTML = gradeData[fam].map(function(g){
-    return '<div class="card grade-card reveal in"><h4>'+g[0]+'</h4><span class="grade-uns">'+g[1]+'</span><p>'+g[2]+'</p><div class="grade-forms">Forms: <strong>'+g[3]+'</strong></div><a href="#rfq" class="prod-link">Quote '+g[0].split(' ')[0]+' →</a></div>';
+    var hub = GRADE_HUBS[g[0]] || 'grades.html';
+    return '<div class="card grade-card reveal in"><h4><a href="'+hub+'" style="color:inherit">'+g[0]+'</a></h4><span class="grade-uns">'+g[1]+'</span><p>'+g[2]+'</p><div class="grade-forms">Forms: <strong>'+g[3]+'</strong></div><a href="'+hub+'" class="prod-link">View '+g[0]+' →</a></div>';
   }).join('');
 }
 renderGrades('monel');

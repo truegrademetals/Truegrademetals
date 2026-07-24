@@ -6,6 +6,7 @@ Ready-to-launch static website. No build step, no server-side code — upload th
 ```
 index.html              Landing page (conversion funnel, RFQ form, SEO schema)
 categories.html         Full product catalog — 6 categories, 22 sub-products, 70+ grades
+grades.html             Grade library index + 69 grade hub pages (grade-*.html)
 about.html              About & Contact — team, values, contact form
 tools.html              Interactive pipe schedule calculator + grade comparison
 industries.html         Industry index + 12 industry landing pages (industry-*.html)
@@ -18,7 +19,7 @@ Product pages (16):
   hastelloy-c276-pipes/fittings/sheets.html
   monel-400-pipes/bars.html       incoloy-825-pipes/sheets.html
 
-404.html, robots.txt, sitemap.xml (37 URLs)
+404.html, robots.txt, sitemap.xml (107 URLs)
 assets/                 site.css, site.js, leadgen.js, images, favicon,
                         grade-selection-guide.pdf + 5 form catalogs (catalog-*.pdf)
 _gen*.py                page generators — edit data & re-run to regenerate pages
