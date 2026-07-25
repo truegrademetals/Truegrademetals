@@ -233,6 +233,21 @@
 /* industry pictograms */
 .ind-card .picto{width:40px;height:40px;margin:0 0 10px;border-radius:10px}
 
+/* ── scroll-driven product carousel ── */
+.carousel-wrap{position:relative;margin:0 calc(50% - 50vw);padding:0 calc(50vw - 50%)}
+.prod-carousel{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:26px max(24px, calc(50vw - 250px)) 30px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.prod-carousel::-webkit-scrollbar{display:none}
+.prod-carousel .prod-card{flex:0 0 min(500px,82vw);scroll-snap-align:center;transition:transform .45s cubic-bezier(.22,.68,0,1.01),box-shadow .45s ease,opacity .45s ease;transform:scale(.88);opacity:.55}
+.prod-carousel .prod-card.center{transform:scale(1);opacity:1;box-shadow:0 24px 60px -18px rgba(15,30,44,.28);z-index:2}
+.prod-carousel .prod-card img{height:190px!important}
+.carousel-ui{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:2px}
+.car-btn{width:44px;height:44px;border-radius:50%;border:1px solid var(--border);background:#fff;color:var(--ink);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .25s;font-family:inherit}
+.car-btn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.car-btn svg{width:16px;height:16px}
+.car-progress{width:min(280px,40vw);height:3px;background:var(--border);border-radius:3px;overflow:hidden}
+.car-progress i{display:block;height:100%;background:var(--accent);border-radius:3px;width:20%;transition:width .2s linear}
+.car-hint{font-size:.74rem;color:var(--muted);text-align:center;margin-top:10px}
+@media(max-width:700px){.prod-carousel{padding-left:20px;padding-right:20px;scroll-padding:0}.prod-carousel .prod-card{flex-basis:78vw}}
 /* ── grade composition chips (truegrademetals.com style) ── */
 .grade-card{position:relative}
 .chem-base{display:flex;gap:6px;margin:10px 0 2px}
@@ -473,8 +488,9 @@
       <h2>Five product forms, one quality system.</h2>
       <p>Browse nickel-alloy pipe, fittings, bars, sheets and wires — or send your full BOM for a consolidated quote.</p>
     </div>
-    <div class="prod-grid">
-      <a href="product.html" class="card prod-card featured reveal">
+    <div class="carousel-wrap">
+    <div class="prod-carousel" id="prodCarousel">
+      <a href="product.html" class="card prod-card featured">
         <img src="assets/prod-pipes.jpg" alt="Nickel alloy seamless pipes and tubes" loading="lazy" style="width:calc(100% + 56px);margin:-28px -28px 20px;height:170px;object-fit:cover;display:block;border-radius:16px 16px 0 0;opacity:.95">
         <div class="form-illus" aria-hidden="true"><svg viewBox="0 0 200 96" fill="none" stroke="currentColor" stroke-width="2">
           <ellipse cx="42" cy="48" rx="26" ry="34"/><ellipse cx="42" cy="48" rx="15" ry="21"/>
@@ -487,7 +503,7 @@
         <p>Seamless, welded, capillary and coil tubing for corrosive and high-pressure service. Our flagship line.</p>
         <span class="prod-link">Open product page →</span>
       </a>
-      <a href="fittings.html" class="card prod-card reveal d1">
+      <a href="fittings.html" class="card prod-card">
         <img src="assets/prod-fittings.jpg" alt="Nickel alloy pipe fittings — elbows, tees, reducers" loading="lazy" style="width:calc(100% + 56px);margin:-28px -28px 20px;height:170px;object-fit:cover;display:block;border-radius:16px 16px 0 0">
         <div class="form-illus" aria-hidden="true"><svg viewBox="0 0 200 96" fill="none" stroke="currentColor" stroke-width="2">
           <!-- 90° elbow -->
@@ -501,7 +517,7 @@
         <p>Elbows, tees, reducers, flanges and caps in matching grades and standards.</p>
         <span class="prod-link">View category →</span>
       </a>
-      <a href="bars.html" class="card prod-card reveal d2">
+      <a href="bars.html" class="card prod-card">
         <img src="assets/prod-bars.jpg" alt="Nickel alloy round bars and rods" loading="lazy" style="width:calc(100% + 56px);margin:-28px -28px 20px;height:170px;object-fit:cover;display:block;border-radius:16px 16px 0 0">
         <div class="form-illus" aria-hidden="true"><svg viewBox="0 0 200 96" fill="none" stroke="currentColor" stroke-width="2">
           <!-- hex bar -->
@@ -514,7 +530,7 @@
         <p>Round, flat, hexagon and square profiles for machining and structural use.</p>
         <span class="prod-link">View category →</span>
       </a>
-      <a href="sheets.html" class="card prod-card reveal">
+      <a href="sheets.html" class="card prod-card">
         <img src="assets/prod-sheets.jpg" alt="Nickel alloy sheets and plates" loading="lazy" style="width:calc(100% + 56px);margin:-28px -28px 20px;height:170px;object-fit:cover;display:block;border-radius:16px 16px 0 0">
         <div class="form-illus" aria-hidden="true"><svg viewBox="0 0 200 96" fill="none" stroke="currentColor" stroke-width="2">
           <!-- isometric plate stack -->
@@ -526,7 +542,7 @@
         <p>Hot- and cold-rolled plate and sheet, cut-to-size with surface finishes.</p>
         <span class="prod-link">View category →</span>
       </a>
-      <a href="wires.html" class="card prod-card reveal d1">
+      <a href="wires.html" class="card prod-card">
         <img src="assets/prod-wires.jpg" alt="Nickel alloy welding wire spools" loading="lazy" style="width:calc(100% + 56px);margin:-28px -28px 20px;height:170px;object-fit:cover;display:block;border-radius:16px 16px 0 0">
         <div class="form-illus" aria-hidden="true"><svg viewBox="0 0 200 96" fill="none" stroke="currentColor" stroke-width="2">
           <!-- wire spool -->
@@ -541,12 +557,19 @@
         <p>Filler wire, welding electrodes and coil for fabrication and MRO.</p>
         <span class="prod-link">View category →</span>
       </a>
-      <a href="#rfq" class="card prod-card reveal d2">
+      <a href="#rfq" class="card prod-card">
         <div class="prod-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2l8 5v10l-8 5-8-5V7z"/></svg></div>
         <h3>Full BOM? Consolidated quote</h3><div class="prod-std">ALL FORMS · ONE PO</div>
         <p>Send your complete bill of materials — one quote, one heat-tracking file, one shipment.</p>
         <span class="prod-link">Send BOM →</span>
       </a>
+    </div>
+    <div class="carousel-ui">
+      <button class="car-btn" id="carPrev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <div class="car-progress"><i id="carBar"></i></div>
+      <button class="car-btn" id="carNext" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+    <p class="car-hint">← Scroll to explore →</p>
     </div>
   </div>
 </section>
@@ -1026,6 +1049,51 @@
 <script src="assets/site.js"></script>
 <script src="assets/leadgen.js"></script>
 <script>
+
+/* ═══ product carousel: center-frame expansion ═══ */
+(function(){
+  var track = document.getElementById('prodCarousel');
+  if (!track) return;
+  var cards = Array.prototype.slice.call(track.querySelectorAll('.prod-card'));
+  var bar = document.getElementById('carBar');
+  function update(){
+    var mid = window.innerWidth / 2;
+    var best = null, bestDist = 1e9;
+    cards.forEach(function(c){
+      var r = c.getBoundingClientRect();
+      var d = Math.abs((r.left + r.right) / 2 - mid);
+      if (d < bestDist) { bestDist = d; best = c; }
+      c.classList.remove('center');
+    });
+    if (best) best.classList.add('center');
+    var max = track.scrollWidth - track.clientWidth;
+    if (bar && max > 0) bar.style.width = Math.max(8, (track.scrollLeft / max) * 100) + '%';
+  }
+  var ticking = false;
+  track.addEventListener('scroll', function(){
+    if (!ticking) { requestAnimationFrame(function(){ update(); ticking = false; }); ticking = true; }
+  }, { passive: true });
+  window.addEventListener('resize', update);
+  function step(dir){
+    var c = track.querySelector('.prod-card.center') || cards[0];
+    var i = cards.indexOf(c) + dir;
+    i = Math.max(0, Math.min(cards.length - 1, i));
+    cards[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+  }
+  document.getElementById('carPrev').addEventListener('click', function(){ step(-1); });
+  document.getElementById('carNext').addEventListener('click', function(){ step(1); });
+  /* keyboard support */
+  track.setAttribute('tabindex','0');
+  track.addEventListener('keydown', function(e){
+    if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
+  });
+  /* start centered on the flagship card */
+  requestAnimationFrame(function(){
+    cards[0].scrollIntoView({ inline: 'center', block: 'nearest' });
+    update();
+  });
+})();
 
 /* ═══ alloy selector ═══ */
 (function(){
