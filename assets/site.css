@@ -232,3 +232,23 @@ h1,h2,h3,h4{font-family:var(--font-head);color:var(--ink);margin:0;font-weight:6
 .tgl-inline-form input{padding:10px 12px;border:1px solid var(--border);border-radius:var(--radius-sm);font-family:inherit;font-size:.88rem;min-width:150px;outline:none}
 .tgl-inline-form input:focus{border-color:var(--accent)}
 .tgl-inline-done{width:100%;font-weight:600;color:var(--green);font-size:.9rem}
+
+/* ── mobile optimisation ── */
+@media(max-width:800px){
+  .section{padding:58px 0}
+  .section-head{margin-bottom:34px}
+  .hero{padding:40px 0 0}
+  .hero-grid{gap:34px;padding-bottom:40px}
+  .hero-sub{font-size:1.02rem}
+  .hero-actions .btn{width:100%;justify-content:center}
+  .hero-contacts{gap:8px 16px;font-size:.82rem}
+  .hero-stats-inner{padding:24px 20px;gap:18px}
+  .hstat strong{font-size:1.65rem}
+  .global-inner{padding:0 20px}
+  .case-card{padding:26px}
+  .chart-box{height:230px}
+  .vs-side{padding:24px 20px}
+  .form-illus{height:72px}
+  .form-illus svg{height:72px}
+  #facilityGrid{gap:10px}
+}

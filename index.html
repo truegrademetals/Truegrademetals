@@ -232,6 +232,18 @@
 .vs-foot strong{color:var(--ink)}
 /* industry pictograms */
 .ind-card .picto{width:40px;height:40px;margin:0 0 10px;border-radius:10px}
+/* pull products closer to hero */
+#case{padding-top:56px}
+@media(max-width:800px){
+  #risks{padding-top:44px}
+  #case{padding-top:36px}
+  #products{padding-top:8px}
+  #products .prod-card img{height:130px!important}
+  #facility{padding-top:0!important}
+  .marquee-band{padding:14px 0}
+  .ind-label span{font-size:.95rem}
+  .eng-card{padding:20px}
+}
 /* industry photo cards */
 #industries .ind-grid{grid-template-columns:repeat(3,1fr)}
 @media(max-width:900px){#industries .ind-grid{grid-template-columns:repeat(2,1fr)}}
