@@ -232,6 +232,20 @@
 .vs-foot strong{color:var(--ink)}
 /* industry pictograms */
 .ind-card .picto{width:40px;height:40px;margin:0 0 10px;border-radius:10px}
+
+/* ── grade composition chips (truegrademetals.com style) ── */
+.grade-card{position:relative}
+.chem-base{display:flex;gap:6px;margin:10px 0 2px}
+.chem-base b{flex:1;text-align:center;font-family:var(--font-mono);font-size:.68rem;font-weight:600;padding:4px 0;border-radius:6px;background:var(--ink);color:#fff;letter-spacing:.04em}
+.chem-base b.a2{background:var(--accent)}
+.chem-toggle{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:.76rem;font-weight:700;color:var(--accent-dark);background:none;border:0;cursor:pointer;font-family:inherit;padding:0}
+.chem-toggle svg{width:12px;height:12px;transition:transform .25s}
+.grade-card.open .chem-toggle svg{transform:rotate(180deg)}
+.chem-panel{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.grade-card.open .chem-panel{max-height:420px}
+.chem-table{margin-top:10px;display:flex;flex-wrap:wrap;gap:5px}
+.chem-table span{font-family:var(--font-mono);font-size:.63rem;background:var(--tint);color:var(--ink);padding:4px 8px;border-radius:6px;white-space:nowrap}
+.chem-src{margin-top:8px;font-size:.62rem;color:var(--muted)}
 /* pull products closer to hero */
 #case{padding-top:56px}
 #products{padding-top:64px}
@@ -1124,6 +1138,34 @@ var gradeData = {
     ['Hastelloy N / W / X','UNS N10003 · N10004 · N06002','Molten-salt reactor grade N; X for gas-turbine combustion zones.','pipe, bar, sheet, wire']
   ]
 };
+
+/* chemical composition per grade — source: truegrademetals.com grade pages (ASTM limits) */
+var GRADE_CHEM = {
+  'Monel 400': { base:['Ni','Cu'], els:['Ni ≥ 63.0%','Cu: 28.0–34.0%','Fe ≤ 2.5%','Mn ≤ 2.00%','C ≤ 0.30%','Si ≤ 0.50%','S ≤ 0.024%'] },
+  'Monel K-500': { base:['Ni','Cu'], els:['Ni ≥ 63.0%','Cu: 27.0–33.0%','Al: 2.30–3.15%','Ti: 0.35–0.85%','Fe ≤ 2.0%','Mn ≤ 1.50%','C ≤ 0.18%','Si ≤ 0.50%','S ≤ 0.010%'] },
+  'Monel 401 / 404 / R-405': { base:['Ni','Cu'], els:['Ni: 40.0–45.0%','Cu: 51.4–56.4%','Fe ≤ 0.75%','Mn ≤ 2.25%','Co ≤ 0.25%','C ≤ 0.10%','Si ≤ 0.25%','S ≤ 0.015%'] },
+  'Monel 502': { base:['Ni','Cu'], els:['Ni: 63.0–70.0%','Cu: 21.9–29.9%','Al: 2.50–3.50%','Ti ≤ 0.50%','Fe ≤ 2.0%','Mn ≤ 1.50%','C ≤ 0.10%','Si ≤ 0.50%','S ≤ 0.010%'] },
+  'Inconel 600': { base:['Ni','Cr'], els:['Ni ≥ 72.0%','Cr: 14.0–17.0%','Fe: 6.0–10.0%','Mn ≤ 1.00%','Cu ≤ 0.50%','C ≤ 0.15%','Si ≤ 0.50%','S ≤ 0.015%'] },
+  'Inconel 601 / 602CA': { base:['Ni','Cr'], els:['Ni: 58.0–63.0%','Cr: 21.0–25.0%','Fe: 7.7–17.4%','Al: 1.00–1.70%','Cu ≤ 1.00%','Mn ≤ 1.00%','C ≤ 0.10%','Si ≤ 0.50%','S ≤ 0.015%'] },
+  'Inconel 625': { base:['Ni','Cr','Mo'], els:['Ni ≥ 58.0%','Cr: 20.0–23.0%','Mo: 8.0–10.0%','Nb+Ta: 3.15–4.15%','Fe ≤ 5.0%','Al ≤ 0.40%','Ti ≤ 0.40%','Co ≤ 1.00%','Mn ≤ 0.50%','C ≤ 0.10%','Si ≤ 0.50%','P ≤ 0.015%','S ≤ 0.015%'] },
+  'Inconel 718': { base:['Ni','Cr','Mo'], els:['Ni: 50.0–55.0%','Cr: 17.0–21.0%','Mo: 2.80–3.30%','Nb+Ta: 4.75–5.50%','Fe: 11.1–22.5%','Ti: 0.65–1.15%','Al: 0.20–0.80%','Cu ≤ 0.30%','Co ≤ 1.00%','Mn ≤ 0.35%','C ≤ 0.08%','Si ≤ 0.35%','P ≤ 0.015%','S ≤ 0.015%','B ≤ 0.006%'] },
+  'Inconel X-750': { base:['Ni','Cr'], els:['Ni ≥ 70.0%','Cr: 14.0–17.0%','Fe: 5.0–9.0%','Ti: 2.25–2.75%','Nb+Ta: 0.70–1.20%','Al: 0.40–1.00%','Cu ≤ 0.50%','Mn ≤ 1.00%','C ≤ 0.08%','Si ≤ 0.50%','S ≤ 0.010%'] },
+  'Incoloy 800 / 800H / 800HT': { base:['Ni','Cr','Fe'], els:['Ni: 30.0–35.0%','Cr: 19.0–23.0%','Fe ≥ 39.5%','Al: 0.15–0.60%','Ti: 0.15–0.60%','Cu ≤ 0.75%','Mn ≤ 1.50%','C ≤ 0.10%','Si ≤ 1.00%','S ≤ 0.015%'] },
+  'Incoloy 825': { base:['Ni','Cr','Mo'], els:['Ni: 38.0–46.0%','Cr: 19.5–23.5%','Mo: 2.5–3.5%','Cu: 1.50–3.00%','Ti: 0.60–1.20%','Fe ≥ 22.0%','Mn ≤ 1.00%','Al ≤ 0.20%','C ≤ 0.05%','Si ≤ 0.50%','S ≤ 0.030%'] },
+  'Hastelloy C-276': { base:['Ni','Mo','Cr'], els:['Ni: 51.0–63.5%','Mo: 15.0–17.0%','Cr: 14.5–16.5%','Fe: 4.0–7.0%','W: 3.0–4.5%','Co ≤ 2.50%','Mn ≤ 1.00%','V ≤ 0.35%','C ≤ 0.01%','Si ≤ 0.08%','P ≤ 0.040%','S ≤ 0.030%'] },
+  'Hastelloy C-22': { base:['Ni','Cr','Mo'], els:['Ni: 50.1–63.0%','Cr: 20.0–22.5%','Mo: 12.5–14.5%','Fe: 2.0–6.0%','W: 2.5–3.5%','Co ≤ 2.50%','Mn ≤ 0.50%','V ≤ 0.35%','C ≤ 0.015%','Si ≤ 0.08%','P ≤ 0.020%','S ≤ 0.020%'] },
+  'Hastelloy B-2 / B-3': { base:['Ni','Mo'], els:['Ni: 65.0–71.0%','Mo: 27.0–32.0%','Fe: 1.0–3.0%','Cr: 1.0–3.0%','Co ≤ 3.00%','Mn ≤ 3.00%','W ≤ 3.0%','Cu ≤ 0.20%','Al ≤ 0.50%','Ti ≤ 0.20%','C ≤ 0.01%','Si ≤ 0.10%','P ≤ 0.030%','S ≤ 0.010%'] },
+  'Hastelloy C-2000': { base:['Ni','Cr','Mo'], els:['Ni: 49.0–64.0%','Cr: 22.0–24.0%','Mo: 15.0–17.0%','Cu: 1.3–1.9%','Fe ≤ 3.0%','Co ≤ 2.0%','C ≤ 0.01%','Si ≤ 0.08%'] }
+};
+function chemHTML(name){
+  var c = GRADE_CHEM[name];
+  if (!c) return '';
+  var chips = c.base.map(function(b,i){ return '<b'+(i>0?' class="a2"':'')+'>'+b+'</b>'; }).join('');
+  var els = c.els.map(function(e){ return '<span>'+e+'</span>'; }).join('');
+  return '<div class="chem-base">'+chips+'</div>'
+    + '<button type="button" class="chem-toggle" onclick="this.closest(\'.grade-card\').classList.toggle(\'open\')">Chemical composition <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button>'
+    + '<div class="chem-panel"><div class="chem-table">'+els+'</div><div class="chem-src">ASTM limits · nominal, per grade</div></div>';
+}
 var GRADE_HUBS = {
   'Monel 400':'grade-monel-400.html','Monel K-500':'grade-monel-k500.html','Monel 401 / 404 / R-405':'grades.html','Monel 502':'grade-monel-502.html',
   'Inconel 600':'grade-inconel-600.html','Inconel 601 / 602CA':'grade-inconel-601.html','Inconel 617':'grade-inconel-617.html','Inconel 625':'grade-inconel-625.html',
@@ -1137,7 +1179,7 @@ var GRADE_HUBS = {
 function renderGrades(fam){
   document.getElementById('gradeGrid').innerHTML = gradeData[fam].map(function(g){
     var hub = GRADE_HUBS[g[0]] || 'grades.html';
-    return '<div class="card grade-card reveal in"><h4><a href="'+hub+'" style="color:inherit">'+g[0]+'</a></h4><span class="grade-uns">'+g[1]+'</span><p>'+g[2]+'</p><div class="grade-forms">Forms: <strong>'+g[3]+'</strong></div><a href="'+hub+'" class="prod-link">View '+g[0]+' →</a></div>';
+    return '<div class="card grade-card reveal in"><h4><a href="'+hub+'" style="color:inherit">'+g[0]+'</a></h4><span class="grade-uns">'+g[1]+'</span><p>'+g[2]+'</p>'+chemHTML(g[0])+'<div class="grade-forms">Forms: <strong>'+g[3]+'</strong></div><a href="'+hub+'" class="prod-link">View '+g[0]+' →</a></div>';
   }).join('');
 }
 renderGrades('monel');
