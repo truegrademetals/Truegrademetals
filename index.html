@@ -245,6 +245,46 @@
   .ind-label span{font-size:.95rem}
   .eng-card{padding:20px}
 }
+
+/* ── popular products (horizontal scroll) ── */
+.pop-row{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 4px 18px;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+.pop-card{scroll-snap-align:start;flex:0 0 270px;background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:transform .3s,box-shadow .3s;display:block}
+.pop-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-sm)}
+.pop-card img{width:100%;height:150px;object-fit:cover}
+.pop-body{padding:16px 18px 18px}
+.pop-body strong{display:block;font-family:var(--font-head);font-size:1rem;margin-bottom:4px}
+.pop-body span{display:block;font-family:var(--font-mono);font-size:.7rem;color:var(--accent-dark);letter-spacing:.03em;margin-bottom:6px}
+.pop-body p{font-size:.8rem;color:var(--muted);line-height:1.55;margin:0}
+.pop-hint{text-align:center;font-size:.78rem;color:var(--muted);margin-top:2px}
+/* ── alloy selector ── */
+.sel-wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+@media(max-width:900px){.sel-wrap{grid-template-columns:1fr}}
+.sel-form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sel-form .full{grid-column:1/-1}
+.sel-field label{display:block;font-size:.78rem;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.sel-field select{width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;font:inherit;font-size:.88rem;background:#fff;color:var(--ink);appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23566' stroke-width='2.5'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.sel-field select:focus{outline:2px solid var(--accent);outline-offset:1px}
+.sel-out{background:var(--ink);color:#fff;border-radius:var(--radius);padding:30px;min-height:100%}
+.sel-out h3{font-size:1.15rem;margin:0 0 6px;color:#fff}
+.sel-out .sel-sub{font-size:.85rem;color:rgba(255,255,255,.6);margin:0 0 20px}
+.sel-grade{display:flex;gap:14px;padding:16px 0;border-top:1px solid rgba(255,255,255,.1)}
+.sel-grade .sg-badge{flex-shrink:0;width:44px;height:44px;border-radius:12px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:700;font-size:.72rem}
+.sel-grade strong{display:block;font-size:.98rem}
+.sel-grade p{font-size:.8rem;color:rgba(255,255,255,.65);margin:4px 0 8px;line-height:1.55}
+.sel-grade a{color:var(--accent-light);font-size:.8rem;font-weight:600;text-decoration:none}
+.sel-empty{color:rgba(255,255,255,.55);font-size:.88rem;line-height:1.6}
+.sel-cta{margin-top:18px}
+/* ── catalogue downloads ── */
+.dl-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+@media(max-width:1000px){.dl-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.dl-grid{grid-template-columns:1fr 1fr}}
+.dl-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:22px 20px;display:flex;flex-direction:column;gap:8px;transition:transform .3s,box-shadow .3s}
+.dl-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm)}
+.dl-card .picto{margin-bottom:6px}
+.dl-card strong{font-family:var(--font-head);font-size:.95rem}
+.dl-card span{font-size:.75rem;color:var(--muted);line-height:1.5;flex:1}
+.dl-card a{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;font-weight:700;color:var(--accent-dark);text-decoration:none;margin-top:6px}
+.dl-card a svg{width:14px;height:14px}
 /* industry photo cards */
 #industries .ind-grid{grid-template-columns:repeat(3,1fr)}
 @media(max-width:900px){#industries .ind-grid{grid-template-columns:repeat(2,1fr)}}
@@ -497,10 +537,33 @@
   </div>
 </section>
 
+<!-- ═══ POPULAR PRODUCTS ═══ -->
+<section class="section" id="popular" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">02 — Popular products</div>
+      <h2>Fast-moving grades, ready to quote.</h2>
+      <p>Frequent smelting schedules, competitive pricing and shorter lead times on the grade × form combinations our customers reorder most.</p>
+    </div>
+    <div class="pop-row reveal">
+      <a class="pop-card" href="inconel-625-pipes.html"><img src="assets/prod-pipes.jpg" alt="Inconel 625 seamless pipe" loading="lazy"><div class="pop-body"><strong>Inconel 625 Seamless Pipe</strong><span>UNS N06625 · ASTM B444</span><p>The marine &amp; subsea default — PREN 51, no heat treatment needed.</p></div></a>
+      <a class="pop-card" href="inconel-718-bars.html"><img src="assets/prod-bars.jpg" alt="Inconel 718 round bar" loading="lazy"><div class="pop-body"><strong>Inconel 718 Round Bar</strong><span>UNS N07718 · ASTM B637</span><p>Aerospace strength king — aged to 1,100 MPa+ yield below 650 °C.</p></div></a>
+      <a class="pop-card" href="hastelloy-c276-pipes.html"><img src="assets/prod-pipes.jpg" alt="Hastelloy C-276 pipe" loading="lazy"><div class="pop-body"><strong>Hastelloy C-276 Pipe</strong><span>UNS N10276 · ASTM B622</span><p>The chemical industry workhorse — PREN 68, reducing-acid champion.</p></div></a>
+      <a class="pop-card" href="monel-400-bars.html"><img src="assets/prod-bars.jpg" alt="Monel 400 round bar" loading="lazy"><div class="pop-body"><strong>Monel 400 Round Bar</strong><span>UNS N04400 · ASTM B164</span><p>A century of seawater service — shafts, valves and marine fasteners.</p></div></a>
+      <a class="pop-card" href="incoloy-825-sheets.html"><img src="assets/prod-sheets.jpg" alt="Incoloy 825 sheet" loading="lazy"><div class="pop-body"><strong>Incoloy 825 Sheet &amp; Plate</strong><span>UNS N08825 · ASTM B424</span><p>Sour-service and acid-plant staple — Mo + Cu + Ti chemistry.</p></div></a>
+      <a class="pop-card" href="hastelloy-c276-fittings.html"><img src="assets/prod-fittings.jpg" alt="Hastelloy C-276 fittings" loading="lazy"><div class="pop-body"><strong>Hastelloy C-276 Fittings</strong><span>UNS N10276 · ASTM B366</span><p>Elbows, tees and reducers to match your C-276 piping system.</p></div></a>
+      <a class="pop-card" href="monel-400-pipes.html"><img src="assets/prod-pipes.jpg" alt="Monel 400 pipe" loading="lazy"><div class="pop-body"><strong>Monel 400 Pipe</strong><span>UNS N04400 · ASTM B165</span><p>Flowing-seawater specialist for marine and desalination systems.</p></div></a>
+      <a class="pop-card" href="inconel-625-bars.html"><img src="assets/prod-bars.jpg" alt="Inconel 625 bar" loading="lazy"><div class="pop-body"><strong>Inconel 625 Round Bar</strong><span>UNS N06625 · ASTM B446</span><p>Subsea fasteners and shafts — strength with seawater immunity.</p></div></a>
+    </div>
+    <p class="pop-hint reveal">← Scroll to explore →&ensp;·&ensp;All 84 grades available in 5 product forms — <a href="categories.html" style="color:var(--accent-dark);font-weight:600">full catalogue</a></p>
+  </div>
+</section>
+
+
 <section class="section" id="risks">
   <div class="container">
     <div class="section-head reveal">
-      <div class="eyebrow">02 — Procurement risks</div>
+      <div class="eyebrow">03 — Procurement risks</div>
       <h2>Sourcing nickel alloys shouldn't feel like a gamble.</h2>
       <p>We built TrueGrade Metals to remove the four biggest sourcing risks industrial buyers face.</p>
     </div>
@@ -517,7 +580,7 @@
 <section class="section section-dark" id="why">
   <div class="container">
     <div class="section-head reveal">
-      <div class="eyebrow">03 — Our promises</div>
+      <div class="eyebrow">04 — Our promises</div>
       <h2>Risk reversal, built into every quote.</h2>
       <p>Three guarantees that separate TrueGrade Metals from commodity traders.</p>
     </div>
@@ -569,7 +632,7 @@
 <section class="section" id="case">
   <div class="container">
     <div class="section-head reveal">
-      <div class="eyebrow">04 — Case study</div>
+      <div class="eyebrow">05 — Case study</div>
       <h2>How a European chemical contractor cut lead time by 40%.</h2>
     </div>
     <div class="card case-card reveal">
@@ -583,11 +646,43 @@
   </div>
 </section>
 
+<!-- ═══ SEARCH BY INDUSTRY (alloy selector) ═══ -->
+<section class="section section-white" id="selector">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">06 — Search by industry</div>
+      <h2>Tell us the service. We name the grade.</h2>
+      <p>The same screening logic our metallurgists apply to every inquiry — answer five questions and get a defensible shortlist in seconds.</p>
+    </div>
+    <div class="sel-wrap">
+      <form class="sel-form reveal" id="alloySelector" onsubmit="return false">
+        <div class="sel-field"><label for="selEnv">Application environment</label>
+          <select id="selEnv"><option value="">Select environment…</option><option value="marine">Marine / offshore</option><option value="chemical">Chemical processing</option><option value="oilgas">Oil &amp; gas (sour service)</option><option value="aero">Aerospace / turbines</option><option value="power">Power generation</option><option value="hydrogen">Hydrogen / clean energy</option></select></div>
+        <div class="sel-field"><label for="selTemp">Operating temperature</label>
+          <select id="selTemp"><option value="">Select range…</option><option value="ambient">Room / ambient</option><option value="t600">Up to 600 °C</option><option value="t900">600 – 900 °C</option><option value="t900p">Above 900 °C</option></select></div>
+        <div class="sel-field"><label for="selMedia">Corrosion media</label>
+          <select id="selMedia"><option value="">Select media…</option><option value="seawater">Chloride / seawater</option><option value="sulfuric">Sulfuric acid</option><option value="hcl">Hydrochloric / reducing acids</option><option value="oxidizing">Oxidizing media / wet chlorine</option><option value="hf">Hydrofluoric acid</option><option value="mild">None / mild</option></select></div>
+        <div class="sel-field"><label for="selForm">Product form</label>
+          <select id="selForm"><option value="">Select form…</option><option value="pipes">Pipe / tube</option><option value="bars">Bar / rod</option><option value="sheets">Sheet / plate</option><option value="wires">Wire / filler</option><option value="fittings">Fitting / flange</option></select></div>
+        <div class="sel-field full"><label for="selVol">Estimated annual volume</label>
+          <select id="selVol"><option value="">Select volume…</option><option value="sample">Qualification samples</option><option value="small">Under 1 tonne</option><option value="mid">1 – 10 tonnes</option><option value="large">Over 10 tonnes</option></select></div>
+      </form>
+      <div class="sel-out reveal d1" id="selOut">
+        <h3>Recommended for your project</h3>
+        <p class="sel-sub">Select your service conditions — recommendations appear here instantly.</p>
+        <div id="selResults"><p class="sel-empty">Every recommendation links to full grade data, standards and a 24-hour quotation path. Nothing here is generic marketing — it is the same first-pass logic our engineers use.</p></div>
+        <div class="sel-cta" id="selCta" style="display:none"><a href="index.html#rfq" class="btn btn-primary" id="selQuoteBtn">Request sample kit quote →</a><p style="font-size:.75rem;color:rgba(255,255,255,.5);margin-top:10px">Validate before you scale: cut-to-size coupon + MTR + third-party lab verification + matched welding filler. Delivered in 7–10 working days.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- ═══ PROCESS ═══ -->
 <section class="section section-white" id="process">
   <div class="container">
     <div class="section-head reveal">
-      <div class="eyebrow">05 — Process</div>
+      <div class="eyebrow">07 — Process</div>
       <h2>From spec to shipment in five steps.</h2>
       <p>A workflow designed for industrial buyers who need speed, traceability and certainty.</p>
     </div>
@@ -623,7 +718,7 @@
 <section class="section section-white" id="grades">
   <div class="container">
     <div class="section-head reveal">
-      <div class="eyebrow">07 — Grade explorer</div>
+      <div class="eyebrow">08 — Grade explorer</div>
       <h2>Find the alloy for your environment.</h2>
       <p>Click any grade family to see stocked grades with UNS numbers and available forms — then request a certified quote with full technical data.</p>
     </div>
@@ -641,7 +736,7 @@
 <section class="section" id="resources">
   <div class="container">
     <div class="section-head reveal">
-      <div class="eyebrow">08 — Engineering data</div>
+      <div class="eyebrow">09 — Engineering data</div>
       <h2>The numbers your team checks first.</h2>
       <p>Nominal published properties for stocked grades — certified heat lots ship with actual MTC values. Need more depth? The <a href="product.html#performance" style="color:var(--accent);font-weight:600">product page</a> carries temperature curves, corrosion rankings and chemistry.</p>
     </div>
@@ -671,7 +766,7 @@
 <section class="section section-white" id="industries">
   <div class="container">
     <div class="section-head reveal">
-      <div class="eyebrow">09 — Industries served</div>
+      <div class="eyebrow">10 — Industries served</div>
       <h2>Trusted where failure is not an option.</h2>
     </div>
     <div class="ind-grid reveal">
@@ -689,7 +784,7 @@
 <section class="section" id="voices">
   <div class="container">
     <div class="section-head reveal">
-      <div class="eyebrow">10 — Buyer voices</div>
+      <div class="eyebrow">11 — Buyer voices</div>
       <h2>What procurement teams say.</h2>
     </div>
     <div class="testi-grid">
@@ -706,7 +801,7 @@
   <div class="container">
     <div class="rfq-grid">
       <div class="reveal">
-        <div class="eyebrow">10 — Get your certified quote</div>
+        <div class="eyebrow">12 — Get your certified quote</div>
         <h2 style="font-size:clamp(2rem,4vw,2.9rem);margin-bottom:16px">Get your certified nickel-alloy quote in 24 hours.</h2>
         <p>Send us your grade, standard, dimensions and quantity. A named metallurgist will review your spec and return a quotation with MTC, lead time and shipping options.</p>
         <div class="contact-opts">
@@ -736,11 +831,30 @@
   </div>
 </section>
 
+
+<!-- ═══ DOWNLOAD CATALOGUES ═══ -->
+<section class="section section-white" id="catalogs">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">13 — Catalogue downloads</div>
+      <h2>Full product catalogues, free PDF.</h2>
+      <p>Specifications, standards, size ranges and grade availability — the documents our engineers quote from.</p>
+    </div>
+    <div class="dl-grid reveal">
+      <div class="dl-card"><div class="picto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/></svg></div><strong>Pipes &amp; Tubes</strong><span>Seamless, welded, capillary &amp; coil — B163/B444/B622 ranges</span><a href="assets/catalog-pipes-tubes.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 4v12M6 12l6 6 6-6M4 20h16"/></svg>Download PDF</a></div>
+      <div class="dl-card"><div class="picto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 20h16M6 16v4M18 16v4M6 16a6 6 0 0 1 12 0"/></svg></div><strong>Fittings &amp; Flanges</strong><span>Elbows, tees, reducers, caps &amp; flanges — B366/B564</span><a href="assets/catalog-fittings-flanges.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 4v12M6 12l6 6 6-6M4 20h16"/></svg>Download PDF</a></div>
+      <div class="dl-card"><div class="picto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 12h18M3 12l4-4M3 12l4 4M21 12l-4-4M21 12l-4 4"/></svg></div><strong>Bars &amp; Rods</strong><span>Round, flat, square &amp; hex — B164/B446/B637 conditions</span><a href="assets/catalog-bars-rods.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 4v12M6 12l6 6 6-6M4 20h16"/></svg>Download PDF</a></div>
+      <div class="dl-card"><div class="picto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="7" width="18" height="10" rx="1"/><path d="M3 12h18"/></svg></div><strong>Sheets &amp; Plates</strong><span>Sheet, plate, coil &amp; strip — B127/B424/B443/B575</span><a href="assets/catalog-sheets-plates.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 4v12M6 12l6 6 6-6M4 20h16"/></svg>Download PDF</a></div>
+      <div class="dl-card"><div class="picto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12c3-6 6 6 8 0s5 6 8 0"/></svg></div><strong>Wires &amp; Electrodes</strong><span>Wire, filler metal &amp; electrodes — AWS A5.14 / A5.11</span><a href="assets/catalog-wires-electrodes.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 4v12M6 12l6 6 6-6M4 20h16"/></svg>Download PDF</a></div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══ FAQ ═══ -->
 <section class="section section-white" id="faq">
   <div class="container" style="max-width:820px">
     <div class="section-head center reveal">
-      <div class="eyebrow">11 — FAQ</div>
+      <div class="eyebrow">14 — FAQ</div>
       <h2>Frequently asked questions.</h2>
     </div>
     <div class="reveal" style="display:flex;flex-direction:column;gap:12px">
@@ -898,6 +1012,82 @@
 <script src="assets/site.js"></script>
 <script src="assets/leadgen.js"></script>
 <script>
+
+/* ═══ alloy selector ═══ */
+(function(){
+  var RULES = [
+    /* [score, grade, badge, why, hub] computed below */
+  ];
+  var G = {
+    '625':  { name:'Inconel 625',  hub:'grade-inconel-625.html',  badge:'625' },
+    '718':  { name:'Inconel 718',  hub:'grade-inconel-718.html',  badge:'718' },
+    'c276': { name:'Hastelloy C-276', hub:'grade-hastelloy-c276.html', badge:'C276' },
+    'c22':  { name:'Hastelloy C-22',  hub:'grade-hastelloy-c22.html',  badge:'C22' },
+    '400':  { name:'Monel 400',    hub:'grade-monel-400.html',    badge:'400' },
+    'k500': { name:'Monel K-500',  hub:'grade-monel-k-500.html',  badge:'K500' },
+    '825':  { name:'Incoloy 825',  hub:'grade-incoloy-825.html',  badge:'825' },
+    '800h': { name:'Incoloy 800H', hub:'grade-incoloy-800h.html', badge:'800H' },
+    '601':  { name:'Inconel 601',  hub:'grade-inconel-601.html',  badge:'601' },
+    '617':  { name:'Inconel 617',  hub:'grade-inconel-617.html',  badge:'617' },
+    'x750': { name:'Inconel X-750',hub:'grade-inconel-x-750.html',badge:'X750' },
+    'b3':   { name:'Hastelloy B-3',hub:'grade-hastelloy-b-3.html',badge:'B-3' }
+  };
+  var WHY = {
+    '625':'PREN ≈ 51 — immune to seawater pitting and crevice corrosion, high strength without heat treatment.',
+    '718':'Age-hardenable to 1,100 MPa+ yield — the aerospace strength standard below 650 °C.',
+    'c276':'PREN ≈ 68 with 16% Mo — the reducing-acid and mixed-chemistry champion.',
+    'c22':'22% Cr — clearly superior in oxidizing and upset-prone chemical streams.',
+    '400':'A century of flowing-seawater and hydrofluoric-acid service.',
+    'k500':'Monel strength doubled by age hardening — shafts and fasteners under load.',
+    '825':'Mo + Cu + Ti chemistry for sour service, sulfuric acid and chloride SCC.',
+    '800h':'Controlled high-carbon 800 for creep strength in 600–900 °C service.',
+    '601':'Oxidation resistance to 1,200 °C with good strength — furnace and exhaust.',
+    '617':'The strongest oxidation-resistant grade for >900 °C power and turbine duty.',
+    'x750':'Precipitation-hardened spring and fastener alloy to ~700 °C.',
+    'b3':'The hydrochloric-acid specialist — best-in-class in hot pure HCl.'
+  };
+  function score(env, temp, media) {
+    var s = { '625':0,'718':0,'c276':0,'c22':0,'400':0,'k500':0,'825':0,'800h':0,'601':0,'617':0,'x750':0,'b3':0 };
+    if (env==='marine'){ s['625']+=3; s['400']+=3; s['k500']+=2; s['c276']+=1; }
+    if (env==='chemical'){ s['c276']+=3; s['c22']+=3; s['825']+=2; s['b3']+=1; }
+    if (env==='oilgas'){ s['625']+=3; s['825']+=3; s['c276']+=2; }
+    if (env==='aero'){ s['718']+=3; s['x750']+=2; s['625']+=2; s['617']+=1; }
+    if (env==='power'){ s['617']+=3; s['800h']+=3; s['601']+=2; s['625']+=1; }
+    if (env==='hydrogen'){ s['625']+=3; s['825']+=2; s['c276']+=2; }
+    if (temp==='ambient'){ s['400']+=1; s['625']+=1; s['c276']+=1; s['825']+=1; }
+    if (temp==='t600'){ s['718']+=2; s['625']+=1; s['800h']+=1; s['601']+=1; }
+    if (temp==='t900'){ s['800h']+=2; s['601']+=2; s['617']+=2; s['625']-=1; s['718']-=3; s['400']-=2; s['c276']-=1; }
+    if (temp==='t900p'){ s['601']+=3; s['617']+=3; s['800h']+=1; s['718']-=5; s['400']-=4; s['825']-=3; s['625']-=2; s['c276']-=2; }
+    if (media==='seawater'){ s['625']+=3; s['c276']+=2; s['400']+=2; s['k500']+=1; }
+    if (media==='sulfuric'){ s['825']+=3; s['c276']+=2; s['b3']+=1; }
+    if (media==='hcl'){ s['b3']+=3; s['c276']+=2; s['c22']+=1; }
+    if (media==='oxidizing'){ s['c22']+=3; s['625']+=1; s['c276']+=1; s['b3']-=2; }
+    if (media==='hf'){ s['400']+=4; s['k500']+=2; s['625']-=3; s['c276']-=3; }
+    if (media==='mild'){ s['800h']+=1; s['601']+=1; s['718']+=1; }
+    return s;
+  }
+  var ids = ['selEnv','selTemp','selMedia','selForm','selVol'];
+  function update(){
+    var v = ids.map(function(i){ return document.getElementById(i).value; });
+    if (!v[0] && !v[1] && !v[2]) {
+      document.getElementById('selResults').innerHTML = '<p class="sel-empty">Select your service conditions — recommendations appear here instantly.</p>';
+      document.getElementById('selCta').style.display = 'none';
+      return;
+    }
+    var s = score(v[0], v[1], v[2]);
+    var top = Object.keys(s).sort(function(a,b){ return s[b]-s[a]; }).filter(function(k){ return s[k] > 0; }).slice(0,2);
+    if (!top.length) top = ['625','c276'];
+    var html = '';
+    top.forEach(function(k){
+      var form = v[3] ? ' · ' + ({pipes:'pipe & tube',bars:'bar & rod',sheets:'sheet & plate',wires:'wire & filler',fittings:'fittings & flanges'})[v[3]] : '';
+      html += '<div class="sel-grade"><div class="sg-badge">'+G[k].badge+'</div><div><strong>'+G[k].name+form+'</strong><p>'+WHY[k]+'</p><a href="'+G[k].hub+'">Full grade data →</a></div></div>';
+    });
+    document.getElementById('selResults').innerHTML = html;
+    document.getElementById('selCta').style.display = 'block';
+  }
+  ids.forEach(function(i){ document.getElementById(i).addEventListener('change', update); });
+})();
+
 /* ═══ grade explorer ═══ */
 var gradeData = {
   monel: [
