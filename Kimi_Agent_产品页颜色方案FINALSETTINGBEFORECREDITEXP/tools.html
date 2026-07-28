@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engineering Tools — Pipe Schedule &amp; Grade Comparison | TrueGrade Metals</title>
+<meta name="description" content="Free engineering tools: interactive pipe schedule calculator (ANSI B36.10/B36.19), nickel alloy grade comparison and weight calculator for Monel, Inconel, Incoloy and Hastelloy.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="canonical" href="https://www.truegrademetals.com/tools.html">
+<meta name="theme-color" content="#0F1E2C">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "BreadcrumbList", "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.truegrademetals.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Engineering Tools", "item": "https://www.truegrademetals.com/tools.html" }
+    ]},
+    { "@type": "WebApplication", "name": "TrueGrade Pipe Schedule & Grade Comparison Tools",
+      "applicationCategory": "EngineeringApplication", "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }
+  ]
+}
+</script>
+<style>
+.tool-card{padding:32px;margin-bottom:26px}
+.tool-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:22px 0}
+@media(max-width:900px){.tool-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.tool-grid{grid-template-columns:1fr}}
+.tool-results{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+@media(max-width:800px){.tool-results{grid-template-columns:repeat(2,1fr)}}
+.tool-result{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px}
+.tool-result span{display:block;font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px}
+.tool-result strong{font-family:var(--font-head);font-size:1.35rem;color:var(--ink)}
+.tool-result small{font-size:.78rem;color:var(--muted);margin-left:3px}
+.cmp-grid{display:grid;grid-template-columns:1fr 36px 1fr;gap:14px;align-items:end;margin:22px 0}
+@media(max-width:700px){.cmp-grid{grid-template-columns:1fr;gap:8px}.cmp-vs{display:none}}
+.cmp-vs{font-family:var(--font-head);font-weight:700;color:var(--muted);text-align:center;padding-bottom:14px}
+.cmp-table{margin-top:8px}
+.cmp-table td.win{color:var(--green);font-weight:700}
+.cmp-note{font-size:.8rem;color:var(--muted);margin-top:12px}
+.verdict{background:var(--tint);border:1px solid var(--tint-2);border-radius:var(--radius-sm);padding:16px 20px;margin-top:18px;font-size:.92rem;line-height:1.6}
+.verdict strong{color:var(--accent-dark)}
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="utility-inner">
+    <div class="utility-group">
+      <span class="utility-pill"><i></i> ISO 9001 · EN 9100 certified</span>
+      <span>EN 10204 3.1 MTC · 30+ years</span>
+    </div>
+    <div class="utility-group">
+      <a href="mailto:info@truegrademetals.com">info@truegrademetals.com</a>
+      <span>+86-519-81809659</span>
+    </div>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">TG</span>
+      <span class="logo-text"><span class="logo-name">TrueGrade Metals</span><span class="logo-tag">Nickel Alloy Specialists</span></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="categories.html">Products</a>
+      <a href="grades.html">Grades</a>
+      <a href="tools.html" class="active">Tools</a>
+      <a href="industries.html">Industries</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="header-actions">
+      <a href="index.html#rfq" class="btn btn-primary"><span class="long">Request Quote — </span>24h ↗</a>
+    </div>
+  </div>
+</header>
+
+<div class="container breadcrumb"><a href="index.html">Home</a> / <span>Engineering Tools</span></div>
+
+<!-- ═══ HERO ═══ -->
+<section class="section" style="padding-top:44px;padding-bottom:40px">
+  <div class="container">
+    <div class="section-head reveal in" style="margin-bottom:0">
+      <div class="eyebrow">Free engineering tools</div>
+      <h2 style="font-size:clamp(2.1rem,4.4vw,3.2rem)">Do the math before you send the RFQ.</h2>
+      <p>The same calculators our own engineers use — pipe schedules, weights and grade selection, free and ungated.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TOOL 1: PIPE SCHEDULE ═══ -->
+<section class="section" style="padding-top:0" id="schedule">
+  <div class="container">
+    <div class="card tool-card reveal in">
+      <div class="eyebrow">Tool 01 — Pipe schedule calculator</div>
+      <h3 style="font-size:1.5rem;margin-bottom:6px">NPS + schedule → dimensions &amp; weight</h3>
+      <p style="font-size:.92rem;margin:0">Pick a nominal size and schedule; get OD, wall, ID, cross-section and weight per metre for your grade (ANSI B36.10 / B36.19).</p>
+      <div class="tool-grid">
+        <div class="field"><label for="sNPS">Nominal size (NPS)</label>
+          <select id="sNPS">
+            <option value="0">1/2"</option><option value="1">3/4"</option><option value="2" selected>1"</option><option value="3">1-1/2"</option>
+            <option value="4">2"</option><option value="5">3"</option><option value="6">4"</option><option value="7">6"</option>
+            <option value="8">8"</option><option value="9">10"</option><option value="10">12"</option><option value="11">14"</option>
+            <option value="12">16"</option><option value="13">20"</option><option value="14">24"</option>
+          </select>
+        </div>
+        <div class="field"><label for="sSCH">Schedule</label>
+          <select id="sSCH"><option value="1">SCH 10</option><option value="2" selected>SCH 40</option><option value="3">SCH 80</option><option value="4">SCH 160</option></select>
+        </div>
+        <div class="field"><label for="sGrade">Grade</label>
+          <select id="sGrade">
+            <option value="8.44">Inconel 625 (8.44)</option><option value="8.19">Inconel 718 (8.19)</option>
+            <option value="8.47">Inconel 600 (8.47)</option><option value="8.89">Hastelloy C-276 (8.89)</option>
+            <option value="8.14">Incoloy 825 (8.14)</option><option value="8.80">Monel 400 (8.80)</option>
+            <option value="8.02">Incoloy 800 (8.02)</option><option value="8.90">Nickel 200 (8.90)</option>
+          </select>
+        </div>
+        <div class="field"><label for="sLen">Length (m)</label><input id="sLen" type="number" value="6" min="0.1" step="0.5"></div>
+      </div>
+      <div class="tool-results">
+        <div class="tool-result"><span>Outside diameter</span><strong class="num" id="rOD">—</strong><small>mm</small></div>
+        <div class="tool-result"><span>Wall thickness</span><strong class="num" id="rWT">—</strong><small>mm</small></div>
+        <div class="tool-result"><span>Inside diameter</span><strong class="num" id="rID">—</strong><small>mm</small></div>
+        <div class="tool-result"><span>Weight per metre</span><strong class="num" id="rKGM">—</strong><small>kg/m</small></div>
+      </div>
+      <div class="tool-results" style="grid-template-columns:repeat(2,1fr)">
+        <div class="tool-result"><span>Total weight</span><strong class="num" id="rTotal">—</strong><small>kg</small></div>
+        <div class="tool-result"><span>Flow area (ID bore)</span><strong class="num" id="rArea">—</strong><small>cm²</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TOOL 2: GRADE COMPARISON ═══ -->
+<section class="section section-white" id="compare">
+  <div class="container">
+    <div class="card tool-card reveal">
+      <div class="eyebrow">Tool 02 — Grade comparison</div>
+      <h3 style="font-size:1.5rem;margin-bottom:6px">Two grades, side by side — with a verdict.</h3>
+      <p style="font-size:.92rem;margin:0">Compare chemistry, strength, temperature and corrosion resistance. The verdict line tells you which alloy wins for which service.</p>
+      <div class="cmp-grid">
+        <div class="field"><label for="gA">Grade A</label><select id="gA"></select></div>
+        <div class="cmp-vs">VS</div>
+        <div class="field"><label for="gB">Grade B</label><select id="gB"></select></div>
+      </div>
+      <div class="table-scroll"><table class="data-table cmp-table" id="cmpTable">
+        <thead><tr><th>Property</th><th id="cmpHA">Grade A</th><th id="cmpHB">Grade B</th></tr></thead>
+        <tbody></tbody>
+      </table></div>
+      <div class="verdict" id="cmpVerdict"></div>
+      <p class="cmp-note">Nominal published values, annealed condition. Certified heats ship with actual MTC values. PREN = Cr + 3.3×Mo + 16×N (qualitative for Ni alloys).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="section section-dark" style="text-align:center">
+  <div class="container reveal">
+    <div class="eyebrow" style="justify-content:center">Done the math?</div>
+    <h2 style="font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:14px">Send the spec — certified quote in 24 hours.</h2>
+    <p style="max-width:620px;margin:0 auto 26px;font-size:1.02rem">Attach your calculated weight and dimensions to the RFQ — our engineers verify everything before quoting anyway.</p>
+    <a href="index.html#rfq" class="btn btn-primary btn-lg">Request 24h quote →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark">TG</span><span class="logo-text"><span class="logo-name" style="color:#fff">TrueGrade Metals</span><span class="logo-tag">Nickel Alloy Specialists</span></span></a>
+        <p>A professional supplier of nickel alloys and superalloys to industrial buyers worldwide — strict quality systems, full material traceability and responsive engineering support.</p>
+      </div>
+      <div><h4>Products</h4><a href="product.html">Seamless Pipe &amp; Tube</a><a href="welded-pipe.html">Welded Pipe &amp; Tube</a><a href="fittings.html">Fittings &amp; Flanges</a><a href="bars.html">Bars &amp; Rods</a><a href="sheets.html">Sheets &amp; Plates</a><a href="wires.html">Wires &amp; Electrodes</a></div>
+      <div><h4>Resources</h4><a href="tools.html">Pipe Schedule Tool</a><a href="tools.html#compare">Grade Comparison</a><a href="blog.html">Engineering Blog</a><a href="categories.html#matrix">Availability Matrix</a><a href="assets/grade-selection-guide.pdf">Grade Selection Guide (PDF)</a></div>
+      <div><h4>Company</h4><a href="about.html">About us</a><a href="about.html#contact">Contact</a><a href="mailto:info@truegrademetals.com">info@truegrademetals.com</a><a href="tel:+8651981809659">+86-519-81809659</a></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 TrueGrade Metals · Changzhou, Jiangsu, China · Quote response within 24 hours</span>
+      <span>ISO 9001 · ISO 14001 · ISO 45001 · EN 9100 · PED 2014/68/EU</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-bar-inner">
+    <div class="sticky-bar-text"><strong>Calculated your spec?</strong><span>Certified quote in 24 h · MTC EN 10204 3.1</span></div>
+    <div class="sticky-bar-actions">
+      <a href="index.html#rfq" class="btn btn-primary">Request 24h Quote →</a>
+      <button class="sticky-bar-close" id="stickyClose" aria-label="Close">✕</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/site.js"></script>
+<script src="assets/leadgen.js"></script>
+<script>
+/* ═══ TOOL 1: pipe schedule ═══ */
+var SCH = [
+ /* NPS, DN, OD, WT10, WT40, WT80, WT160 */
+ ['1/2"','15',21.3,2.11,2.77,3.73,4.78],['3/4"','20',26.7,2.11,2.87,3.91,5.56],
+ ['1"','25',33.4,2.77,3.38,4.55,6.35],['1-1/2"','40',48.3,2.77,3.68,5.08,7.14],
+ ['2"','50',60.3,2.77,3.91,5.54,8.74],['3"','80',88.9,3.05,5.49,7.62,11.13],
+ ['4"','100',114.3,3.05,6.02,8.56,13.49],['6"','150',168.3,3.40,7.11,10.97,18.26],
+ ['8"','200',219.1,3.76,8.18,12.70,23.01],['10"','250',273.1,4.19,9.27,12.70,28.58],
+ ['12"','300',323.9,4.57,10.31,12.70,33.32],['14"','350',355.6,4.78,11.13,12.70,35.71],
+ ['16"','400',406.4,4.78,12.70,12.70,40.49],['20"','500',508.0,5.54,15.09,12.70,50.01],
+ ['24"','600',610.0,6.35,17.48,12.70,59.54]
+];
+function calcSched(){
+  var row = SCH[+document.getElementById('sNPS').value];
+  var col = +document.getElementById('sSCH').value;
+  var rho = +document.getElementById('sGrade').value;
+  var len = +document.getElementById('sLen').value || 0;
+  var od = row[2], wt = row[col+2];
+  var id = od - 2*wt;
+  var kgm = Math.PI * (od - wt) * wt * rho / 1000;
+  document.getElementById('rOD').textContent = od.toFixed(1);
+  document.getElementById('rWT').textContent = wt.toFixed(2);
+  document.getElementById('rID').textContent = id.toFixed(1);
+  document.getElementById('rKGM').textContent = kgm.toFixed(2);
+  document.getElementById('rTotal').textContent = (kgm*len).toLocaleString('en-US',{maximumFractionDigits:1});
+  document.getElementById('rArea').textContent = (Math.PI*id*id/400).toFixed(1);
+}
+['sNPS','sSCH','sGrade','sLen'].forEach(function(id){ document.getElementById(id).addEventListener('input', calcSched); });
+calcSched();
+
+/* ═══ TOOL 2: grade comparison ═══ */
+var G = [
+ {n:'Inconel 625', uns:'N06625', chem:'61 Ni · 21 Cr · 9 Mo · 3.6 Nb', y:414, t:827, temp:982, pren:51, dens:8.44, best:'Strength + corrosion + heat in one alloy'},
+ {n:'Inconel 718', uns:'N07718', chem:'53 Ni · 19 Cr · 5.1 Nb · 3 Mo', y:1035, t:1240, temp:700, pren:31, dens:8.19, best:'Maximum strength to 700 °C'},
+ {n:'Inconel 600', uns:'N06600', chem:'72 Ni · 15 Cr · 8 Fe', y:240, t:655, temp:1095, pren:17, dens:8.47, best:'Oxidation & furnace atmospheres'},
+ {n:'Hastelloy C-276', uns:'N10276', chem:'57 Ni · 16 Mo · 16 Cr · 4 W', y:355, t:790, temp:1040, pren:68, dens:8.89, best:'Worst-case mixed corrosion'},
+ {n:'Hastelloy C-22', uns:'N06022', chem:'56 Ni · 13 Mo · 22 Cr · 3 W', y:355, t:760, temp:1040, pren:65, dens:8.69, best:'Chloride process streams'},
+ {n:'Hastelloy B-3', uns:'N10675', chem:'68 Ni · 28 Mo · 1.5 Cr', y:417, t:895, temp:400, pren:47, dens:9.22, best:'Reducing acids (HCl)'},
+ {n:'Incoloy 825', uns:'N08825', chem:'42 Ni · 21 Cr · 3 Mo · 2 Cu', y:241, t:586, temp:540, pren:31, dens:8.14, best:'Sulfuric & phosphoric acids'},
+ {n:'Incoloy 800', uns:'N08800', chem:'32 Ni · 21 Cr · 46 Fe', y:205, t:520, temp:1100, pren:21, dens:8.02, best:'High-temp strength on a budget'},
+ {n:'Monel 400', uns:'N04400', chem:'66 Ni · 31 Cu', y:240, t:550, temp:480, pren:8, dens:8.80, best:'Seawater & HF acid'},
+ {n:'Monel K-500', uns:'N05500', chem:'66 Ni · 29 Cu · Al/Ti', y:690, t:965, temp:480, pren:8, dens:8.44, best:'Marine strength (shafts, fasteners)'},
+ {n:'316L (reference)', uns:'S31603', chem:'10 Ni · 17 Cr · 2 Mo', y:205, t:515, temp:425, pren:24, dens:7.98, best:'Mild service only'}
+];
+var selA = document.getElementById('gA'), selB = document.getElementById('gB');
+G.forEach(function(g,i){
+  selA.add(new Option(g.n, i)); selB.add(new Option(g.n, i));
+});
+selA.value = 0; selB.value = 3;
+function cmpRow(label, va, vb, unit, higherBetter){
+  var winA = higherBetter ? va > vb : va < vb;
+  var aCls = winA && va !== vb ? ' class="win"' : '';
+  var bCls = !winA && va !== vb ? ' class="win"' : '';
+  return '<tr><td>'+label+'</td><td'+aCls+'>'+va+(unit?' '+unit:'')+'</td><td'+bCls+'>'+vb+(unit?' '+unit:'')+'</td></tr>';
+}
+function renderCmp(){
+  var a = G[+selA.value], b = G[+selB.value];
+  document.getElementById('cmpHA').textContent = a.n;
+  document.getElementById('cmpHB').textContent = b.n;
+  var rows = '';
+  rows += '<tr><td>UNS</td><td>'+a.uns+'</td><td>'+b.uns+'</td></tr>';
+  rows += '<tr><td>Nominal chemistry</td><td>'+a.chem+'</td><td>'+b.chem+'</td></tr>';
+  rows += cmpRow('Min. yield strength', a.y, b.y, 'MPa', true);
+  rows += cmpRow('Min. tensile strength', a.t, b.t, 'MPa', true);
+  rows += cmpRow('Max service temperature', a.temp, b.temp, '°C', true);
+  rows += cmpRow('PREN (pitting resistance)', a.pren, b.pren, '', true);
+  rows += cmpRow('Density', a.dens, b.dens, 'g/cm³', false);
+  rows += '<tr><td>Best for</td><td>'+a.best+'</td><td>'+b.best+'</td></tr>';
+  document.querySelector('#cmpTable tbody').innerHTML = rows;
+  var verdict = '';
+  if (a === b){ verdict = 'Same grade selected on both sides — pick two different alloys to compare.'; }
+  else {
+    var pts = [];
+    if (a.y !== b.y) pts.push('<strong>'+(a.y>b.y?a.n:b.n)+'</strong> wins on strength ('+Math.max(a.y,b.y)+' vs '+Math.min(a.y,b.y)+' MPa yield)');
+    if (a.temp !== b.temp) pts.push('<strong>'+(a.temp>b.temp?a.n:b.n)+'</strong> survives higher temperature ('+Math.max(a.temp,b.temp)+' °C)');
+    if (a.pren !== b.pren) pts.push('<strong>'+(a.pren>b.pren?a.n:b.n)+'</strong> resists chloride pitting better (PREN '+Math.max(a.pren,b.pren)+')');
+    verdict = pts.join(' · ') + '.<br>Unsure for your medium, temperature and pressure? <a href="index.html#rfq" style="color:var(--accent-dark);font-weight:700">Ask our metallurgist — free, 24h reply</a>.';
+  }
+  document.getElementById('cmpVerdict').innerHTML = verdict;
+}
+selA.addEventListener('input', renderCmp); selB.addEventListener('input', renderCmp);
+renderCmp();
+</script>
+</body>
+</html>
